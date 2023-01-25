@@ -1,0 +1,145 @@
+.contacts__inner {
+  display: flex;
+  padding-top: 140px;
+  background: linear-gradient(to right, #f9f3ee 59%, var(--sandal) 41%);
+  width: 100%;
+}
+
+.contacts__form {
+  width: 59%;
+}
+
+.contacts__formTitle {
+  margin-bottom: 100px;
+}
+
+.contacts__formContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contacts__formTextInputs {
+  display: grid;
+  gap: 38px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.contacts__formInput {
+  max-width: 669px;
+  width: 100%;
+  height: 45px;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  border-bottom: 1px solid #1616161e;
+  background-color: transparent;
+  padding: 15px 0;
+  font-size: 26px;
+  color: var(--black);
+  -webkit-text-fill-color: var(--black);
+  box-shadow: 0 0 0px 1000px #f9f3ee inset;
+  -webkit-box-shadow: 0 0 0px 1000px #f9f3ee inset;
+}
+
+.contacts__formInput:focus {
+  outline: none;
+}
+
+.contacts__formInput::placeholder {
+  font-weight: 300;
+  font-size: 26px;
+  color: var(--sandal);
+}
+
+.contacts__formCheckbox {
+  margin-bottom: 36px;
+}
+
+.contacts__offices {
+  display: flex;
+  flex-direction: column;
+  width: 41%;
+  padding-left: 119px;
+  padding-bottom: 73px;
+  color: var(--cream);
+}
+
+.contacts__officesTitle {
+  font-family: var(--accent-font);
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.contacts__officesContent {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.contacts__officesItem {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #d9d9d9;
+  font-family: var(--accent-font);
+  padding: 30px 0;
+}
+
+.contacts__officesItem:last-child {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.contacts__officesImg {
+  max-width: 80px;
+  margin-right: 57px;
+}
+
+.contacts__officesImg img {
+  width: 100%;
+}
+
+.contacts__officesAddress {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.contacts__officesTel {
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--cream);
+}
+
+.contacts__social {
+  display: flex;
+  justify-content: center;
+}
+
+.contacts__socialLink {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--cream);
+}
+
+.contacts__socialLink:not(:last-child) {
+  margin-right: 35px;
+}
+
+.contacts__socialIcon {
+  align-self: center;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  fill: var(--cream);
+  transition: background-color 80ms ease;
+}
+
+.contacts__socialIcon:hover {
+  fill: var(--brown);
+}
+
+.contacts__socialTitle {
+  font-size: 14px;
+}

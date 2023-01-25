@@ -1,0 +1,18 @@
+.aboutFact {
+  padding-top: 30px;
+  border-top: 1px solid #1616164d;
+  width: 100%;
+  max-width: 417px;
+}
+
+.aboutFact__number {
+  font-family: var(--accent-font);
+  font-size: 62px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.aboutFact__title {
+  font-size: 22px;
+  text-transform: uppercase;
+}

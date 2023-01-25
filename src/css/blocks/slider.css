@@ -1,0 +1,25 @@
+.slider {
+    position: relative;
+}
+
+.slider__content {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 30px;
+}
+
+
+.slider__button {
+    position: absolute;
+    top: 25%;
+}
+
+.slider__button--left {
+    position: absolute;
+    left: -20px;
+}
+
+.slider__button--right {
+    position: absolute;
+    right: -20px;
+}

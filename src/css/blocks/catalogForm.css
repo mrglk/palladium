@@ -1,0 +1,111 @@
+.catalogForm {
+  position: relative;
+  max-width: 780px;
+  width: 100%;
+  max-height: 595px;
+  background-color: var(--white-cream);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.catalogForm__inner {
+  display: flex;
+  flex-direction: column;
+  padding: 103px 50px 58px 50px;
+  width: 100%;
+}
+
+.catalogForm__closeButton {
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  width: 30px;
+  height: 30px;
+}
+
+.catalogForm__radioContainer {
+  display: flex;
+  flex-shrink: 1;
+  width: 100%;
+  margin-bottom: 44px;
+}
+
+.catalogForm__radioButtonWrapper {
+  width: 100%;
+}
+
+.catalogForm__radioButton {
+  width: 25%;
+  cursor: pointer;
+  display: none;
+}
+
+.catalogForm__radioLabel {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: transparent;
+  border: 1px solid #d8d8d8;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.catalogForm__radioIcon {
+  fill: #949494;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.catalogForm__radioButton:checked + .catalogForm__radioLabel {
+  background-color: var(--sandal);
+  border-color: var(--sandal);
+  color: var(--white);
+}
+
+.catalogForm__radioButton:checked
+  + .catalogForm__radioLabel
+  .catalogForm__radioIcon {
+  fill: var(--white);
+}
+
+.catalogForm__textInputs {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+.catalogForm__input {
+  appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-fill-color: var(--brown);
+  box-shadow: 0 0 0px 1000px #f5f5f5 inset;
+  -webkit-box-shadow: 0 0 0px 1000px #f5f5f5 inset;
+
+  padding: 33px 30px;
+  height: 85px;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--brown);
+}
+
+.catalogForm__input::placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--brown);
+  opacity: 0.3;
+}
+
+.catalogForm__input:focus {
+  outline: none;
+}
+
+.catalogForm__checkbox {
+  margin-bottom: 40px;
+}

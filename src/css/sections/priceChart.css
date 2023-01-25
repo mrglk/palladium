@@ -1,0 +1,143 @@
+.priceChart {
+  padding-bottom: 200px;
+}
+
+.priceChart__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.priceChart__header {
+  max-width: 568px;
+  margin-bottom: 44px;
+}
+
+.priceChart__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.priceChart__left {
+  position: relative;
+  margin-right: 30px;
+}
+
+.priceChart__rangeAndCost {
+  position: absolute;
+  top: 106px;
+  left: 0;
+}
+
+.priceChart__subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--brown);
+  margin-bottom: 25px;
+}
+
+.priceChart__range {
+  margin-bottom: 80px;
+}
+
+.priceChart__cost {
+  display: flex;
+}
+
+.priceChart__costItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.priceChart__costItem:not(:last-child) {
+  display: flex;
+  align-items: center;
+  padding-right: 25px;
+  margin-right: 25px;
+}
+
+.priceChart__costItem:not(:last-child)::after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -18px;
+  display: block;
+  content: "";
+  height: 36px;
+  width: 1px;
+  background-color: #d9d9d9;
+}
+
+.priceChart__costCountry {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--brown);
+  opacity: 0.4;
+  margin-bottom: 15px;
+}
+
+.priceChart__costPrise {
+  font-family: var(--accent-font);
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: -0.03em;
+  color: var(--sandal);
+}
+
+.priceChart__costPrise--best {
+  color: var(--black);
+}
+
+.priceChart__chartImage {
+  max-width: 1538px;
+  width: 100%;
+}
+
+.priceChart__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -70px;
+}
+
+.priceChart__percentSubtitle {
+  max-width: 183px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #453d36;
+  opacity: 0.5;
+  margin-bottom: 25px;
+}
+
+.priceChart__percentItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(157, 140, 124, 0.5);
+  border-radius: 46px;
+  padding: 15px 19px;
+  width: 194px;
+  margin-bottom: 80px;
+}
+
+.priceChart__countryIcon {
+  width: 28px;
+  height: 28px;
+  border-radius: 233px;
+}
+
+.priceChart__percentCountry {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--sandal);
+  opacity: 0.5;
+}
+
+.priceChart__percentNum {
+  font-family: var(--accent-font);
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--sandal);
+  opacity: 0.5;
+}

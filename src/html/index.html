@@ -1,0 +1,1156 @@
+<html>
+
+<head>
+  <link rel="icon" href="data:;base64,=">
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Palladium</title>
+</head>
+
+<body>
+  <header class="container header">
+    <div class="container__row container__row--removeRight header__inner">
+      <div class="header__logo">
+        <a href="/index.html">
+          <svg class="header__logoIcon">
+            <use href="./spritemap.svg#icon-logo" />
+          </svg>
+        </a>
+      </div>
+      <div class="header__content">
+        <div class="header__contactsAndNavigation">
+          <div class="header__contactsAndLang">
+            <div class="header__contacts">
+              <div class="header__phones">
+                <a href="tel:+97143102127" class="header__tel">+971 4 310-21-27</a>
+                <a href="tel:+74951471885" class="header__tel">+7 (495) 147-18-85</a>
+              </div>
+              <div class="header__socials">
+                <a href="/index.html" class="header__socialLink">
+                  <svg class="header__socialIcon">
+                    <use href="./spritemap.svg#icon-telegram-header" />
+                  </svg>
+                </a>
+                <a href="/index.html" class="header__socialLink">
+                  <svg class="header__socialIcon">
+                    <use href="./spritemap.svg#icon-watsapp-header" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="header__langButtonWrapper">
+              <button class="header__langButton">EN</button>
+            </div>
+          </div>
+          <nav class="header__navLinks">
+            <a href="/index.html" class="header__link">About us</a>
+            <a href="/index.html" class="header__link">Available projects</a>
+            <a href="/index.html" class="header__link">Services</a>
+            <a href="/index.html" class="header__link">FAQ</a>
+            <a href="/index.html" class="header__link">Contacts</a>
+          </nav>
+        </div>
+        <div class="header__menuButtonWrapper"><button class="header__menuButton">Menu</button></div>
+      </div>
+    </div>
+
+    <div class="overlay">
+      <div class="burgerMenu">
+        <div class="burgerMenu__inner">
+          <div class="burgerMenu__header">
+            <a href="/index.html" class="burgerMenu__logoLink">
+              <svg class="burgerMenu__logoIcon">
+                <use href="./spritemap.svg#icon-logo" />
+              </svg>
+            </a>
+          </div>
+          <nav class="burgerMenu__nav">
+            <div class="burgerMenu__column">
+              <a href="/index.html" class="burgerMenu__link">About company</a>
+              <a href="/index.html" class="burgerMenu__link">Available projects</a>
+              <a href="/index.html" class="burgerMenu__link">Property prices</a>
+              <a href="/index.html" class="burgerMenu__link">The best areas of Dubai</a>
+              <a href="/index.html" class="burgerMenu__link">Our experts</a>
+              <a href="/index.html" class="burgerMenu__link">Benefits of palladium</a>
+            </div>
+            <div class="burgerMenu__column">
+              <a href="/index.html" class="burgerMenu__link">Golden Visa</a>
+              <a href="/index.html" class="burgerMenu__link">Reviews</a>
+              <a href="/index.html" class="burgerMenu__link">FAQ</a>
+              <a href="/index.html" class="burgerMenu__link">Our services</a>
+              <a href="/index.html" class="burgerMenu__link">Contacts</a>
+            </div>
+          </nav>
+          <div class="burgerMenu__footer">
+            <div class="burgerMenu__languages">
+              <a href="./index.html" class="burgerMenu__langLink">RU</a>
+              <a href="./index.html" class="burgerMenu__langLink burgerMenu__langLink--active">EN</a>
+            </div>
+            <div class="burgerMenu__social">
+              <a href="/index.html" class="burgerMenu__socialLink">
+                <svg class="burgerMenu__socialIcon">
+                  <use href="./spritemap.svg#icon-burger-menu-telegram" />
+                </svg>
+              </a>
+              <a href="/index.html" class="burgerMenu__socialLink">
+                <svg class="burgerMenu__socialIcon">
+                  <use href="./spritemap.svg#icon-burger-menu-watsapp" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="container firstScreen">
+      <div class="container__row firstScreen__inner">
+        <h1 class="firstScreen__header">Most profitable property in Dubai within 24 hours</h1>
+        <p class="firstScreen__description">Palladium Realty - experts in Dubai real estate</p>
+        <div class="firstScreen__form">
+          <div class="firstScreen__inputsGroup">
+            <div class="firstScreen__input">
+              <div class="inputWrapper" data-lable="Purpose:">
+                <select name="purpose" class="js-select">
+                  <option value="investment">Investment</option>
+                  <option value="accommodation">Accommodation</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="firstScreen__input">
+              <div class="inputWrapper" data-lable="Property type:">
+                <select name="purpose" class="js-select">
+                  <option value="investment">Apartments</option>
+                  <option value="accommodation">House</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="firstScreen__input">
+              <div class="inputWrapper" data-lable="District:">
+                <select name="purpose" class="js-select">
+                  <option value="investment">Dubai Marina</option>
+                  <option value="accommodation">Dubai Lena</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="inputSelect">
+              <label for="prise" class="inputSelect__label"></label>Price, $</label>
+              <span class="inputSelect__price inputSelect__price--min">100000</span>
+              <input name="prise" type="range" class="inputSelect__range" value="1000000" step="100000" min="100000"
+                max="1000000">
+              <output class="inputSelect__price inputSelect__price--max">1000000</output>
+            </div>
+          </div>
+          <button class="button js-open-modal" data-modal="apartmentData">Get an individual offer</button>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+    <section class="container about">
+      <div class="container__row about__inner">
+        <div class="about__content">
+          <div class="about__left">
+            <p class="about__subtitle">About us</p>
+            <h2 class="about__header">Palladium Realty</h2>
+            <div class="about__description">
+              <p>We offer remote property presentations, online meetings with developers, and help you transfer funds
+                legally to Dubai to reserve a property or pay for a unit in full.</p>
+              <p>Our company is a partner of all property developers in Dubai, for our clients we are monitoring the
+                closed sales and give an opportunity to participate in them. We provide our expert assessment of the
+                quality and prospects of the object, excluding unsuccessful deals.</p>
+            </div>
+            <button class="button button--smaller button--thinner js-open-modal" data-modal="catalogForm">Get a
+              catalog</button>
+          </div>
+          <div class="about__right">
+            <div class="about__rightRow">
+              <div class="aboutFact">
+                <div class="aboutFact__number">30+</div>
+                <p class="aboutFact__title">DEVELOPERS IN DUBAI</p>
+              </div>
+              <div class="aboutFact">
+                <div class="aboutFact__number">20+</div>
+                <p class="aboutFact__title">QUALIFIED EMPLOYEES</p>
+              </div>
+            </div>
+            <div class="about__rightRow">
+              <div class="aboutFact">
+                <div class="aboutFact__number">900+</div>
+                <p class="aboutFact__title">TOTAL INVESTMENT (MLN. $)</p>
+              </div>
+              <div class="aboutFact">
+                <div class="aboutFact__number">100+</div>
+                <p class="aboutFact__title">PROPERTIES</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about__logos">
+          <a href="/index.html">
+            <svg class="about__logoIcon">
+              <use href="./spritemap.svg#icon-emaar-logo" />
+            </svg>
+          </a>
+          <a href="/index.html">
+            <svg class="about__logoIcon">
+              <use href="./spritemap.svg#icon-meraas-logo" />
+            </svg>
+          </a>
+          <a href="/index.html">
+            <svg class="about__logoIcon">
+              <use href="./spritemap.svg#icon-damac-logo" />
+            </svg>
+          </a>
+          <a href="/index.html">
+            <svg class="about__logoIcon">
+              <use href="./spritemap.svg#icon-deyaar-logo" />
+            </svg>
+          </a>
+          <a href="/index.html">
+            <svg class="about__logoIcon">
+              <use href="./spritemap.svg#icon-sobha-logo" />
+            </svg>
+          </a>
+          <a href="/index.html">
+            <svg class="about__logoIcon">
+              <use href="./spritemap.svg#icon-select-group-logo" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="container projects">
+      <div class="container__row projects__inner">
+        <div class="projects__top">
+          <h2 class="projects__header">Available projects in Dubai</h2>
+          <div class="projects__filter">
+            <button class="filterButton">Penthouses</button>
+            <button class="filterButton filterButton--active">Apartments</button>
+            <button class="filterButton">Townhouses</button>
+            <button class="filterButton">Villas</button>
+          </div>
+        </div>
+        <div class="projects__slider">
+          <div class="slider">
+            <div class="slider__button slider__button--left">
+              <button class="arrowButton">
+                <svg class="arrowButton__icon arrowButton__icon--back">
+                  <use href="./spritemap.svg#icon-arrow" />
+                </svg>
+              </button>
+            </div>
+            <div class="slider__content">
+              <div class="projectItem">
+                <div class="projectItem__photo">
+                  <img alt="Golf Views, Jumeirah Lakes Towers" src="../img/projects.jpg"
+                    srcSet="../img/projects-2x.jpg 2x">
+                </div>
+                <div class="projectItem__description">
+                  <div class="projectItem__geo">
+                    <svg class="projectItem__geoIcon">
+                      <use href="./spritemap.svg#icon-geo-icon" />
+                    </svg>
+                    <p class="projectItem__geoText">Golf Views, Jumeirah Lakes Towers</p>
+                  </div>
+                  <p class="projectItem__title">1-BEDROOM APARTMENTS</p>
+                  <div class="projectItem__data">
+                    <p>Rooms <span class="projectItem__dataNum">2</span></p>
+                    <p>Area <span class="projectItem__dataNum">150 m2</span></p>
+                  </div>
+                  <div class="projectItem__sale">
+                    <p class="projectItem__price">358 920</p>
+                    <div class="projectItem__market">
+                      <svg class="projectItem__marketIcon">
+                        <use href="./spritemap.svg#icon-lightning-icon" />
+                      </svg>
+                      <p class="projectItem__marketText">Below market by 7%</p>
+                    </div>
+                  </div>
+                  <div class="projects__sliderButton projects__sliderButton--right">
+                    <button class="arrowButton">
+                    </button>
+                  </div>
+                </div>
+                <div class="moreButton">
+                  <p class="moreButton__text">More info</p>
+                  <div class="moreButton__line"></div>
+                  <button class="moreButton__button"></button>
+                </div>
+              </div>
+              <div class="projectItem">
+                <div class="projectItem__photo">
+                  <img alt="Golf Views, Jumeirah Lakes Towers" src="../img/projects-2.jpg"
+                    srcSet="../img/projects-2-2x.jpg 2x">
+                </div>
+                <div class="projectItem__description">
+                  <div class="projectItem__geo">
+                    <svg class="projectItem__geoIcon">
+                      <use href="./spritemap.svg#icon-geo-icon" />
+                    </svg>
+                    <p class="projectItem__geoText">Golf Views, Jumeirah Lakes Towers</p>
+                  </div>
+                  <p class="projectItem__title">2-BEDROOM APARTMENTS</p>
+                  <div class="projectItem__data">
+                    <p>Rooms <span class="projectItem__dataNum">2</span></p>
+                    <p>Area <span class="projectItem__dataNum">150 m2</span></p>
+                  </div>
+                  <div class="projectItem__sale">
+                    <p class="projectItem__price">358 920</p>
+                    <div class="projectItem__market">
+                      <svg class="projectItem__marketIcon">
+                        <use href="./spritemap.svg#icon-lightning-icon" />
+                      </svg>
+                      <p class="projectItem__marketText">Below market by 9%</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="moreButton">
+                  <p class="moreButton__text">More info</p>
+                  <div class="moreButton__line"></div>
+                  <button class="moreButton__button"></button>
+                </div>
+              </div>
+              <div class="projectItem">
+                <div class="projectItem__photo">
+                  <img alt="Golf Views, Jumeirah Lakes Towers" src="../img/projects-3.jpg"
+                    srcSet="../img/projects-3-2x.jpg 2x">
+                </div>
+                <div class="projectItem__description">
+                  <div class="projectItem__geo">
+                    <svg class="projectItem__geoIcon">
+                      <use href="./spritemap.svg#icon-geo-icon" />
+                    </svg>
+                    <p class="projectItem__geoText">Golf Views, Jumeirah Lakes Towers</p>
+                  </div>
+                  <p class="projectItem__title">3-BEDROOM APARTMENTS</p>
+                  <div class="projectItem__data">
+                    <p>Rooms <span class="projectItem__dataNum">2</span></p>
+                    <p>Area <span class="projectItem__dataNum">150 m2</span></p>
+                  </div>
+                  <div class="projectItem__sale">
+                    <p class="projectItem__price">358 920</p>
+                    <div class="projectItem__market">
+                      <svg class="projectItem__marketIcon">
+                        <use href="./spritemap.svg#icon-lightning-icon" />
+                      </svg>
+                      <p class="projectItem__marketText">Below market by 5%</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="moreButton">
+                  <p class="moreButton__text">More info</p>
+                  <div class="moreButton__line"></div>
+                  <button class="moreButton__button"></button>
+                </div>
+              </div>
+            </div>
+            <div class="projects__sliderButton projects__sliderButton--right">
+              <button class="arrowButton">
+                <svg class="arrowButton__icon">
+                  <use href="./spritemap.svg#icon-arrow" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container offers">
+      <div class="container__row offers__inner">
+        <div class="offers__left">
+          <p class="offers__subtitle">Offers</p>
+          <h2 class="offers__header">Be the first to know about sales launches and receive exclusive offers!</h2>
+          <button class="button button--smaller button--thinner">Get a catalog</button>
+        </div>
+        <div class="offers__right">
+          <img alt="Beach house" src="../img/offers-photo.jpg" srcSet="../img/offers-photo-2x.jpg 2x">
+        </div>
+      </div>
+    </section>
+    <section class="container priceChart">
+      <div class="container__row priceChart__inner">
+        <h2 class="priceChart__header">How fast are property prices rising?</h2>
+        <div class="priceChart__content">
+          <div class="priceChart__left">
+            <div class="priceChart__rangeAndCost">
+              <p class="priceChart__subtitle">Choose period</p>
+              <div class="priceChart__range">
+                <div class="rangePrice">
+                  <input name="priseChart" type="range" class="rangePrive__input" value="2023" step="5000" min="2013"
+                    max="2033">
+                </div>
+              </div>
+              <p class="priceChart__subtitle">Cost per m2</p>
+              <div class="priceChart__cost">
+                <div class="priceChart__costItem">
+                  <p class="priceChart__costCountry">UAE</p>
+                  <p class="priceChart__costPrise priceChart__costPrise--best">4500$</p>
+                </div>
+                <div class="priceChart__costItem">
+                  <p class="priceChart__costCountry">Turkey</p>
+                  <p class="priceChart__costPrise priceChart__costPrise--best">6000$</p>
+                </div>
+                <div class="priceChart__costItem">
+                  <p class="priceChart__costCountry">Spain</p>
+                  <p class="priceChart__costPrise priceChart__costPrise--best">9000$</p>
+                </div>
+              </div>
+            </div>
+            <img class="priceChart__chartImage" alt="Chart" src="../img/chart-test.jpg">
+          </div>
+          <div class="priceChart__right">
+            <p class="priceChart__percentSubtitle">Increase in cost per m2 for the selected period</p>
+            <div class="priceChart__percentGroup">
+              <div class="priceChart__percentItem">
+                <svg class="priceChart__countryIcon">
+                  <use href="./spritemap.svg#icon-uae-icon" />
+                </svg>
+                <p class="priceChart__percentCountry">UAE</p>
+                <p class="priceChart__percentNum">260%</p>
+              </div>
+              <div class="priceChart__percentItem">
+                <svg class="priceChart__countryIcon">
+                  <use href="./spritemap.svg#icon-turkey-icon" />
+                </svg>
+                <p class="priceChart__percentCountry">Turkey</p>
+                <p class="priceChart__percentNum">90%</p>
+              </div>
+              <div class="priceChart__percentItem">
+                <svg class="priceChart__countryIcon">
+                  <use href="./spritemap.svg#icon-spain-icon" />
+                </svg>
+                <p class="priceChart__percentCountry">Spain</p>
+                <p class="priceChart__percentNum">60%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container map">
+      <div class="container__row map__inner">
+        <div class="map__top">
+          <h2 class="map__header">Dubai best areas at the glance</h2>
+          <button class="button button--smaller button--thinner">Get a catalog</button>
+          <!-- <div class="mapItem">
+            <div class="mapItem__inner">
+              <div class="mapItem__photo">
+                <img alt="Palm Jumeirah" src="../img/map-item-photo.jpg"
+                    srcSet="../img/map-item-photo-2x.jpg 2x">
+              </div>
+              <div class="mapItem__content">
+                <h3 class="mapItem__header">Palm Jumeirah</h3>
+                <div class="mapItem__description">
+                  <div class="mapItem__column">
+                    <div class="mapItem__cell">
+                      <p class="mapItem__subtitle">Starting price</p>
+                      <p class="mapItem__data">AED 1,874,000</p>
+                    </div>
+                    <div class="mapItem__cell">
+                      <p class="mapItem__subtitle">Developer</p>
+                      <p class="mapItem__data">Nakheel</p>
+                    </div>
+                  </div>
+                  <div class="mapItem__column">
+                    <div class="mapItem__cell">
+                      <p class="mapItem__subtitle">Area</p>
+                      <p class="mapItem__data">180 million sq. ft.</p>
+                    </div>
+                    <div class="mapItem__cell">
+                      <p class="mapItem__subtitle">Type</p>
+                      <p class="mapItem__data">Residential</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <section class="container experts">
+      <div class="container__row container__row--removeLeft experts__inner">
+        <div class="experts__videoSide">
+          <img class="experts__video" src="../img/video-test.jpg">
+          <div class="experts__duration">
+            <p class="experts__durationText">Video duration</p>
+            <p class="experts__durationTime">1:16</p>
+          </div>
+          <button class="experts__play">
+            <svg class="experts__playIcon">
+              <use href="./spritemap.svg#icon-play-icon" />
+            </svg>
+          </button>
+        </div>
+        <div class="experts__contentSide">
+          <div class="experts__header">
+            <p class="experts__subtitle">Our experts</p>
+            <q class="experts__quote">We created Palladium to be your guide to the real estate world
+              of the United Arab Emirates.</q>
+          </div>
+          <div class="experts__data">
+            <div class="experts__dataLeft">
+              <div class="experts__view">
+                <img alt="Anton Moskalev" class="experts__photo" src="../img/anton-moskalev.jpg"
+                  srcSet="../img/anton-moskalev-2x.jpg 2x">
+                <div>
+                  <p class="experts__name">Anton Moskalev,</p>
+                  <p class="experts__position">Founder of Palladium Realty</p>
+                </div>
+              </div>
+              <div class="experts__more">
+                <p class="experts__moreSubtitle">More about Anton Moskalev</p>
+                <div class="experts__moreSocial">
+                  <a href="/index.html" class="experts__moreLink">
+                    <svg class="experts__moreIcon">
+                      <use href="./spritemap.svg#icon-youtube-experts" />
+                    </svg>
+                  </a>
+                  <a href="/index.html" class="experts__moreLink">
+                    <svg class="experts__moreIcon">
+                      <use href="./spritemap.svg#icon-telegram-experts" />
+                    </svg>
+                  </a>
+                  <a href="/index.html" class="experts__moreLink">
+                    <svg class="experts__moreIcon">
+                      <use href="./spritemap.svg#icon-facebook-experts" />
+                    </svg>
+                  </a>
+                  <a href="/index.html" class="experts__moreLink">
+                    <svg class="experts__moreIcon">
+                      <use href="./spritemap.svg#icon-instagram-experts" />
+                    </svg>
+                  </a>
+                  <a href="/index.html" class="experts__moreLink">
+                    <svg class="experts__moreIcon">
+                      <use href="./spritemap.svg#icon-twitter-experts" />
+                    </svg>
+                  </a>
+                  <a href="/index.html" class="experts__moreLink">
+                    <svg class="experts__moreIcon">
+                      <use href="./spritemap.svg#icon-vk-experts" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="experts__dataRight">
+              <div class="experts__about">
+                <ul>
+                  <li>Member of the Legislative Assembly of the Nizhny Novgorod Region of the 6th convocation, member of
+                    the committees on budget, property and land relations</li>
+                  <li>Investor, entrepreneur, over 7,000 square meters of space under management,
+                    real estate expert in the UAE</li>
+                  <li>Owner of Palladium Realty and Palladium Advisory in Dubai, UAE</li>
+                  <li>‌The owner of the Telegram and YouTube channel about real estate in Dubai</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="experts__next">
+            <a href="./index.html" class="experts__nextLink">
+              <span>Next expert</span>
+              <div class="arrowButton experts__nextButton">
+                <svg class="arrowButton__icon experts__nextIcon">
+                  <use href="./spritemap.svg#icon-arrow" />
+                </svg>
+              </div>
+            </a>
+            <div class="experts__view">
+              <img alt="Eugeny Kogan" class="experts__photo experts__photo--smaller" src="../img/kogan.jpg"
+                srcSet="../img/kogan-2x.jpg 2x">
+              <div>
+                <p class="experts__name">Eugeny Kogan,</p>
+                <p class="experts__position">Partner of Palladium Realty</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container letYouGet">
+      <div class="container__row letYouGet__inner">
+        <h2 class="letYouGet__header">Palladium let you get</h2>
+        <div class="letYouGet__content">
+          <div class="offerItem offerItem--triangle">
+            <div class="offerItem__about">
+              <h3 class="offerItem__title">Golden Visa</h3>
+              <p class="offerItem__text">Get UAE Golden Visa by investing in Dubai Real Estate
+                Long-term residency visa that enables foreign tenants
+                to live and work or study in the UAE</p>
+            </div>
+            <div class="moreButton offerItem__button">
+              <p class="moreButton__text moreButton__text--darker">More info</p>
+              <div class="moreButton__line moreButton__line--darker"></div>
+              <button class="moreButton__button moreButton__button--darker"></button>
+            </div>
+          </div>
+          <div class="offerItem offerItem--wave offerItem--lighter">
+            <div class="offerItem__about">
+              <h3 class="offerItem__title">Remote purchase </h3>
+              <p class="offerItem__text">We offer remote property presentations, online meetings
+                with developers, and help you transfer funds legally to Dubai
+                to reserve a property or pay for a unit in full.</p>
+            </div>
+            <div class="moreButton offerItem__button">
+              <p class="moreButton__text moreButton__text--darker">More info</p>
+              <div class="moreButton__line moreButton__line--darker"></div>
+              <button class="moreButton__button moreButton__button--darker"></button>
+            </div>
+          </div>
+          <div class="offerItem offerItem--lighter offerItem--circle">
+            <div class="offerItem__about">
+              <h3 class="offerItem__title">Booking</h3>
+              <p class="offerItem__text">Reserve several objects and choose the one that suits you better</p>
+            </div>
+            <div class="moreButton offerItem__button">
+              <p class="moreButton__text moreButton__text--darker">More info</p>
+              <div class="moreButton__line moreButton__line--darker"></div>
+              <button class="moreButton__button moreButton__button--darker"></button>
+            </div>
+          </div>
+          <div class="offerItem offerItem--web">
+            <div class="offerItem__about">
+              <h3 class="offerItem__title">Closed auctions</h3>
+              <p class="offerItem__text">Participate in closed auctions from developers<br />
+                We are monitoring the closed sales and give an
+                opportunity to participate in them.</p>
+            </div>
+            <div class="moreButton offerItem__button">
+              <p class="moreButton__text moreButton__text--darker">More info</p>
+              <div class="moreButton__line moreButton__line--darker"></div>
+              <button class="moreButton__button moreButton__button--darker"></button>
+            </div>
+          </div>
+          <div class="offerItem offerItem--line">
+            <div class="offerItem__about">
+              <h3 class="offerItem__title">Upcoming sales</h3>
+              <p class="offerItem__text">Be informed of the upcoming sales start at a very early stage
+                We provide our expert assessment of the quality and prospects
+                of the object, excluding unsuccessful deals.</p>
+            </div>
+            <div class="moreButton offerItem__button">
+              <p class="moreButton__text moreButton__text--darker">More info</p>
+              <div class="moreButton__line moreButton__line--darker"></div>
+              <button class="moreButton__button moreButton__button--darker"></button>
+            </div>
+          </div>
+          <div class="offerItem offerItem--lighter offerItem--cross">
+            <div class="offerItem__about">
+              <h3 class="offerItem__title">CANCELED UNITS</h3>
+              <p class="offerItem__text">Developer periodically cancels reservations, and the
+                apartments become available to our customers with
+                the greatest benefit at a price below the market</p>
+            </div>
+            <div class="moreButton offerItem__button">
+              <p class="moreButton__text moreButton__text--darker">More info</p>
+              <div class="moreButton__line moreButton__line--darker"></div>
+              <button class="moreButton__button moreButton__button--darker"></button>
+            </div>
+          </div>
+        </div>
+        <button class="button">Get an individual offer</button>
+      </div>
+    </section>
+    <section class="container goldenVisa">
+      <div class="container__row goldenVisa__inner">
+        <div class="goldenVisa__main">
+          <div class="goldenVisa__left">
+            <h2 class="goldenVisa__header">Getting a Golden Visa through us and its benefits</h2>
+            <div class="goldenVisa__description">
+              <p>The UAE Golden Visa is a long-term residency visa that enables foreign tenants to live and work or
+                study
+                in the UAE while enjoying exclusive benefits. In other words, the permits are issued in exchange for
+                investments in the country's economy</p>
+              <ul class="goldenVisa__list">
+                <li>10 years renewable residency in the UAE</li>
+                <li>In advance, we help with opening a bank account  to pay for your PROPERTY</li>
+                <li>Sponsoring family members, including spouse and children regardless of their ages, and domestic
+                  helpers</li>
+                <li>No requirement for an employment sponsor</li>
+              </ul>
+            </div>
+            <button class="button button--smaller">get a free consultation</button>
+          </div>
+          <div class="goldenVisa__image">
+            <img alt="Gilden Visa" src="../img/golden-visa.png" srcSet="../img/golden-visa-2x.png 2x">
+          </div>
+        </div>
+        <div class="goldenVisa__bottom">
+          <h3 class="goldenVisa__subtitle">We assist in opening bank accounts</h3>
+          <div class="goldenVisa__logos">
+            <svg class="goldenVisa__logo">
+              <use href="./spritemap.svg#icon-emirates-logo" />
+            </svg>
+            <svg class="goldenVisa__logo">
+              <use href="./spritemap.svg#icon-fab-logo" />
+            </svg>
+            <svg class="goldenVisa__logo">
+              <use href="./spritemap.svg#icon-nbf-logo" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container reviews">
+      <div class="container__row reviews__inner">
+        <h2 class="reviews__header">Reviews</h2>
+        <div class="reviews__container">
+          <div class="reviews__item">
+            <div class="reviews__message">
+              <svg class="reviews__icon">
+                <use href="./spritemap.svg#icon-facebook-review" />
+              </svg>
+              <p class="reviews__text">Got my Emirates ID for my whole family buy buying a nice unit on Beach Front 10
+                month ago, and raise 2% already...</p>
+              <time class="reviews__date" datetime="2022-12-24">24.12.2022</time>
+            </div>
+            <div class="reviews__sender">
+              <img class="reviews__img" alt="David" src="../img/review-david.jpg"
+                srcSet="../img/review-david-2x.jpg 2x">
+              <div class="reviews__info">
+                <p class="reviews__name">David Smith</p>
+                <p class="reviews__position">M.D. from Cape Town</p>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__message">
+              <svg class="reviews__icon">
+                <use href="./spritemap.svg#icon-facebook-review" />
+              </svg>
+              <p class="reviews__text">Palladium picked up several studios for me in areas that are in demand by
+                travelers, and I rent them profitably on Airbnb...</p>
+              <time class="reviews__date" datetime="2022-10-11">11.10.2022</time>
+            </div>
+            <div class="reviews__sender">
+              <img class="reviews__img" alt="Stephen" src="../img/review-stephen.jpg"
+                srcSet="../img/review-stephen-2x.jpg 2x">
+              <div class="reviews__info">
+                <p class="reviews__name">Stephen Garcia</p>
+                <p class="reviews__position">Student from Barcelona</p>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__message">
+              <svg class="reviews__icon">
+                <use href="./spritemap.svg#icon-facebook-review" />
+              </svg>
+              <p class="reviews__text">I decided to move to Dubai, bought apartment in the City Walk area. I am opening
+                a
+                coffee shop in our building now...</p>
+              <time class="reviews__date" datetime="2022-10-11">11.10.2022</time>
+            </div>
+            <div class="reviews__sender">
+              <img class="reviews__img" alt="Wesley" src="../img/review-wesley.jpg"
+                srcSet="../img/review-wesley-2x.jpg 2x">
+              <div class="reviews__info">
+                <p class="reviews__name">Wesley Allen</p>
+                <p class="reviews__position">Entrepreneur from London</p>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__message">
+              <svg class="reviews__icon">
+                <use href="./spritemap.svg#icon-facebook-review" />
+              </svg>
+              <p class="reviews__text">Palladium helped move the company through the purchase of profitable real estate.
+                Now we discovered the Asian market...</p>
+              <time class="reviews__date" datetime="2022-10-11">11.10.2022</time>
+            </div>
+            <div class="reviews__sender">
+              <img class="reviews__img" alt="Bernard" src="../img/review-bernard.jpg"
+                srcSet="../img/review-bernard-2x.jpg 2x">
+              <div class="reviews__info">
+                <p class="reviews__name">Bernard Miller</p>
+                <p class="reviews__position">G.M. from Jersey </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container faq">
+      <div class="container__row faq__inner">
+        <h2 class="faq__header">Frequently Asked Questions</h2>
+        <div class="faq__list">
+          <div class="faq__item">
+            <div class="faq__itemHeader">
+              <h3 class="faq__itemTitle">How much does real estate appreciate in value?</h3>
+            </div>
+            <div class="faq__itemContent">
+              <p class="faq__itemAnswer">You can rent out your unit as per Dubai law, and appoint an agent to find the
+                tenant. By listing your existing property with Mada Properties, we are able to provide you with advice,
+                guidance, and protection. Providing easy and hassle-free home buying and renting is one of our main
+                goals.
+              </p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__itemHeader">
+              <h3 class="faq__itemTitle">What taxes do I need to pay when buying property in Dubai?</h3>
+            </div>
+            <div class="faq__itemContent">
+              <p class="faq__itemCAnswer">You can rent out your unit as per Dubai law, and appoint an agent to find the
+                tenant. By listing your existing property with Mada Properties, we are able to provide you with advice,
+                guidance, and protection. Providing easy and hassle-free home buying and renting is one of our main
+                goals.
+              </p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__itemHeader">
+              <h3 class="faq__itemTitle">Can you help with the rental of real estate?</h3>
+            </div>
+            <div class="faq__itemContent">
+              <p class="faq__itemCAnswer">You can rent out your unit as per Dubai law, and appoint an agent to find the
+                tenant. By listing your existing property with Mada Properties, we are able to provide you with advice,
+                guidance, and protection. Providing easy and hassle-free home buying and renting is one of our main
+                goals.
+              </p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__itemHeader">
+              <h3 class="faq__itemTitle">In what regions is it better to buy property?</h3>
+            </div>
+            <div class="faq__itemContent">
+              <p class="faq__itemCAnswer">You can rent out your unit as per Dubai law, and appoint an agent to find the
+                tenant. By listing your existing property with Mada Properties, we are able to provide you with advice,
+                guidance, and protection. Providing easy and hassle-free home buying and renting is one of our main
+                goals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container services">
+      <div class="container__row services__inner">
+        <div class="services__headerWrapper">
+          <h2 class="services__header">Our Advisory Services</h2>
+        </div>
+        <div class="services__right">
+          <div class="services__content">
+            <div class="serviceItem">
+              <div class="serviceItem__image">
+                <img class="serviceItem" alt="Residency" src="../img/service.jpg" srcSet="../img/service-2x.jpg 2x">
+              </div>
+              <div class="serviceItem__content">
+                <p class="serviceItem__num">(01)</p>
+                <p class="serviceItem__title">Residency</p>
+                <p class="serviceItem__description">Get Emirates ID and legal <br />residency in the UAE</p>
+              </div>
+            </div>
+            <div class="serviceItem">
+              <div class="serviceItem__image">
+                <img class="serviceItem" alt="BUSINESS" src="../img/service-2.jpg" srcSet="../img/service-2-2x.jpg 2x">
+              </div>
+              <div class="serviceItem__content">
+                <p class="serviceItem__num">(03)</p>
+                <p class="serviceItem__title">BUSINESS</p>
+                <p class="serviceItem__description">Open a business with no <br />or minimal tax rate</p>
+              </div>
+            </div>
+            <div class="serviceItem">
+              <div class="serviceItem__image">
+                <img class="serviceItem" alt="Relocation" src="../img/service-3.jpg"
+                  srcSet="../img/service-3-2x.jpg 2x">
+              </div>
+              <div class="serviceItem__content">
+                <p class="serviceItem__num">(03)</p>
+                <p class="serviceItem__title">Relocation</p>
+                <p class="serviceItem__description">Get an opportunity to relocate <br />with your family</p>
+              </div>
+            </div>
+            <div class="serviceItem">
+              <div class="serviceItem__image">
+                <img class="serviceItem" alt="Banl account" src="../img/service-4.jpg"
+                  srcSet="../img/service-4-2x.jpg 2x">
+              </div>
+              <div class="serviceItem__content">
+                <p class="serviceItem__num">(04)</p>
+                <p class="serviceItem__title">BANK ACCOUNT</p>
+                <p class="serviceItem__description">We assist in opening local <br />bank account</p>
+              </div>
+            </div>
+            <div class="serviceItem">
+              <div class="serviceItem__image">
+                <img class="serviceItem" alt="Free customs" src="../img/service-5.jpg"
+                  srcSet="../img/service-5-2x.jpg 2x">
+              </div>
+              <div class="serviceItem__content">
+                <p class="serviceItem__num">(05)</p>
+                <p class="serviceItem__title">Free customs</p>
+                <p class="serviceItem__description">Exempt your business from customs duties on imports and exports</p>
+              </div>
+            </div>
+            <div class="serviceItem">
+              <div class="serviceItem__image">
+                <img class="serviceItem" alt="Worldwide finance" src="../img/service-6.jpg"
+                  srcSet="../img/service-6-2x.jpg 2x">
+              </div>
+              <div class="serviceItem__content">
+                <p class="serviceItem__num">(06)</p>
+                <p class="serviceItem__title">Worldwide finance</p>
+                <p class="serviceItem__description">Relocation of the capital safely <br />and quick</p>
+              </div>
+            </div>
+          </div>
+          <button class="services__button button button--smaller">get a free consultation</button>
+        </div>
+      </div>
+    </section>
+    <section class="container contacts">
+      <div class="container__row contacts__inner">
+        <div class="contacts__form">
+          <h2 class="contacts__formTitle">Contact us</h2>
+          <div class="contacts__formContent">
+            <div class="contacts__formTextInputs">
+              <input class="contacts__formInput" type="text" name="name" placeholder="Name">
+              <input class="contacts__formInput" type="tel" name="tel" placeholder="Phone number">
+              <input class="contacts__formInput" type="email" name="email" placeholder="E-mail">
+            </div>
+            <div class="contacts__formCheckbox">
+              <div class="checkbox">
+                <input class="checkbox__input" type="checkbox" id="privacy" name="privacy" checked>
+                <label class="checkbox__label" for="privacy">
+                  <svg class="checkbox__mark">
+                    <use href="./spritemap.svg#icon-check-mark" />
+                  </svg>
+                  <p class="checkbox__text">I have read and accepted the <a class="checkbox__link"
+                      href="./index.html">Privacy Policy</a></p>
+                </label>
+              </div>
+            </div>
+            <button class="button button--smaller">Send</button>
+          </div>
+        </div>
+        <div class="contacts__offices">
+          <p class="contacts__officesTitle">Our offices</p>
+          <div class="contacts__officesContent">
+            <div class="contacts__officesItem">
+              <div class="contacts__officesImg"><img alt="Italia" src="../img/offices.png"
+                  srcSet="../img/offices-2x.png 2x"></div>
+              <div class="contacts__officesContacts">
+                <p class="contacts__officesAddress">Via Giovanni Battista Pirelli, 9, Milano MI, Italia</p>
+                <a class="contacts__officesTel" href="tel:+393333245691">+39 (333) 324-56-91</a>
+              </div>
+            </div>
+            <div class="contacts__officesItem">
+              <div class="contacts__officesImg"><img alt="Dubai" src="../img/offices-2.png"
+                  srcSet="../img/offices-2-2x.png 2x"></div>
+              <div class="contacts__officesContacts">
+                <p class="contacts__officesAddress">Dubai, Bay Square 11, office 403</p>
+                <a class="contacts__officesTel" href="tel:+97143102171">+ 971 (4) 310-21-71</a>
+              </div>
+            </div>
+            <div class="contacts__officesItem">
+              <div class="contacts__officesImg"><img alt="Moscow" src="../img/offices-3.png"
+                  srcSet="../img/offices-3-2x.png 2x"></div>
+              <div class="contacts__officesContacts">
+                <p class="contacts__officesAddress">Presnensky district, Moscow, Russia</p>
+                <a class="contacts__officesTel" href="tel:+74951471885">+7 (495) 147-18-85</a>
+              </div>
+            </div>
+          </div>
+          <div class="contacts__social">
+            <a href="/index.html" class="contacts__socialLink">
+              <svg class="contacts__socialIcon">
+                <use href="./spritemap.svg#icon-telegram-contacts" />
+              </svg>
+              <p class="contacts__socialTitle">Telegram</p>
+            </a>
+            <a href="/index.html" class="contacts__socialLink">
+              <svg class="contacts__socialIcon">
+                <use href="./spritemap.svg#icon-watsapp-contacts" />
+              </svg>
+              <p class="contacts__socialTitle">Watsapp</p>
+            </a>
+          </div>
+        </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <div class="container__row footer__inner">
+      <p class="footer__text">© 2023 Palladium Realty</p>
+      <p class="footer__text">Website made in <span class="footer__text--darker">FINIK</span></p>
+    </div>
+  </footer>
+
+  <section class="modals js-modals">
+    <div class="modals__item" id="apartmentData">
+      <div class="apartmentData">
+        <div class="apartmentData__closeButton js-close-modals">
+          <div class="closeButton"></div>
+        </div>
+        <div class="apartmentData__inner">
+          <div class="apartmentData__left">
+            <div class="apartmentData__photo">
+              <img alt="Apartaments" src="../img/apartments.jpg" srcSet="../img/apartments-2x.jpg 2x">
+            </div>
+            <div class="apartmentData__slider">
+              <button class="arrowButton arrowButton--transparent">
+                <svg class="arrowButton__icon arrowButton__icon--back">
+                  <use href="./spritemap.svg#icon-arrow" />
+                </svg>
+              </button>
+              <div class="apartmentData__sliderContainer">
+                <div class="apartmentData__sliderPhoto"><img alt="Apartaments" src="../img/apartments.jpg"
+                    srcSet="../img/apartments-2x.jpg 2x"></div>
+                <div class="apartmentData__sliderPhoto"><img alt="Apartaments" src="../img/apartments.jpg"
+                    srcSet="../img/apartments-2x.jpg 2x"></div>
+                <div class="apartmentData__sliderPhoto"><img alt="Apartaments" src="../img/apartments.jpg"
+                    srcSet="../img/apartments-2x.jpg 2x"></div>
+                <div class="apartmentData__sliderPhoto"><img alt="Apartaments" src="../img/apartments.jpg"
+                    srcSet="../img/apartments-2x.jpg 2x"></div>
+                <div class="apartmentData__sliderPhoto"><img alt="Apartaments" src="../img/apartments.jpg"
+                    srcSet="../img/apartments-2x.jpg 2x"></div>
+              </div>
+              <button class="arrowButton arrowButton--transparent">
+                <svg class="arrowButton__icon">
+                  <use href="./spritemap.svg#icon-arrow" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="apartmentData__right">
+            <div class="apartmentData__rightTop">
+              <p class="apartmentData__id">ID: 1253353</p>
+              <h3 class="apartmentData__header">2 Bedroom apartment</h3>
+              <p class="apartmentData__address">Golf Views, Dubai, Cluster Z, Jumeirah Lakes Apartments Z3 </p>
+              <p class="apartmentData__description">Apartments in the multifunctional complex Golf Views Seven A city
+                that
+                is 5 minutes away from two championship Faldo and Majlis golf courses at the golf club Emirates</p>
+              <div class="apartmentData__options">
+                <div class="apartmentData__option">
+                  <p>Property type</p>
+                  <div class="apartmentData__border"></div>
+                  <p>Apartment</p>
+                </div>
+                <div class="apartmentData__option">
+                  <p>Property age</p>
+                  <div class="apartmentData__border"></div>
+                  <p>3 Years</p>
+                </div>
+                <div class="apartmentData__option">
+                  <p>Property size</p>
+                  <div class="apartmentData__border"></div>
+                  <p>1,000 sqft / 93 sqm</p>
+                </div>
+                <div class="apartmentData__option">
+                  <p>Bathrooms</p>
+                  <div class="apartmentData__border"></div>
+                  <p>3</p>
+                </div>
+                <div class="apartmentData__option">
+                  <p>Bedrooms</p>
+                  <div class="apartmentData__border"></div>
+                  <p>2 + Maid</p>
+                </div>
+              </div>
+            </div>
+            <div class="apartmentData__rightBottom">
+              <p class="apartmentData__price">284,000 <span>$</span></spa>
+              </p>
+              <div class="apartmentData__buttons">
+                <button class="button button--smaller button--thinner button--white">download brochure,
+                  <div class="button__caption"><span>199KB</span>
+                    <svg class="button__icon">
+                      <use href="./spritemap.svg#icon-download-icon" />
+                    </svg>
+                  </div></button>
+                <button class="button button--smaller button--thinner">Get free consultation</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modals__item" id="catalogForm">
+      <div class="catalogForm">
+        <div class="catalogForm__closeButton js-close-modals">
+          <div class="closeButton"></div>
+        </div>
+        <div class="catalogForm__inner">
+
+          <div class="catalogForm__radioContainer">
+            <div class="catalogForm__radioButtonWrapper">
+              <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioTel" checked>
+              <label class="catalogForm__radioLabel" for="radioTel">
+                <svg class="catalogForm__radioIcon">
+                  <use href="./spritemap.svg#icon-catalog-tel" />
+                </svg>
+                <p>Call</p>
+              </label>
+            </div>
+            <div class="catalogForm__radioButtonWrapper">
+              <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioWatsapp">
+              <label class="catalogForm__radioLabel" for="radioWatsapp">
+                <svg class="catalogForm__radioIcon">
+                  <use href="./spritemap.svg#icon-catalog-watsapp" />
+                </svg>
+                <p>Watsapp</p>
+              </label>
+            </div>
+            <div class="catalogForm__radioButtonWrapper">
+              <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioViber">
+              <label class="catalogForm__radioLabel" for="radioViber">
+                <svg class="catalogForm__radioIcon">
+                  <use href="./spritemap.svg#icon-catalog-Viber" />
+                </svg>
+                <p>Viber</p>
+              </label>
+            </div>
+            <div class="catalogForm__radioButtonWrapper">
+              <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioTelegram">
+              <label class="catalogForm__radioLabel" for="radioTelegram">
+                <svg class="catalogForm__radioIcon">
+                  <use href="./spritemap.svg#icon-catalog-telegram" />
+                </svg>
+                <p>Telegram</p>
+              </label>
+            </div>
+          </div>
+
+          <div class="catalogForm__textInputs">
+            <input class="catalogForm__input" type="text" name="name" placeholder="Name">
+            <input class="catalogForm__input" type="tel" name="tel" placeholder="Phone">
+          </div>
+
+          <div class="catalogForm__checkbox">
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="privacyCatalog" name="privacyCatalog" checked>
+              <label class="checkbox__label" for="privacyCatalog">
+                <svg class="checkbox__mark">
+                  <use href="./spritemap.svg#icon-check-mark" />
+                </svg>
+                <p class="checkbox__text">I have read and accepted the <a class="checkbox__link"
+                    href="./index.html">Privacy Policy</a></p>
+              </label>
+            </div>
+          </div>
+
+          <button class="button button--smaller button--thinner js-open-modal" data-modal="catalogForm">Get a
+            catalog</button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

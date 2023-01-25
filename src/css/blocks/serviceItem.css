@@ -1,0 +1,37 @@
+.serviceItem {
+  max-width: 418px;
+  width: 100%;
+  background-color: #f9f3ee;
+}
+
+.serviceItem__image {
+  max-width: 418px;
+}
+
+.serviceItem__image img {
+  width: 100%;
+}
+
+.serviceItem__content {
+  padding: 30px 40px 91px 30px;
+  color: var(--brown);
+}
+
+.serviceItem__num {
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.serviceItem__title {
+  font-family: var(--accent-font);
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.serviceItem__description {
+  font-size: 20px;
+  line-height: 1.4;
+}

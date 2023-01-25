@@ -1,0 +1,139 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 130px;
+  border-bottom: 1px solid rgba(230, 230, 230, 0.4);
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  color: var(--white);
+}
+
+.header__left {
+  flex-grow: 1;
+}
+
+.header__logoIcon {
+  width: 210px;
+  height: 75px;
+  fill: var(--white);
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+  border-left: 1px solid rgba(230, 230, 230, 0.4);
+}
+
+.header__contactsAndNavigation {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header__contactsAndLang {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+  padding-left: 30px;
+  border-bottom: 1px solid rgba(230, 230, 230, 0.4);
+}
+
+.header__contacts {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding-right: 32px;
+}
+
+.header__tel {
+  padding-right: 25px;
+  font-size: 18px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.header__socialIcon {
+  width: 24px;
+  height: 24px;
+  fill: var(--white);
+  text-decoration: none;
+}
+
+.header__socialLink {
+  text-decoration: none;
+}
+
+.header__socialLink:not(:last-child) {
+  padding-right: 40px;
+}
+
+.header__langButtonWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  border-left: 1px solid rgba(230, 230, 230, 0.4);
+}
+
+.header__langButton {
+  padding: 0 46px;
+  font-size: 18px;
+  color: var(--white);
+  background-color: transparent;
+  border: none;
+}
+
+.header__navLinks {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+  padding-left: 30px;
+  padding-right: 32px;
+}
+
+.header__link {
+  font-size: 20px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.header__link:not(:last-child) {
+  padding-right: 75px;
+}
+
+.header__menuButton {
+  position: relative;
+  cursor: pointer;
+  z-index: 5;
+  font-size: 18px;
+  color: var(--white);
+  width: 151px;
+  height: 100%;
+  margin-bottom: -1px;
+  border: none;
+  background-color: var(--sandal);
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+.header__menuButton:hover {
+  color: var(--white);
+  background-color: var(--brown);
+}
+
+.header__menuButton--opened {
+  color: var(--white);
+  background-color: var(--brown);
+}

@@ -1,0 +1,63 @@
+.offerItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 40px 30px 40px;
+  background-color: #f9f3ee;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.offerItem--lighter {
+  background-color: var(--white-cream);
+}
+
+.offerItem--triangle {
+  background-image: url("../../img/bg-triangle.png");
+}
+
+.offerItem--wave {
+  background-image: url("../../img/bg-wave.png");
+}
+
+.offerItem--circle {
+  background-image: url("../../img/bg-circle.png");
+}
+
+.offerItem--web {
+  background-image: url("../../img/bg-web.png");
+}
+
+.offerItem--line {
+  background-image: url("../../img/bg-line.png");
+}
+
+.offerItem--cross {
+  background-image: url("../../img/bg-cross.png");
+}
+
+.offerItem__about {
+  width: 100%;
+}
+
+.offerItem__title {
+  font-family: var(--accent-font);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 32px;
+  color: var(--brown);
+  margin-bottom: 20px;
+}
+
+.offerItem__text {
+  max-width: 509px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--black);
+}
+
+.offerItem__button {
+  align-self: flex-end;
+}

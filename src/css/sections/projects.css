@@ -1,0 +1,49 @@
+.projects {
+  padding-top: 87px;
+  margin-bottom: 133px;
+  background-color: var(--sandal);
+}
+
+.projects__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects__top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 72px;
+}
+
+.projects__header {
+  color: var(--cream);
+}
+
+.projects__filter {
+  display: flex;
+  align-items: flex-start;
+}
+
+.projects__filter button:not(:last-child) {
+  margin-right: 26px;
+}
+
+.projects__slider {
+  margin-bottom: 91px;
+}
+
+.projects__sliderButton {
+  position: absolute;
+  top: 25%;
+}
+
+.projects__sliderButton--left {
+  position: absolute;
+  left: -20px;
+}
+
+.projects__sliderButton--right {
+  position: absolute;
+  right: -20px;
+}

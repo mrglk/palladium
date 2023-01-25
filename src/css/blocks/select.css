@@ -1,0 +1,51 @@
+.select {
+  position: relative;
+  padding: 34px 40px 34px 30px;
+  position: relative;
+  color: var(--white);
+  max-width: 418px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  backdrop-filter: blur(9px);
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.select__currentValue {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select__currentValue::after {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 13px;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAyMiAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTExIDEyLjk1TDAuNSAyLjQ1TDIuOTUgMEwxMSA4LjA1TDE5LjA1IDBMMjEuNSAyLjQ1TDExIDEyLjk1WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==");
+}
+
+.select--opened .select__currentValue::after {
+  transform: rotate(180deg);
+}
+
+.select__options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: none;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(9px);
+}
+
+.select__option {
+  padding: 15px;
+}
+
+.select:hover .select__options {
+  display: block;
+}
