@@ -41,7 +41,9 @@
               </div>
             </div>
             <div class="header__langButtonWrapper">
-              <button class="header__langButton">EN</button>
+              <button class="header__langButton">
+                <p class="header__langButtonText">EN</p>
+              </button>
             </div>
           </div>
           <nav class="header__navLinks">
@@ -52,7 +54,10 @@
             <a href="/index.html" class="header__link">Contacts</a>
           </nav>
         </div>
-        <div class="header__menuButtonWrapper"><button class="header__menuButton">Menu</button></div>
+        <div class="header__menuButtonWrapper"><button class="header__menuButton">
+            <span class="header__tablet--hidden">Menu</span>
+            <div class="header__desktop--hidden header__menuIcon"></div>
+          </button></div>
       </div>
     </div>
 
@@ -60,45 +65,55 @@
       <div class="burgerMenu">
         <div class="burgerMenu__inner">
           <div class="burgerMenu__header">
-            <a href="/index.html" class="burgerMenu__logoLink">
-              <svg class="burgerMenu__logoIcon">
-                <use href="./spritemap.svg#icon-logo" />
-              </svg>
-            </a>
+            <div class="burgerMenu__row">
+              <a href="/index.html" class="burgerMenu__logoLink">
+                <svg class="burgerMenu__logoIcon">
+                  <use href="./spritemap.svg#icon-logo" />
+                </svg>
+              </a>
+            </div>
           </div>
           <nav class="burgerMenu__nav">
-            <div class="burgerMenu__column">
-              <a href="/index.html" class="burgerMenu__link">About company</a>
-              <a href="/index.html" class="burgerMenu__link">Available projects</a>
-              <a href="/index.html" class="burgerMenu__link">Property prices</a>
-              <a href="/index.html" class="burgerMenu__link">The best areas of Dubai</a>
-              <a href="/index.html" class="burgerMenu__link">Our experts</a>
-              <a href="/index.html" class="burgerMenu__link">Benefits of palladium</a>
-            </div>
-            <div class="burgerMenu__column">
-              <a href="/index.html" class="burgerMenu__link">Golden Visa</a>
-              <a href="/index.html" class="burgerMenu__link">Reviews</a>
-              <a href="/index.html" class="burgerMenu__link">FAQ</a>
-              <a href="/index.html" class="burgerMenu__link">Our services</a>
-              <a href="/index.html" class="burgerMenu__link">Contacts</a>
+            <div class="burgerMenu__row">
+              <div class="burgerMenu__navInner">
+                <div class="burgerMenu__column">
+                  <a href="/index.html" class="burgerMenu__link">About company</a>
+                  <a href="/index.html" class="burgerMenu__link">Available projects</a>
+                  <a href="/index.html" class="burgerMenu__link">Property prices</a>
+                  <a href="/index.html" class="burgerMenu__link">The best areas of Dubai</a>
+                  <a href="/index.html" class="burgerMenu__link">Our experts</a>
+                  <a href="/index.html" class="burgerMenu__link">Benefits of palladium</a>
+                </div>
+                <div class="burgerMenu__column">
+                  <a href="/index.html" class="burgerMenu__link">Golden Visa</a>
+                  <a href="/index.html" class="burgerMenu__link">Reviews</a>
+                  <a href="/index.html" class="burgerMenu__link">FAQ</a>
+                  <a href="/index.html" class="burgerMenu__link">Our services</a>
+                  <a href="/index.html" class="burgerMenu__link">Contacts</a>
+                </div>
+              </div>
             </div>
           </nav>
           <div class="burgerMenu__footer">
-            <div class="burgerMenu__languages">
-              <a href="./index.html" class="burgerMenu__langLink">RU</a>
-              <a href="./index.html" class="burgerMenu__langLink burgerMenu__langLink--active">EN</a>
-            </div>
-            <div class="burgerMenu__social">
-              <a href="/index.html" class="burgerMenu__socialLink">
-                <svg class="burgerMenu__socialIcon">
-                  <use href="./spritemap.svg#icon-burger-menu-telegram" />
-                </svg>
-              </a>
-              <a href="/index.html" class="burgerMenu__socialLink">
-                <svg class="burgerMenu__socialIcon">
-                  <use href="./spritemap.svg#icon-burger-menu-watsapp" />
-                </svg>
-              </a>
+            <div class="burgerMenu__row">
+              <div class="burgerMenu__footerInner">
+                <div class="burgerMenu__languages">
+                  <a href="./index.html" class="burgerMenu__langLink">RU</a>
+                  <a href="./index.html" class="burgerMenu__langLink burgerMenu__langLink--active">EN</a>
+                </div>
+                <div class="burgerMenu__social">
+                  <a href="/index.html" class="burgerMenu__socialLink">
+                    <svg class="burgerMenu__socialIcon">
+                      <use href="./spritemap.svg#icon-burger-menu-telegram" />
+                    </svg>
+                  </a>
+                  <a href="/index.html" class="burgerMenu__socialLink">
+                    <svg class="burgerMenu__socialIcon">
+                      <use href="./spritemap.svg#icon-burger-menu-watsapp" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -141,12 +156,17 @@
               </div>
             </div>
 
-            <div class="inputSelect">
-              <label for="prise" class="inputSelect__label"></label>Price, $</label>
-              <span class="inputSelect__price inputSelect__price--min">100000</span>
-              <input name="prise" type="range" class="inputSelect__range" value="1000000" step="100000" min="100000"
-                max="1000000">
-              <output class="inputSelect__price inputSelect__price--max">1000000</output>
+            <div class="firstScreen__input">
+              <div class="inputWrapper" data-lable="Price, $">
+                <div class="inputRange">
+                  <div class="inputRange__priceWrapper">
+                    <span class="inputRange__price js-range-min">100000</span>
+                    <span class="inputRange__price js-range-max">1000000</span>
+                  </div>
+                  <div class="inputRange__input" id="my-slider" data-min="100000" data-max="1000000"
+                    data-range="1000000"></div>
+                </div>
+              </div>
             </div>
           </div>
           <button class="button js-open-modal" data-modal="apartmentData">Get an individual offer</button>
@@ -228,7 +248,8 @@
         </div>
       </div>
     </section>
-    <section class="container projects">
+
+<section class="container projects">
       <div class="container__row projects__inner">
         <div class="projects__top">
           <h2 class="projects__header">Available projects in Dubai</h2>
@@ -441,7 +462,7 @@
         <div class="map__top">
           <h2 class="map__header">Dubai best areas at the glance</h2>
           <button class="button button--smaller button--thinner">Get a catalog</button>
-          <!-- <div class="mapItem">
+          <div class="mapItem">
             <div class="mapItem__inner">
               <div class="mapItem__photo">
                 <img alt="Palm Jumeirah" src="../img/map-item-photo.jpg"
@@ -473,9 +494,9 @@
                 </div>
               </div>
             </div>
-          </div> -->
-        </div>
-      </div>
+          </div>
+    </div>
+    </div>
     </section>
     <section class="container experts">
       <div class="container__row container__row--removeLeft experts__inner">

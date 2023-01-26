@@ -1,3 +1,7 @@
+.header__desktop--hidden {
+  display: none;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -95,6 +99,26 @@
   border: none;
 }
 
+.header__langButton:hover {
+  cursor: pointer;
+}
+
+
+.header__langButtonText {
+  position: relative;
+}
+
+.header__langButtonText::after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1.5px;
+  background-color: var(--white);
+}
+
 .header__navLinks {
   display: flex;
   align-items: center;
@@ -136,4 +160,129 @@
 .header__menuButton--opened {
   color: var(--white);
   background-color: var(--brown);
+}
+
+.header__menuIcon {
+  position: relative;
+  cursor: pointer;
+}
+.header__menuIcon::after,
+.header__menuIcon::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background-color: var(--white);
+  width: 20px;
+  height: 2px;
+  top: -5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header__menuIcon::before {
+  top: 2px;
+}
+
+@media screen and (max-width: 1600px) {
+  .header__contacts {
+    padding-right: 30px;
+  }
+
+  .header__tel {
+    padding-right: 25px;
+    font-size: 16px;
+  }
+
+  .header__socialLink:not(:last-child) {
+    padding-right: 24px;
+  }
+
+  .header__langButton {
+    padding: 0 30px;
+  }
+
+  .header__navLinks {
+    padding-left: 30px;
+    padding-right: 28px;
+  }
+
+  .header__link {
+    font-size: 16px;
+  }
+
+  .header__link:not(:last-child) {
+    padding-right: 38px;
+  }
+
+  .header__menuButton {
+    width: 142px;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .header__desktop--hidden {
+    display: block;
+  }
+  .header__tablet--hidden {
+    display: none;
+  }
+  .header {
+    height: 59px;
+  }
+
+  .header__logoIcon {
+    width: 100px;
+    height: 35px;
+  }
+
+  .header__content {
+    border-left: none;
+  }
+
+  .header__contactsAndLang {
+    padding-left: 0;
+  }
+
+  .header__langButton {
+    font-size: 14px;
+    padding: 0 25px;
+  }
+
+  .header__contacts {
+    padding-right: 0;
+    display: none;
+  }
+
+  .header__navLinks {
+    display: none;
+  }
+
+  .header__menuButton {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header__langButtonWrapper--openedMenu {
+    border-color: #1616161e;
+    z-index: 5;
+  }
+
+  .header__langButtonWrapper--openedMenu .header__langButton {
+    color: var(--sandal);
+  }
+
+  .header__langButtonWrapper--openedMenu .header__langButtonText::after {
+    background-color: var(--sandal);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header__langButton {
+    padding: 0 20px;
+  }
+  .header__menuButton {
+    width: 62px;
+  }
 }

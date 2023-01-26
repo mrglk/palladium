@@ -1,7 +1,10 @@
 .inputWrapper {
   position: relative;
-  margin: 20px;
   border-radius: 4px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  backdrop-filter: blur(9px);
+  width: 100%;
 }
 
 .inputWrapper::before {
@@ -11,7 +14,7 @@
   position: absolute;
 
   top: -11px;
-  left: 10px;
+  left: 19px;
   height: 9px;
 
   padding: 2px 10px 0px 10px;
@@ -25,4 +28,25 @@
   line-height: 1;
   color: var(--white);
   z-index: 2;
+}
+
+@media screen and (max-width: 1440px) {
+  .inputWrapper::before {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .inputWrapper::before {
+    font-size: 12px;
+  }
+  .inputWrapper::before {
+    font-size: 12px;
+  }
+
+  .inputWrapper::before {
+    top: -7px;
+    left: 19px;
+    height: 5px;
+  }
 }
