@@ -150,6 +150,32 @@
   border: none;
   background-color: var(--sandal);
   transition: background-color 200ms ease, color 200ms ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__tablet--close {
+  position: absolute;
+  transition: transform 300ms ease, opacity 300ms ease;
+  transform: translateY(50%);
+  opacity: 0;
+}
+
+.header__tablet--open {
+  position: absolute;
+  transition: transform 300ms ease, opacity 300ms ease;
+}
+
+.header__menuButton--active .header__tablet--open {
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+.header__menuButton--active .header__tablet--close {
+  transform: translateY(-0%);
+  opacity: 1;
 }
 
 .header__menuButton:hover {
@@ -176,7 +202,23 @@
   height: 2px;
   top: -5px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  margin-left: -10px;
+
+  transition: transform 300ms ease, top 200ms ease 300ms;
+}
+
+.header__menuButton--active .header__menuIcon::after {
+  transform: rotate(45deg);
+  top: -1px;
+
+  transition: transform 300ms ease 200ms, top 200ms ease;
+}
+
+.header__menuButton--active .header__menuIcon::before {
+  transform: rotate(-45deg);
+  top: -1px;
+
+  transition: transform 300ms ease 200ms, top 200ms ease;
 }
 
 .header__menuIcon::before {
@@ -242,6 +284,7 @@
 
   .header__contactsAndLang {
     padding-left: 0;
+    border-bottom: 0;
   }
 
   .header__langButton {
