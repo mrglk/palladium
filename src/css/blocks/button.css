@@ -71,3 +71,17 @@
 .button:hover .button__icon {
   fill: var(--white);
 }
+
+@media screen and (max-width: 1440px) {
+  .button {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
