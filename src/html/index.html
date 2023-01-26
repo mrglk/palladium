@@ -248,7 +248,7 @@
             </svg>
           </a>
         </div>
-        <button class="about__buttonTublet button button--smaller button--thinner js-open-modal"
+        <button class="about__buttonTublet button button--smaller button--thinner button--widerOnTablet js-open-modal"
           data-modal="catalogForm">Get a
           catalog</button>
       </div>
@@ -412,13 +412,17 @@
         <div class="offers__left">
           <p class="offers__subtitle">Offers</p>
           <h2 class="offers__header">Be the first to know about sales launches and receive exclusive offers!</h2>
-          <button class="button button--smaller button--thinner">Get a catalog</button>
+          <button class="offers__tabletHidden button button--smaller button--thinner button--widerOnTablet">Get a catalog</button>
         </div>
         <div class="offers__right">
-          <img alt="Beach house" src="../img/offers-photo.jpg" srcSet="../img/offers-photo-2x.jpg 2x">
+          <img class="offers__desktop1920Visible" alt="Beach house" src="../img/offers-photo.jpg" srcSet="../img/offers-photo-2x.jpg 2x">
+          <img class="offers__desktopVisible" alt="Beach house" src="../img/offers-photo-desktop.jpg" srcSet="../img/offers-photo-desktop-2x.jpg 2x">
+          <img class="offers__tabletVisible" alt="Beach house" src="../img/offers-photo-tablet.jpg" srcSet="../img/offers-photo-tablet-2x.jpg 2x">
         </div>
       </div>
+      <button class="offers__onlyTabletVisible button button--smaller button--thinner button--widerOnTablet">Get a catalog</button>
     </section>
+
     <section class="container priceChart">
       <div class="container__row priceChart__inner">
         <h2 class="priceChart__header">How fast are property prices rising?</h2>
@@ -486,6 +490,7 @@
           <button class="button button--smaller button--thinner">Get a catalog</button>
           <div class="mapItem">
             <div class="mapItem__inner">
+             <div class="mapItem__closeButton mapItem__desktopHidden"><div class="mapItem__closeIcon"></div></div>
               <div class="mapItem__photo">
                 <img alt="Palm Jumeirah" src="../img/map-item-photo.jpg" srcSet="../img/map-item-photo-2x.jpg 2x">
               </div>
