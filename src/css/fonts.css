@@ -1,18 +1,5 @@
-/*@font-face {*/
-/*  font-family: Benzin;*/
-/*  src: url("/fonts/Benzin-ExtraBold.eot");*/
-/*  src: local("Benzin ExtraBold"), local("Benzin-ExtraBold"),*/
-/*    url("/fonts/Benzin-ExtraBold.eot?#iefix") format("embedded-opentype"),*/
-/*    url("/fonts/Benzin-ExtraBold.woff2") format("woff2"),*/
-/*    url("/fonts/Benzin-ExtraBold.woff") format("woff"),*/
-/*    url("/fonts/Benzin-ExtraBold.ttf") format("truetype");*/
-/*  font-weight: 900;*/
-/*  font-style: normal;*/
-/*  font-display: swap;*/
-/*}*/
-
 @font-face {
-  font-family: var(--general-font);
+  font-family: "Inter";
   src: url("../fonts/Inter/Inter-Regular.eot");
   src: url("../fonts/Inter/Inter-Regular.eot?#iefix")
       format("embedded-opentype"),
@@ -133,7 +120,7 @@
 }
 
 @font-face {
-  font-family: var(--accent-font);
+  font-family: "Lora";
   src: url("../fonts/Lora/Lora-Regular.eot");
   src: url("../fonts/Lora/Lora-Regular.eot?#iefix") format("embedded-opentype"),
     url("../fonts/Lora/Lora-Regular.woff2") format("woff2"),
