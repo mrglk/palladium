@@ -38,6 +38,10 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+
+  .container__row.container__row--removeLeft {
+    padding-left: 30px;
+  }
 }
 
 @media screen and (max-width: 620px) {

@@ -37,3 +37,10 @@
 .arrowButton:hover .arrowButton__icon {
     fill: var(--cream);
 }
+
+@media screen and (max-width: 570px) {
+    .arrowButton {
+        width: 40px;
+        height: 40px;
+    }
+}
