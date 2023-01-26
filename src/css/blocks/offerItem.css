@@ -56,8 +56,133 @@
   font-size: 18px;
   line-height: 1.4;
   color: var(--black);
+  margin-bottom: 57px;
+}
+
+.offerItem__number {
+  display: none;
 }
 
 .offerItem__button {
   align-self: flex-end;
+}
+
+@media screen and (max-width: 1440px) {
+  .offerItem {
+    padding-right: 50px;
+  }
+  .offerItem__title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .offerItem__text {
+    font-size: 16px;
+    margin-bottom: 34px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .offerItem {
+    min-width: 335px;
+    padding: 35px 24px 35px 25px;
+    height: 380px;
+    margin-right: 15px;
+}
+
+.offerItem:nth-child(3) {
+ order: 6;
+}
+
+.offerItem:nth-child(4) {
+  order: 5;
+ }
+
+.offerItem--lighter {
+  border: 1px solid rgba(157, 140, 124, 0.3);
+}
+
+  .offerItem:not(:nth-child(3)) {
+    padding-right: 50px;
+    margin-right: 15px;
+    
+  }
+  .offerItem__title {
+    font-size: 20px;
+  }
+  
+  .offerItem__text {
+    font-size: 14px;
+  }
+
+  .offerItem__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .offerItem__number {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--brown);
+  }
+
+  .offerItem__number span {
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .offerItem__button {
+   display: none;
+  }
+
+  .offerItem--triangle {
+    background-image: url("../../img/bg-triangle-tablet.png");
+  }
+  
+  .offerItem--wave {
+    background-image: url("../../img/bg-wave-tablet.png");
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  .offerItem {
+    min-width: 288px;
+}
+  .offerItem {
+    margin-right: 20px;
+  }
+  .offerItem__title {
+    font-size: 20px;
+  }
+  
+  .offerItem__text {
+    font-size: 14px;
+  }
+
+  .offerItem__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .offerItem__number {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--brown);
+  }
+
+  .offerItem__number span {
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .offerItem__button {
+   display: none;
+  }
 }
