@@ -1,9 +1,10 @@
 .inputWrapper {
   position: relative;
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: 4px;
-  backdrop-filter: blur(9px);
+  /*border-radius: 4px;*/
+  /*background: rgba(255, 255, 255, 0.4);*/
+  /*border-radius: 4px;*/
+  /*background: rgba(255, 255, 255, 0.4);*/
+  /*backdrop-filter: blur(9px);*/
   width: 100%;
 }
 
@@ -13,11 +14,11 @@
   display: inline-block;
   position: absolute;
 
-  top: -11px;
+  top: -13px;
   left: 19px;
   height: 9px;
 
-  padding: 2px 10px 0px 10px;
+  padding: 4px 10px 0 10px;
 
   border-radius: 4px 4px 0 0;
   backdrop-filter: blur(9px);
@@ -39,13 +40,7 @@
 @media screen and (max-width: 900px) {
   .inputWrapper::before {
     font-size: 12px;
-  }
-  .inputWrapper::before {
-    font-size: 12px;
-  }
-
-  .inputWrapper::before {
-    top: -7px;
+    top: -9px;
     left: 19px;
     height: 5px;
   }

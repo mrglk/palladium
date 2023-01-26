@@ -5,6 +5,10 @@
   padding: 0 30px;
   height: 92px;
   width: 100%;
+
+  border-radius: 4px;
+  backdrop-filter: blur(9px);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .inputRange__priceWrapper {
