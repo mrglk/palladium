@@ -1,13 +1,20 @@
 .select {
   position: relative;
-  padding: 34px 40px 34px 30px;
   color: var(--white);
   /* max-width: 418px; */
   width: 100%;
-  border-radius: 4px;
   font-weight: 500;
   font-size: 22px;
   height: 92px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(9px);
+
+  cursor: pointer;
+}
+
+.select--active {
+  border-radius: 4px 4px 0 0 ;
 }
 
 .select__currentValue {
@@ -15,6 +22,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 34px 40px 34px 30px;
+  border-radius: 4px;
+  /*backdrop-filter: blur(9px);*/
+  overflow: hidden;
 }
 
 .select__currentValue::after {
@@ -26,7 +37,7 @@
   background-repeat: no-repeat;
 }
 
-.select--opened .select__currentValue::after {
+.select--active .select__currentValue::after {
   transform: rotate(180deg);
 }
 
@@ -35,28 +46,47 @@
   top: 100%;
   left: 0;
   width: 100%;
-  display: none;
   background: rgba(255, 255, 255, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(9px);
+  /*border: 1px solid rgba(255, 255, 255, 0.4);*/
+  /*backdrop-filter: blur(9px);*/
+
+  border-radius: 0 0 4px 4px;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  z-index: 3;
+
+  transition: opacity 200ms ease;
 }
 
 .select__option {
-  padding: 15px;
+  padding: 15px 30px;
+
+  transition: background 100ms ease;
 }
 
-.select:hover .select__options {
-  display: block;
+.select__option:hover {
+  background: #00000022;
 }
 
+.select--active .select__options {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
 
 @media screen and (max-width: 1440px) {
   .select {
-    padding: 30px 40px 33px 27px;
     font-size: 20px;
       height: 80px;
   }
   
+  .select__currentValue{
+    padding: 30px 40px 33px 27px;
+  }
+
   .select__currentValue::after {
     width: 17px;
     height: 11px;
@@ -66,11 +96,14 @@
 
   @media screen and (max-width: 900px) {
     .select {
-      padding: 16px 20px 16px 26px;
       font-size: 16px;
       height: 52px;
     }
-    
+
+    .select__currentValue {
+      padding: 16px 20px 16px 26px;
+    }
+
     .select__currentValue::after {
       width: 12px;
       height: 9px;
