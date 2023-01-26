@@ -431,28 +431,53 @@
             <div class="priceChart__rangeAndCost">
               <p class="priceChart__subtitle">Choose period</p>
               <div class="priceChart__range">
-                <div class="rangePrice">
-                  <input name="priseChart" type="range" class="rangePrive__input" value="2023" step="5000" min="2013"
+                <div class="chartRange">
+                  <input name="price-chart" type="range" class="chartRange__input js-chart-range" value="2023" step="5" min="2013"
                     max="2033">
+                  <div class="chartRange__steps">
+                    <div class="chartRange__step"></div>
+                    <div class="chartRange__step"></div>
+                    <div class="chartRange__step"></div>
+                    <div class="chartRange__step"></div>
+                    <div class="chartRange__step"></div>
+                  </div>
+                  <div class="chartRange__dates">
+                    <div class="chartRange__date">2013</div>
+                    <div class="chartRange__date">2018</div>
+                    <div class="chartRange__date">2023</div>
+                    <div class="chartRange__date">2028</div>
+                    <div class="chartRange__date">2033</div>
+                  </div>
                 </div>
               </div>
               <p class="priceChart__subtitle">Cost per m2</p>
               <div class="priceChart__cost">
                 <div class="priceChart__costItem">
                   <p class="priceChart__costCountry">UAE</p>
-                  <p class="priceChart__costPrise priceChart__costPrise--best">4500$</p>
+                  <p class="priceChart__costPrise priceChart__costPrise--best">
+                    <span class="js-chart-price-uae">6000</span>$
+                  </p>
                 </div>
                 <div class="priceChart__costItem">
                   <p class="priceChart__costCountry">Turkey</p>
-                  <p class="priceChart__costPrise priceChart__costPrise--best">6000$</p>
+                  <p class="priceChart__costPrise">
+                    <span class="js-chart-price-turkey">133</span>$
+                  </p>
                 </div>
                 <div class="priceChart__costItem">
                   <p class="priceChart__costCountry">Spain</p>
-                  <p class="priceChart__costPrise priceChart__costPrise--best">9000$</p>
+                  <p class="priceChart__costPrise">
+                    <span class="js-chart-price-spain">4324</span>$
+                  </p>
                 </div>
               </div>
             </div>
-            <img class="priceChart__chartImage" alt="Chart" src="../img/chart-test.jpg">
+            <div class="priceChart__chartImageWrapper">
+              <img class="priceChart__chartImage" alt="Chart" src="../img/graph-2.png">
+              <div class="priceChart__chartImageOverlay js-chart-overlay" style="width: 50%;">
+                <img class="priceChart__chartImage" alt="Chart" src="../img/graph-1.png">
+              </div>
+            </div>
           </div>
           <div class="priceChart__right">
             <p class="priceChart__percentSubtitle">Increase in cost per m2 for the selected period</p>
@@ -462,21 +487,27 @@
                   <use href="./spritemap.svg#icon-uae-icon" />
                 </svg>
                 <p class="priceChart__percentCountry">UAE</p>
-                <p class="priceChart__percentNum">260%</p>
+                <p class="priceChart__percentNum">
+                  <span class="js-chart-increase-uae">260</span>%
+                </p>
               </div>
               <div class="priceChart__percentItem">
                 <svg class="priceChart__countryIcon">
                   <use href="./spritemap.svg#icon-turkey-icon" />
                 </svg>
                 <p class="priceChart__percentCountry">Turkey</p>
-                <p class="priceChart__percentNum">90%</p>
+                <p class="priceChart__percentNum">
+                  <span class="js-chart-increase-turkey">90</span>%
+                </p>
               </div>
               <div class="priceChart__percentItem">
                 <svg class="priceChart__countryIcon">
                   <use href="./spritemap.svg#icon-spain-icon" />
                 </svg>
                 <p class="priceChart__percentCountry">Spain</p>
-                <p class="priceChart__percentNum">60%</p>
+                <p class="priceChart__percentNum">
+                  <span class="js-chart-increase-spain">60</span>%
+                </p>
               </div>
             </div>
           </div>

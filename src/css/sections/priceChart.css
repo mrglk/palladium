@@ -89,9 +89,28 @@
   color: var(--black);
 }
 
+.priceChart__chartImageWrapper {
+  position: relative;
+  display: flex;
+  pointer-events: none;
+}
+
+.priceChart__chartImageOverlay {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+  transition: width 300ms ease;
+}
+
 .priceChart__chartImage {
   max-width: 1538px;
   width: 100%;
+  object-fit: cover;
+  height: 100%;
+  object-position: left;
 }
 
 .priceChart__right {
@@ -130,6 +149,8 @@
 .priceChart__percentCountry {
   font-weight: 600;
   font-size: 16px;
+  margin-right: auto;
+  padding-left: 10px;
   color: var(--sandal);
   opacity: 0.5;
 }

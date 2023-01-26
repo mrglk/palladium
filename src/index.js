@@ -4,10 +4,12 @@ import { customSelect } from "./js/customSelect";
 import { initModals } from "./js/initModals";
 import { initRangeSlider } from "./js/rangeSlider";
 import { initBurgerMenu } from './js/burgerMenu';
+import { initChart } from './js/chart';
 
 document.addEventListener("DOMContentLoaded", function () {
     customSelect()
     initModals()
     initRangeSlider()
     initBurgerMenu()
+    initChart()
 });
