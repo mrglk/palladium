@@ -22,3 +22,17 @@
     background-color: var(--cream);
     color: var(--black);
 }
+
+
+@media screen and (max-width: 1440px) {
+    .filterButton {
+        padding: 15px 40px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .filterButton {
+         font-size: 10px;
+        padding: 10px 10px;
+    }
+}

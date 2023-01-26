@@ -68,3 +68,32 @@
 .moreButton__button:hover::before {
   background-color: var(--cream);
 }
+
+@media screen and (max-width: 960px) {
+  .moreButton__text {
+    font-size: 14px;
+  }
+  
+  .moreButton__text--darker {
+    color: var(--brown);
+  }
+  
+  .moreButton__line::after {
+    width: 81px;
+  }
+  
+  .moreButton__line--darker::after {
+    background-color: var(--brown);
+  }
+  
+  .moreButton__button {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .moreButton__button::after,
+  .moreButton__button::before {
+    width: 10px;
+    height: 0.61px;
+  }
+}

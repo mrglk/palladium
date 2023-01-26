@@ -18,11 +18,17 @@
 
 .projects__header {
   color: var(--cream);
+  margin-right: 10px;
+}
+
+.projects__filterWrapper {
+  display: flex;
+  align-items: flex-end;
 }
 
 .projects__filter {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
 .projects__filter button:not(:last-child) {
@@ -30,20 +36,74 @@
 }
 
 .projects__slider {
+  position: relative;
   margin-bottom: 91px;
+  width: 100%;
 }
 
-.projects__sliderButton {
-  position: absolute;
-  top: 25%;
+@media screen and (max-width: 1440px) {
+  .projects__top {
+    margin-bottom: 67px;
+  }
+
+  .projects__filter button:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  .projects__slider {
+    margin-bottom: 63px;
+  }
 }
 
-.projects__sliderButton--left {
-  position: absolute;
-  left: -20px;
+@media screen and (max-width: 960px) {
+  .projects__top {
+    margin-bottom: 35px;
+  }
+
+  .projects__slider {
+    margin-bottom: 60px;
+  }
+  .projects__sliderButton {
+    display: none;
+  }
 }
 
-.projects__sliderButton--right {
-  position: absolute;
-  right: -20px;
+@media screen and (max-width: 700px) {
+  .projects {
+    padding-top: 52px;
+    margin-bottom: 80px;
+  }
+
+  .projects__top {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  .projects__header {
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
+
+  .projects__slider {
+    margin-bottom: 66px;
+  }
+
+  .projects__filter {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .projects__filterWrapperLayer {
+    position: relative;
+    overflow-x: auto;
+    margin-bottom: -30px;
+    padding-bottom: 30px;
+    width: 100%;
+  }
+
+  .projects__filterWrapper {
+    overflow: hidden;
+    width: 100%;
+  }
 }
