@@ -18,3 +18,60 @@
 .letYouGet__header {
   margin-bottom: 70px;
 }
+
+@media screen and (max-width: 1440px) {
+  .letYouGet {
+    margin-bottom: 150px;
+  }
+
+  .letYouGet__content {
+    margin-bottom: 50px;
+  }
+
+  .letYouGet__header {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .letYouGet {
+    margin-bottom: 100px;
+  }
+
+  .letYouGet__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .letYouGet__header {
+    margin-bottom: 45px;
+  }
+  .letYouGet__content {
+    display: flex;
+    overflow: scroll;
+    margin-bottom: 70px;
+    width: 100%;
+  }
+
+  .letYouGet__button {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .letYouGet {
+    margin-bottom: 80px;
+  }
+
+  .letYouGet__inner {
+    align-items: center;
+  }
+
+  .letYouGet__header {
+    margin-bottom: 35px;
+  }
+  .letYouGet__content {
+    margin-bottom: 76px;
+  }
+}
