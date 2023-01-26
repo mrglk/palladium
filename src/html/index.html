@@ -163,8 +163,8 @@
                     <span class="inputRange__price js-range-min">100000</span>
                     <span class="inputRange__price js-range-max">1000000</span>
                   </div>
-                  <div class="inputRange__input" id="my-slider" data-min="0" data-max="900000"
-                    data-range="900000"></div>
+                  <div class="inputRange__input" id="my-slider" data-min="0" data-max="900000" data-range="900000">
+                  </div>
                 </div>
               </div>
             </div>
@@ -407,20 +407,25 @@
         </div>
       </div>
     </section>
-  <section class="container offers">
+    <section class="container offers">
       <div class="container__row offers__inner">
         <div class="offers__left">
           <p class="offers__subtitle">Offers</p>
           <h2 class="offers__header">Be the first to know about sales launches and receive exclusive offers!</h2>
-          <button class="offers__tabletHidden button button--smaller button--thinner button--widerOnTablet">Get a catalog</button>
+          <button class="offers__tabletHidden button button--smaller button--thinner button--widerOnTablet">Get a
+            catalog</button>
         </div>
         <div class="offers__right">
-          <img class="offers__desktop1920Visible" alt="Beach house" src="../img/offers-photo.jpg" srcSet="../img/offers-photo-2x.jpg 2x">
-          <img class="offers__desktopVisible" alt="Beach house" src="../img/offers-photo-desktop.jpg" srcSet="../img/offers-photo-desktop-2x.jpg 2x">
-          <img class="offers__tabletVisible" alt="Beach house" src="../img/offers-photo-tablet.jpg" srcSet="../img/offers-photo-tablet-2x.jpg 2x">
+          <img class="offers__desktop1920Visible" alt="Beach house" src="../img/offers-photo.jpg"
+            srcSet="../img/offers-photo-2x.jpg 2x">
+          <img class="offers__desktopVisible" alt="Beach house" src="../img/offers-photo-desktop.jpg"
+            srcSet="../img/offers-photo-desktop-2x.jpg 2x">
+          <img class="offers__tabletVisible" alt="Beach house" src="../img/offers-photo-tablet.jpg"
+            srcSet="../img/offers-photo-tablet-2x.jpg 2x">
         </div>
       </div>
-      <button class="offers__onlyTabletVisible button button--smaller button--thinner button--widerOnTablet">Get a catalog</button>
+      <button class="offers__onlyTabletVisible button button--smaller button--thinner button--widerOnTablet">Get a
+        catalog</button>
     </section>
 
     <section class="container priceChart">
@@ -490,7 +495,9 @@
           <button class="button button--smaller button--thinner">Get a catalog</button>
           <div class="mapItem">
             <div class="mapItem__inner">
-             <div class="mapItem__closeButton mapItem__desktopHidden"><div class="mapItem__closeIcon"></div></div>
+              <div class="mapItem__closeButton mapItem__desktopHidden">
+                <div class="mapItem__closeIcon"></div>
+              </div>
               <div class="mapItem__photo">
                 <img alt="Palm Jumeirah" src="../img/map-item-photo.jpg" srcSet="../img/map-item-photo-2x.jpg 2x">
               </div>
@@ -527,16 +534,75 @@
     <section class="container experts">
       <div class="container__row container__row--removeLeft experts__inner">
         <div class="experts__videoSide">
-          <img class="experts__video" src="../img/video-test.jpg">
-          <div class="experts__duration">
-            <p class="experts__durationText">Video duration</p>
-            <p class="experts__durationTime">1:16</p>
+          <div class="experts__videoWrapper">
+            <img class="experts__video" src="../img/video-test.jpg">
+            <div class="experts__duration">
+              <p class="experts__durationText">Video duration</p>
+              <p class="experts__durationTime">1:16</p>
+            </div>
+            <button class="experts__play">
+              <svg class="experts__playIcon">
+                <use href="./spritemap.svg#icon-play-icon" />
+              </svg>
+            </button>
           </div>
-          <button class="experts__play">
-            <svg class="experts__playIcon">
-              <use href="./spritemap.svg#icon-play-icon" />
-            </svg>
-          </button>
+          <div class="experts__mobileVisible">
+            <div class="experts__more">
+              <p class="experts__moreSubtitle">More about Anton Moskalev</p>
+              <div class="experts__moreSocial">
+                <a href="/index.html" class="experts__moreLink">
+                  <svg class="experts__moreIcon">
+                    <use href="./spritemap.svg#icon-youtube-experts" />
+                  </svg>
+                </a>
+                <a href="/index.html" class="experts__moreLink">
+                  <svg class="experts__moreIcon">
+                    <use href="./spritemap.svg#icon-telegram-experts" />
+                  </svg>
+                </a>
+                <a href="/index.html" class="experts__moreLink">
+                  <svg class="experts__moreIcon">
+                    <use href="./spritemap.svg#icon-facebook-experts" />
+                  </svg>
+                </a>
+                <a href="/index.html" class="experts__moreLink">
+                  <svg class="experts__moreIcon">
+                    <use href="./spritemap.svg#icon-instagram-experts" />
+                  </svg>
+                </a>
+                <a href="/index.html" class="experts__moreLink">
+                  <svg class="experts__moreIcon">
+                    <use href="./spritemap.svg#icon-twitter-experts" />
+                  </svg>
+                </a>
+                <a href="/index.html" class="experts__moreLink">
+                  <svg class="experts__moreIcon">
+                    <use href="./spritemap.svg#icon-vk-experts" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="experts__desktopHidden">
+            <div class="experts__next">
+              <a href="./index.html" class="experts__nextLink">
+                <span>Next expert</span>
+                <div class="arrowButton experts__nextButton">
+                  <svg class="arrowButton__icon experts__nextIcon">
+                    <use href="./spritemap.svg#icon-arrow" />
+                  </svg>
+                </div>
+              </a>
+              <div class="experts__view">
+                <img alt="Eugeny Kogan" class="experts__photo experts__photo--smaller" src="../img/kogan.jpg"
+                  srcSet="../img/kogan-2x.jpg 2x">
+                <div>
+                  <p class="experts__name">Eugeny Kogan,</p>
+                  <p class="experts__position">Partner of Palladium Realty</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="experts__contentSide">
           <div class="experts__header">
@@ -554,7 +620,7 @@
                   <p class="experts__position">Founder of Palladium Realty</p>
                 </div>
               </div>
-              <div class="experts__more">
+              <div class="experts__more experts__mobileHidden ">
                 <p class="experts__moreSubtitle">More about Anton Moskalev</p>
                 <div class="experts__moreSocial">
                   <a href="/index.html" class="experts__moreLink">
@@ -603,7 +669,7 @@
               </div>
             </div>
           </div>
-          <div class="experts__next">
+          <div class="experts__next experts__tabletHidden">
             <a href="./index.html" class="experts__nextLink">
               <span>Next expert</span>
               <div class="arrowButton experts__nextButton">
@@ -636,7 +702,7 @@
                   Long-term residency visa that enables foreign tenants
                   to live and work or study in the UAE</p>
               </div>
-                <p class="offerItem__number"><span>(</span>01<span>)</span></p>
+              <p class="offerItem__number"><span>(</span>01<span>)</span></p>
             </div>
             <div class="moreButton offerItem__button">
               <p class="moreButton__text moreButton__text--darker">More info</p>
@@ -652,7 +718,7 @@
                   with developers, and help you transfer funds legally to Dubai
                   to reserve a property or pay for a unit in full.</p>
               </div>
-                <p class="offerItem__number"><span>(</span>02<span>)</span></p>
+              <p class="offerItem__number"><span>(</span>02<span>)</span></p>
             </div>
             <div class="moreButton offerItem__button">
               <p class="moreButton__text moreButton__text--darker">More info</p>
@@ -682,7 +748,7 @@
                   We are monitoring the closed sales and give an
                   opportunity to participate in them.</p>
               </div>
-                <p class="offerItem__number"><span>(</span>05<span>)</span></p>
+              <p class="offerItem__number"><span>(</span>05<span>)</span></p>
             </div>
             <div class="moreButton offerItem__button">
               <p class="moreButton__text moreButton__text--darker">More info</p>
@@ -698,7 +764,7 @@
                   We provide our expert assessment of the quality and prospects
                   of the object, excluding unsuccessful deals.</p>
               </div>
-                <p class="offerItem__number"><span>(</span>03<span>)</span></p>
+              <p class="offerItem__number"><span>(</span>03<span>)</span></p>
             </div>
             <div class="moreButton offerItem__button">
               <p class="moreButton__text moreButton__text--darker">More info</p>
@@ -714,7 +780,7 @@
                   apartments become available to our customers with
                   the greatest benefit at a price below the market</p>
               </div>
-                <p class="offerItem__number"><span>(</span>04<span>)</span></p>
+              <p class="offerItem__number"><span>(</span>04<span>)</span></p>
             </div>
             <div class="moreButton offerItem__button">
               <p class="moreButton__text moreButton__text--darker">More info</p>
@@ -1045,7 +1111,7 @@
             </a>
           </div>
         </div>
-    </section> 
+    </section>
   </main>
 
   <footer class="container footer">
