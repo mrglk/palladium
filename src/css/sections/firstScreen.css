@@ -59,22 +59,22 @@
     padding-top: 210px;
     margin-bottom: 154px;
   }
-  
+
   .firstScreen__header {
     max-width: 657px;
     margin-bottom: 25px;
   }
-  
+
   .firstScreen__description {
     margin-bottom: 55px;
     max-width: 369px;
     font-size: 22px;
   }
-  
+
   .firstScreen__form {
     padding-bottom: 109px;
   }
-  
+
   .firstScreen__inputsGroup {
     padding-bottom: 60px;
   }
@@ -84,7 +84,7 @@
   .firstScreen__inputsGroup {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns:  1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 35px;
     padding-bottom: 82px;
@@ -101,25 +101,29 @@
     max-width: 450px;
     margin-bottom: 30px;
   }
-  
+
   .firstScreen__description {
     margin-bottom: 40px;
     max-width: 234px;
     font-size: 18px;
   }
-  
+
   .firstScreen__form {
     padding-bottom: 70px;
   }
-  
+
   .firstScreen__inputsGroup {
     padding-bottom: 60px;
   }
 }
 
 @media screen and (max-width: 560px) {
+  .firstScreen {
+    margin-bottom: 80px;
+  }
+
   .firstScreen__inputsGroup {
-    grid-template-columns:  1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 35px;
     padding-bottom: 82px;
@@ -136,15 +140,15 @@
     max-width: 335px;
     margin-bottom: 16px;
   }
-  
+
   .firstScreen__description {
     margin-bottom: 30px;
   }
-  
+
   .firstScreen__form {
     padding-bottom: 70px;
   }
-  
+
   .firstScreen__inputsGroup {
     padding-bottom: 69px;
   }
