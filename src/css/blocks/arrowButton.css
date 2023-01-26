@@ -5,8 +5,8 @@
     flex-shrink: 0;
     cursor: pointer;
     background-color: var(--cream);
-    width: 41px;
-    height: 41px;
+    width: 48px;
+    height: 48px;
     border-radius: 200px;
     border: none;
     transition: background-color 80ms ease, color 80ms ease;

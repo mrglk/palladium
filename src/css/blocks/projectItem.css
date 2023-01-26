@@ -1,3 +1,11 @@
+.projectItem {
+  min-width: 567px;
+}
+
+.projectItem:not(:last-child) {
+  margin-right: 30px;
+}
+
 .projectItem__photo {
   max-width: 567px;
   margin-bottom: 27px;
@@ -37,18 +45,28 @@
 
 .projectItem__data {
   display: flex;
-  opacity: 0.5;
   margin-bottom: 24px;
 }
 
-.projectItem__data p:not(:last-child) {
+.projectItem__dataTitle {
+  font-weight: 500;
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.projectItem__cell {
+  display: flex;
+}
+
+.projectItem__cell:not(:last-child) {
   margin-right: 33px;
 }
 
 .projectItem__dataNum {
   font-family: var(--accent-font);
-  font-weight: 500;
+  font-weight: 400;
   opacity: 1;
+  font-size: 18px;
   letter-spacing: -0.03em;
   margin-left: 20px;
 }
@@ -88,4 +106,135 @@
 .projectItem__marketText {
   font-weight: 500;
   font-size: 20px;
+}
+
+@media screen and (max-width: 1440px) {
+  .projectItem {
+    min-width: 420px;
+  }
+
+  .projectItem__photo {
+    max-width: 420px;
+    margin-bottom: 21px;
+  }
+
+  .projectItem__description {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  .projectItem__geo {
+    margin-bottom: 21px;
+  }
+
+  .projectItem__title {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .projectItem__data {
+    margin-bottom: 30px;
+  }
+
+  .projectItem__dataTitle {
+    font-weight: 500;
+    font-size: 16px;
+    opacity: 0.5;
+  }
+
+  .projectItem__cell {
+    display: flex;
+  }
+
+  .projectItem__cell:not(:last-child) {
+    margin-right: 29px;
+  }
+
+  .projectItem__sale {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .projectItem {
+    min-width: 233px;
+  }
+
+  .projectItem__photo {
+    max-width: 233px;
+    margin-bottom: 16px;
+  }
+
+  .projectItem__description {
+    padding-bottom: 16px;
+    margin-bottom: 22px;
+  }
+
+  .projectItem__geo {
+    margin-bottom: 12px;
+  }
+
+  .projectItem__geoText {
+    font-size: 9px;
+  }
+
+  .projectItem__geoIcon {
+    width: 7.25px;
+    height: 10px;
+    margin-right: 9px;
+  }
+
+  .projectItem__title {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .projectItem__data {
+    margin-bottom: 16px;
+  }
+
+  .projectItem__dataTitle {
+    font-size: 14px;
+  }
+
+  .projectItem__dataNum {
+    font-size: 16px;
+  }
+
+  .projectItem__cell {
+    display: flex;
+  }
+
+  .projectItem__cell:not(:last-child) {
+    margin-right: 33px;
+  }
+
+  .projectItem__price {
+    font-size: 22px;
+  }
+
+  .projectItem__market {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projectItem {
+    min-width: 217px;
+  }
+
+  .projectItem__photo {
+    max-width: 217px;
+  }
+
+  .projectItem__description {
+    padding-bottom: 22px;
+    margin-bottom: 24px;
+  }
+  
+  .projectItem__cell:not(:last-child) {
+    margin-right: 30px;
+  }
 }

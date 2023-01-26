@@ -293,3 +293,9 @@
     margin-right: 0;
   }
 }
+
+@media screen and (max-width: 325px) {
+  .about__logoIcon {
+    max-width: 100px;
+  }
+}
