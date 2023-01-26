@@ -40,7 +40,7 @@
                 </a>
               </div>
             </div>
-            <div class="header__langButtonWrapper">
+            <div class="header__langButtonWrapper js-lang-button">
               <button class="header__langButton">
                 <p class="header__langButtonText">EN</p>
               </button>
@@ -54,15 +54,20 @@
             <a href="/index.html" class="header__link">Contacts</a>
           </nav>
         </div>
-        <div class="header__menuButtonWrapper"><button class="header__menuButton">
-            <span class="header__tablet--hidden">Menu</span>
-            <div class="header__desktop--hidden header__menuIcon"></div>
-          </button></div>
+        <div class="header__menuButtonWrapper">
+          <button class="header__menuButton js-burger-menu-button">
+            <span class="header__menuIcon header__desktop--hidden"></span>
+            <span class="header__tablet--hidden header__tablet--open">Menu</span>
+            <span class="header__tablet--hidden header__tablet--close">Close</span>
+          </button>
+        </div>
       </div>
     </div>
+  </header>
 
-    <div class="overlay">
-      <div class="burgerMenu">
+  <main>
+    <section class="container firstScreen">
+      <div class="burgerMenu js-burger-menu">
         <div class="burgerMenu__inner">
           <div class="burgerMenu__header">
             <div class="burgerMenu__row">
@@ -119,11 +124,6 @@
         </div>
       </div>
 
-    </div>
-  </header>
-
-  <main>
-    <section class="container firstScreen">
       <div class="container__row firstScreen__inner">
         <h1 class="firstScreen__header">Most profitable property in Dubai within 24 hours</h1>
         <p class="firstScreen__description">Palladium Realty - experts in Dubai real estate</p>
@@ -1172,6 +1172,7 @@
       </div>
     </div>
   </section>
+  <div class="overlay js-overlay"></div>
 </body>
 
 </html>
