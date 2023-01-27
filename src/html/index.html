@@ -644,12 +644,17 @@
       <div class="container__row container__row--removeLeft experts__inner">
         <div class="experts__videoSide">
           <div class="experts__videoWrapper">
-            <img class="experts__video" src="../img/video-test.jpg">
+            <div class="experts__video">
+              <video class="experts__videoElement js-video-element" muted>
+                <source src="../video/video.mp4" type="video/mp4">
+              </video>
+
+            </div>
             <div class="experts__duration">
               <p class="experts__durationText">Video duration</p>
               <p class="experts__durationTime">1:16</p>
             </div>
-            <button class="experts__play">
+            <button class="experts__play js-video-control">
               <svg class="experts__playIcon">
                 <use href="./spritemap.svg#icon-play-icon" />
               </svg>
