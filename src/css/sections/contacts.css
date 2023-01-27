@@ -44,8 +44,13 @@
   -webkit-box-shadow: 0 0 0px 1000px #f9f3ee inset;
 }
 
+.contacts__formInput[data-valid="false"] {
+  border-color: var(--red)
+}
+
 .contacts__formInput:focus {
   outline: none;
+  border-color: var(--sandal);
 }
 
 .contacts__formInput::-webkit-input-placeholder,
