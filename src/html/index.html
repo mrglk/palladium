@@ -271,7 +271,7 @@
         </div>
         <div class="projects__slider">
           <div class="sliderWrapper">
-            <div class="projects__sliderButton slider__button slider__button--left">
+            <div class="projects__sliderButton slider__button slider__button--left js-project-slider-prev">
               <button class="arrowButton">
                 <svg class="arrowButton__icon arrowButton__icon--back">
                   <use href="./spritemap.svg#icon-arrow" />
@@ -279,124 +279,202 @@
               </button>
             </div>
             <div class="slider">
-              <div class="slider__content">
-                <div class="projectItem">
-                  <div class="projectItem__photo">
-                    <img alt="Golf Views, Jumeirah Lakes Towers" src="../img/projects.jpg"
-                      srcSet="../img/projects-2x.jpg 2x">
-                  </div>
-                  <div class="projectItem__description">
-                    <div class="projectItem__geo">
-                      <svg class="projectItem__geoIcon">
-                        <use href="./spritemap.svg#icon-geo-icon" />
-                      </svg>
-                      <p class="projectItem__geoText">Golf Views, Jumeirah Lakes Towers</p>
+              <div class="slider__content js-project-slider">
+                <div class="swiper-wrapper">
+                  <div class="projectItem swiper-slide">
+                    <div class="projectItem__photo">
+                      <img alt="Golf Views, Jumeirah Lakes Towers" src="../img/projects.jpg"
+                        srcSet="../img/projects-2x.jpg 2x">
                     </div>
-                    <p class="projectItem__title">1-BEDROOM APARTMENTS</p>
-                    <div class="projectItem__data">
-                      <div class="projectItem__cell">
-                        <p class="projectItem__dataTitle">Rooms</p><span class="projectItem__dataNum">2</span>
-                      </div>
-                      <div class="projectItem__cell">
-                        <p class="projectItem__dataTitle">Area</p><span class="projectItem__dataNum">150 m2</span>
-                      </div>
-                    </div>
-                    <div class="projectItem__sale">
-                      <p class="projectItem__price">358 920</p>
-                      <div class="projectItem__market">
-                        <svg class="projectItem__marketIcon">
-                          <use href="./spritemap.svg#icon-lightning-icon" />
+                    <div class="projectItem__description">
+                      <div class="projectItem__geo">
+                        <svg class="projectItem__geoIcon">
+                          <use href="./spritemap.svg#icon-geo-icon" />
                         </svg>
-                        <p class="projectItem__marketText">Below market by 7%</p>
+                        <p class="projectItem__geoText">Golf Views, Jumeirah Lakes Towers</p>
                       </div>
-                    </div>
-
-                  </div>
-                  <div class="moreButton">
-                    <p class="moreButton__text">More info</p>
-                    <div class="moreButton__line"></div>
-                    <button class="moreButton__button"></button>
-                  </div>
-                </div>
-                <div class="projectItem">
-                  <div class="projectItem__photo">
-                    <img alt="Golf Views, Jumeirah Lakes Towers" src="../img/projects-2.jpg"
-                      srcSet="../img/projects-2-2x.jpg 2x">
-                  </div>
-                  <div class="projectItem__description">
-                    <div class="projectItem__geo">
-                      <svg class="projectItem__geoIcon">
-                        <use href="./spritemap.svg#icon-geo-icon" />
-                      </svg>
-                      <p class="projectItem__geoText">Golf Views, Jumeirah Lakes Towers</p>
-                    </div>
-                    <p class="projectItem__title">2-BEDROOM APARTMENTS</p>
-                    <div class="projectItem__data">
-                      <div class="projectItem__cell">
-                        <p class="projectItem__dataTitle">Rooms</p><span class="projectItem__dataNum">2</span>
-                      </div>
-                      <div class="projectItem__cell">
-                        <p class="projectItem__dataTitle">Area</p><span class="projectItem__dataNum">150 m2</span>
-                      </div>
-                    </div>
-                    <div class="projectItem__sale">
-                      <p class="projectItem__price">358 920</p>
-                      <div class="projectItem__market">
-                        <svg class="projectItem__marketIcon">
-                          <use href="./spritemap.svg#icon-lightning-icon" />
-                        </svg>
-                        <p class="projectItem__marketText">Below market by 9%</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="moreButton">
-                    <p class="moreButton__text">More info</p>
-                    <div class="moreButton__line"></div>
-                    <button class="moreButton__button"></button>
-                  </div>
-                </div>
-                <div class="projectItem">
-                  <div class="projectItem__photo">
-                    <img alt="Golf Views, Jumeirah Lakes Towers" src="../img/projects-3.jpg"
-                      srcSet="../img/projects-3-2x.jpg 2x">
-                  </div>
-                  <div class="projectItem__description">
-                    <div class="projectItem__geo">
-                      <svg class="projectItem__geoIcon">
-                        <use href="./spritemap.svg#icon-geo-icon" />
-                      </svg>
-                      <p class="projectItem__geoText">Golf Views, Jumeirah Lakes Towers</p>
-                    </div>
-                    <p class="projectItem__title">3-BEDROOM APARTMENTS</p>
-                    <div class="projectItem__data">
-                      <div class="projectItem__cell">
-                        <p class="projectItem__dataTitle">Rooms</p><span class="projectItem__dataNum">2</span>
-                      </div>
-                      <div>
+                      <p class="projectItem__title">1-BEDROOM APARTMENTS</p>
+                      <div class="projectItem__data">
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Rooms</p><span class="projectItem__dataNum">2</span>
+                        </div>
                         <div class="projectItem__cell">
                           <p class="projectItem__dataTitle">Area</p><span class="projectItem__dataNum">150 m2</span>
                         </div>
                       </div>
+                      <div class="projectItem__sale">
+                        <p class="projectItem__price">358 920</p>
+                        <div class="projectItem__market">
+                          <svg class="projectItem__marketIcon">
+                            <use href="./spritemap.svg#icon-lightning-icon" />
+                          </svg>
+                          <p class="projectItem__marketText">Below market by 7%</p>
+                        </div>
+                      </div>
+
                     </div>
-                    <div class="projectItem__sale">
-                      <p class="projectItem__price">358 920</p>
-                      <div class="projectItem__market">
-                        <svg class="projectItem__marketIcon">
-                          <use href="./spritemap.svg#icon-lightning-icon" />
+                    <div class="moreButton">
+                      <p class="moreButton__text">More info</p>
+                      <div class="moreButton__line"></div>
+                      <button class="moreButton__button"></button>
+                    </div>
+                  </div>
+                  <div class="projectItem swiper-slide">
+                    <div class="projectItem__photo">
+                      <img alt="Golf Views, Jumeirah Lakes Towers" src="../img/projects-2.jpg"
+                        srcSet="../img/projects-2-2x.jpg 2x">
+                    </div>
+                    <div class="projectItem__description">
+                      <div class="projectItem__geo">
+                        <svg class="projectItem__geoIcon">
+                          <use href="./spritemap.svg#icon-geo-icon" />
                         </svg>
-                        <p class="projectItem__marketText">Below market by 5%</p>
+                        <p class="projectItem__geoText">Golf Views, Jumeirah Lakes Towers</p>
+                      </div>
+                      <p class="projectItem__title">2-BEDROOM APARTMENTS</p>
+                      <div class="projectItem__data">
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Rooms</p><span class="projectItem__dataNum">2</span>
+                        </div>
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Area</p><span class="projectItem__dataNum">150 m2</span>
+                        </div>
+                      </div>
+                      <div class="projectItem__sale">
+                        <p class="projectItem__price">358 920</p>
+                        <div class="projectItem__market">
+                          <svg class="projectItem__marketIcon">
+                            <use href="./spritemap.svg#icon-lightning-icon" />
+                          </svg>
+                          <p class="projectItem__marketText">Below market by 9%</p>
+                        </div>
                       </div>
                     </div>
+                    <div class="moreButton">
+                      <p class="moreButton__text">More info</p>
+                      <div class="moreButton__line"></div>
+                      <button class="moreButton__button"></button>
+                    </div>
                   </div>
-                  <div class="moreButton">
-                    <p class="moreButton__text">More info</p>
-                    <div class="moreButton__line"></div>
-                    <button class="moreButton__button"></button>
+                  <div class="projectItem swiper-slide">
+                    <div class="projectItem__photo">
+                      <img alt="Golf Views, Jumeirah Lakes Towers" src="../img/projects-3.jpg"
+                        srcSet="../img/projects-3-2x.jpg 2x">
+                    </div>
+                    <div class="projectItem__description">
+                      <div class="projectItem__geo">
+                        <svg class="projectItem__geoIcon">
+                          <use href="./spritemap.svg#icon-geo-icon" />
+                        </svg>
+                        <p class="projectItem__geoText">Golf Views, Jumeirah Lakes Towers</p>
+                      </div>
+                      <p class="projectItem__title">3-BEDROOM APARTMENTS</p>
+                      <div class="projectItem__data">
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Rooms</p><span class="projectItem__dataNum">2</span>
+                        </div>
+                        <div>
+                          <div class="projectItem__cell">
+                            <p class="projectItem__dataTitle">Area</p><span class="projectItem__dataNum">150 m2</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="projectItem__sale">
+                        <p class="projectItem__price">358 920</p>
+                        <div class="projectItem__market">
+                          <svg class="projectItem__marketIcon">
+                            <use href="./spritemap.svg#icon-lightning-icon" />
+                          </svg>
+                          <p class="projectItem__marketText">Below market by 5%</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="moreButton">
+                      <p class="moreButton__text">More info</p>
+                      <div class="moreButton__line"></div>
+                      <button class="moreButton__button"></button>
+                    </div>
                   </div>
-                </div>
+                  <div class="projectItem swiper-slide">
+                    <div class="projectItem__photo">
+                      <img alt="Golf Views, Jumeirah Lakes Towers" src="../img/projects-2.jpg"
+                        srcSet="../img/projects-2-2x.jpg 2x">
+                    </div>
+                    <div class="projectItem__description">
+                      <div class="projectItem__geo">
+                        <svg class="projectItem__geoIcon">
+                          <use href="./spritemap.svg#icon-geo-icon" />
+                        </svg>
+                        <p class="projectItem__geoText">Golf Views, Jumeirah Lakes Towers</p>
+                      </div>
+                      <p class="projectItem__title">2-BEDROOM APARTMENTS</p>
+                      <div class="projectItem__data">
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Rooms</p><span class="projectItem__dataNum">2</span>
+                        </div>
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Area</p><span class="projectItem__dataNum">150 m2</span>
+                        </div>
+                      </div>
+                      <div class="projectItem__sale">
+                        <p class="projectItem__price">358 920</p>
+                        <div class="projectItem__market">
+                          <svg class="projectItem__marketIcon">
+                            <use href="./spritemap.svg#icon-lightning-icon" />
+                          </svg>
+                          <p class="projectItem__marketText">Below market by 9%</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="moreButton">
+                      <p class="moreButton__text">More info</p>
+                      <div class="moreButton__line"></div>
+                      <button class="moreButton__button"></button>
+                    </div>
+                  </div>
+                  <div class="projectItem swiper-slide">
+                    <div class="projectItem__photo">
+                      <img alt="Golf Views, Jumeirah Lakes Towers" src="../img/projects-3.jpg"
+                        srcSet="../img/projects-3-2x.jpg 2x">
+                    </div>
+                    <div class="projectItem__description">
+                      <div class="projectItem__geo">
+                        <svg class="projectItem__geoIcon">
+                          <use href="./spritemap.svg#icon-geo-icon" />
+                        </svg>
+                        <p class="projectItem__geoText">Golf Views, Jumeirah Lakes Towers</p>
+                      </div>
+                      <p class="projectItem__title">3-BEDROOM APARTMENTS</p>
+                      <div class="projectItem__data">
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Rooms</p><span class="projectItem__dataNum">2</span>
+                        </div>
+                        <div>
+                          <div class="projectItem__cell">
+                            <p class="projectItem__dataTitle">Area</p><span class="projectItem__dataNum">150 m2</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="projectItem__sale">
+                        <p class="projectItem__price">358 920</p>
+                        <div class="projectItem__market">
+                          <svg class="projectItem__marketIcon">
+                            <use href="./spritemap.svg#icon-lightning-icon" />
+                          </svg>
+                          <p class="projectItem__marketText">Below market by 5%</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="moreButton">
+                      <p class="moreButton__text">More info</p>
+                      <div class="moreButton__line"></div>
+                      <button class="moreButton__button"></button>
+                    </div>
+                  </div>
+               </div>
               </div>
             </div>
-            <div class="projects__sliderButton slider__button slider__button--right">
+            <div class="projects__sliderButton slider__button slider__button--right js-project-slider-next">
               <button class="arrowButton">
                 <svg class="arrowButton__icon arrowButton__icon">
                   <use href="./spritemap.svg#icon-arrow" />
