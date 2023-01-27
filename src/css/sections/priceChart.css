@@ -162,3 +162,15 @@
   color: var(--sandal);
   opacity: 0.5;
 }
+
+@media screen and (max-width: 1440px) {
+
+}
+
+@media screen and (max-width: 960px) {
+  
+}
+
+@media screen and (max-width: 480px) {
+  
+}
