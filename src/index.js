@@ -11,6 +11,7 @@ import { initVideo } from './js/video';
 import { initReviews } from './js/reviews';
 import { initOurServices } from './js/ourServices';
 import { initFaq } from './js/faq';
+import { initExpertSlider } from './js/expertSlider';
 
 document.addEventListener("DOMContentLoaded", function () {
     customSelect()
@@ -24,4 +25,5 @@ document.addEventListener("DOMContentLoaded", function () {
     initReviews()
     initOurServices()
     initFaq()
+    initExpertSlider()
 });
