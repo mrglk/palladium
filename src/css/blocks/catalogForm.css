@@ -92,11 +92,16 @@
   padding: 33px 30px;
   height: 85px;
   background-color: #f5f5f5;
-  border: none;
   border-radius: 3px;
   font-weight: 500;
   font-size: 18px;
   color: var(--brown);
+
+  border: 1px solid #f5f5f5;
+}
+
+.catalogForm__input[data-valid="false"] {
+  border-color: var(--red)
 }
 
 .catalogForm__input::placeholder {

@@ -1392,21 +1392,24 @@
         <div class="contacts__form">
           <h2 class="contacts__formTitle">Contact us</h2>
           <div class="contacts__formContent">
-            <div class="contacts__formTextInputs">
-              <input class="contacts__formInput" type="text" name="name" placeholder="Name">
-              <input class="contacts__formInput" type="tel" name="tel" placeholder="Phone number">
-              <input class="contacts__formInput" type="email" name="email" placeholder="E-mail">
-            </div>
-            <div class="contacts__formCheckbox">
-              <div class="checkbox">
-                <input class="checkbox__input" type="checkbox" id="privacy" name="privacy" checked>
-                <label class="checkbox__label" for="privacy">
-                  <p class="checkbox__text">I have read and accepted the <a class="checkbox__link"
-                      href="./index.html">Privacy Policy</a></p>
-                </label>
+            <form action="https://palladiumestate.ae/amo.php?action=amo">
+              <div class="contacts__formTextInputs">
+                <input class="contacts__formInput" data-validation="required" type="text" name="name" placeholder="Name">
+                <input class="contacts__formInput" data-validation="phone" type="tel" name="tel" placeholder="Phone number">
+                <input class="contacts__formInput" data-validation="email" type="email" name="email" placeholder="E-mail">
               </div>
-            </div>
-            <button class="button button--smaller">Send</button>
+              <div class="contacts__formCheckbox">
+                <div class="checkbox">
+                  <input class="checkbox__input" data-validation="checkbox" type="checkbox" id="privacy" name="privacy" checked>
+                  <label class="checkbox__label" for="privacy">
+                    <p class="checkbox__text">I have read and accepted the <a class="checkbox__link"
+                        href="./index.html">Privacy Policy</a>
+                    </p>
+                  </label>
+                </div>
+              </div>
+              <input type="submit" class="button button--smaller" value="Send" data-success="Sent">
+            </form>
           </div>
         </div>
         <div class="contacts__offices">
@@ -1558,64 +1561,69 @@
           <div class="closeButton"></div>
         </div>
         <div class="catalogForm__inner">
-
-          <div class="catalogForm__radioContainer">
-            <div class="catalogForm__radioButtonWrapper">
-              <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioTel" checked>
-              <label class="catalogForm__radioLabel" for="radioTel">
-                <svg class="catalogForm__radioIcon">
-                  <use href="./spritemap.svg#icon-catalog-tel" />
-                </svg>
-                <p class="catalogForm__radioText">Call</p>
-              </label>
+          <form action="#">
+            <div class="catalogForm__radioContainer">
+              <div class="catalogForm__radioButtonWrapper">
+                <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioTel" checked>
+                <label class="catalogForm__radioLabel" for="radioTel">
+                  <svg class="catalogForm__radioIcon">
+                    <use href="./spritemap.svg#icon-catalog-tel" />
+                  </svg>
+                  <p class="catalogForm__radioText">Call</p>
+                </label>
+              </div>
+              <div class="catalogForm__radioButtonWrapper">
+                <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioWatsapp">
+                <label class="catalogForm__radioLabel" for="radioWatsapp">
+                  <svg class="catalogForm__radioIcon">
+                    <use href="./spritemap.svg#icon-catalog-watsapp" />
+                  </svg>
+                  <p class="catalogForm__radioText">Watsapp</p>
+                </label>
+              </div>
+              <div class="catalogForm__radioButtonWrapper">
+                <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioViber">
+                <label class="catalogForm__radioLabel" for="radioViber">
+                  <svg class="catalogForm__radioIcon">
+                    <use href="./spritemap.svg#icon-catalog-Viber" />
+                  </svg>
+                  <p class="catalogForm__radioText">Viber</p>
+                </label>
+              </div>
+              <div class="catalogForm__radioButtonWrapper">
+                <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioTelegram">
+                <label class="catalogForm__radioLabel" for="radioTelegram">
+                  <svg class="catalogForm__radioIcon">
+                    <use href="./spritemap.svg#icon-catalog-telegram" />
+                  </svg>
+                  <p class="catalogForm__radioText">Telegram</p>
+                </label>
+              </div>
             </div>
-            <div class="catalogForm__radioButtonWrapper">
-              <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioWatsapp">
-              <label class="catalogForm__radioLabel" for="radioWatsapp">
-                <svg class="catalogForm__radioIcon">
-                  <use href="./spritemap.svg#icon-catalog-watsapp" />
-                </svg>
-                <p class="catalogForm__radioText">Watsapp</p>
-              </label>
-            </div>
-            <div class="catalogForm__radioButtonWrapper">
-              <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioViber">
-              <label class="catalogForm__radioLabel" for="radioViber">
-                <svg class="catalogForm__radioIcon">
-                  <use href="./spritemap.svg#icon-catalog-Viber" />
-                </svg>
-                <p class="catalogForm__radioText">Viber</p>
-              </label>
-            </div>
-            <div class="catalogForm__radioButtonWrapper">
-              <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioTelegram">
-              <label class="catalogForm__radioLabel" for="radioTelegram">
-                <svg class="catalogForm__radioIcon">
-                  <use href="./spritemap.svg#icon-catalog-telegram" />
-                </svg>
-                <p class="catalogForm__radioText">Telegram</p>
-              </label>
-            </div>
-          </div>
 
-          <div class="catalogForm__textInputs">
-            <input class="catalogForm__input" type="text" name="name" placeholder="Name">
-            <input class="catalogForm__input" type="tel" name="tel" placeholder="Phone">
-          </div>
-
-          <div class="catalogForm__checkbox">
-            <div class="checkbox">
-              <input class="checkbox__input" type="checkbox" id="privacyCatalog" name="privacyCatalog" checked>
-              <label class="checkbox__label checkbox__label--righter" for="privacyCatalog">
-                <p class="checkbox__text">I have read and accepted the <a class="checkbox__link"
-                    href="./index.html">Privacy Policy</a></p>
-              </label>
+            <div class="catalogForm__textInputs">
+              <input class="catalogForm__input" data-validation="required" type="text" name="name" placeholder="Name">
+              <input class="catalogForm__input" data-validation="phone" type="tel" name="tel" placeholder="Phone">
             </div>
-          </div>
 
-          <button class="button button--smaller button--thinner js-open-modal" data-modal="catalogForm">Get a
-            catalog</button>
+            <div class="catalogForm__checkbox">
+              <div class="checkbox">
+                <input class="checkbox__input" data-validation="checkbox" type="checkbox" id="privacyCatalog" name="privacyCatalog" checked>
+                <label class="checkbox__label checkbox__label--righter" for="privacyCatalog">
+                  <p class="checkbox__text">I have read and accepted the <a class="checkbox__link"
+                      href="./index.html">Privacy Policy</a></p>
+                </label>
+              </div>
+            </div>
 
+            <input
+              type="submit"
+              class="button button--smaller button--thinner"
+              data-modal="catalogForm"
+              value="Get a catalog"
+              data-success="Sent"
+            >
+          </form>
         </div>
       </div>
     </div>

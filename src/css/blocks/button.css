@@ -72,6 +72,11 @@
   fill: var(--white);
 }
 
+.disabled[disabled] {
+  opacity: .5;
+  pointer-events: none;
+}
+
 @media screen and (max-width: 1440px) {
   .button {
     padding-top: 25px;
