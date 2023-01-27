@@ -10,6 +10,12 @@
   border-bottom: 1px solid rgba(230, 230, 230, 0.4);
 }
 
+.header__row {
+  max-width: calc(50vw + 960px);
+  margin-left: auto;
+  padding-right: 0;
+}
+
 .header__inner {
   display: flex;
   justify-content: space-between;
