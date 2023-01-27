@@ -21,6 +21,15 @@
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
-/* 
-width: 25.38px;
-height: 2.54px; */
+@media screen and (max-width: 960px) {
+    .closeButton {
+        width: 14px;
+        height: 14px;
+    }
+
+    .closeButton::after, .closeButton::before  {
+    width: 17.76px;
+    height: 1.77px;
+}
+
+}

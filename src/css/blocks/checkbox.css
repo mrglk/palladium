@@ -17,6 +17,10 @@
   margin-left: 25px;
 }
 
+.checkbox__label--righter {
+  margin-left: 26px;
+}
+
 .checkbox__input + label::before {
   content: "";
   box-sizing: border-box;
