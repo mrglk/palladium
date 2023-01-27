@@ -24,6 +24,7 @@
 .faq__itemHeader {
   position: relative;
   padding: 40px 0;
+  cursor: pointer;
 }
 
 .faq__itemHeader::after,

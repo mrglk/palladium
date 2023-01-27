@@ -9,6 +9,8 @@
     visibility: hidden;
     pointer-events: none;
     z-index: 3;
+
+    cursor: pointer;
   
     transition: opacity 400ms ease, visibility 400ms ease;
     background: rgba(0, 0, 0, 0.8);
