@@ -16,3 +16,12 @@
 .footer__text--darker {
   color: var(--black);
 }
+
+@media screen and (max-width: 960px) {
+  .footer {
+    height: 53px;
+  }
+  .footer__text {
+    font-size: 12px;
+  }
+}
