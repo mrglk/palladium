@@ -2,30 +2,31 @@ import Swiper from "swiper/bundle";
 
 let swiper
 
-export function initOfferSlider() {
+export function initOurServices() {
   breakpoint.addListener(breakpointChecker);
   breakpointChecker();
 }
 
 function initOfferSwiper() {
-  swiper = new Swiper('.js-offer-slider', {
+  swiper = new Swiper('.js-services-slider', {
     slidesPerView: 'auto',
-    spaceBetween: 0,
+    spaceBetween: 15,
     freeMode: true,
     loop: false,
     pagination: {
-      el: ".js-offer-slider-bar",
-      type: "progressbar",
+      el: '.js-services-slider-bar',
+      type: 'progressbar',
     },
   });
 }
 
-const breakpoint = window.matchMedia("(max-width: 980px)");
+const breakpoint = window.matchMedia('(max-width: 980px)');
 
-const breakpointChecker = function () {
+const breakpointChecker = function() {
   if (breakpoint.matches === true) {
     return initOfferSwiper();
   } else {
     swiper && swiper.destroy()
   }
 };
+
