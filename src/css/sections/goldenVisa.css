@@ -155,6 +155,7 @@
 
   .goldenVisa__image {
     width: 47%;
+    align-items: flex-start;
   }
 
   .goldenVisa__image img {

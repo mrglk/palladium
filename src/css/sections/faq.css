@@ -64,12 +64,9 @@
   transition: height 300ms ease;
 }
 
-.faq__itemCAnswer {
-  margin-bottom: 40px;
-}
-
 .faq__itemAnswer {
   padding-top: 30px;
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 1440px) {
