@@ -13,11 +13,12 @@
 
 .reviews__container {
   display: flex;
-  align-items: stretch;
+  overflow: scroll;
+  width: 100%;
 }
 
 .reviews__item {
-  max-width: 450px;
+  min-width: 450px;
   width: 100%;
 }
 
@@ -83,4 +84,90 @@
 
 .reviews__position {
   opacity: 0.5;
+}
+
+
+@media screen and (max-width: 1440px) {
+  .reviews {
+    margin-bottom: 150px;
+  }
+  
+  .reviews__header {
+    margin-bottom: 60px;
+  }
+  
+  .reviews__text {
+    font-size: 22px;
+    margin-bottom: 32px;
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+  .reviews {
+    margin-bottom: 100px;
+  }
+  
+  .reviews__header {
+    margin-bottom: 45px;
+  }
+
+  .reviews__item {
+    min-width: 276px;
+  }
+  
+  .reviews__item:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+.reviews__message {
+    padding: 25px 22px 30px 25px;
+    margin-bottom: 40px;
+  } 
+  
+  .reviews__message::after {
+    left: 29px;
+    bottom: -22px;
+  }
+  
+  .reviews__icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .reviews__text {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .reviews__date {
+    font-size: 12px;
+  } 
+  
+
+.reviews__img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  } 
+  
+  .reviews__info {
+    font-size: 14px;
+    color: var(--black);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .reviews {
+    margin-bottom: 80px;
+  }
+  
+  .reviews__header {
+    margin-bottom: 35px;
+  }
+  
+  .reviews__message::after {
+    bottom: -20px;
+  }
 }

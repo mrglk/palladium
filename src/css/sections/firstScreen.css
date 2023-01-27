@@ -7,6 +7,10 @@
   margin-bottom: 200px;
 }
 
+.firstScreen__input select {
+  display: none;
+}
+
 .firstScreen__inner {
   display: flex;
   flex-direction: column;
