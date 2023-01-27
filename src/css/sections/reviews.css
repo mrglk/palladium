@@ -13,12 +13,23 @@
 
 .reviews__container {
   display: flex;
-  overflow: scroll;
   width: 100%;
+  overflow: hidden;
+}
+
+.reviews__containerProgress {
+  --swiper-pagination-color: var(--sandal);
+
+  display: none;
+
+  position: relative;
+  height: 2px;
+  width: 100%;
+  margin-top: 50px;
 }
 
 .reviews__item {
-  min-width: 450px;
+  max-width: 450px;
   width: 100%;
 }
 
@@ -113,9 +124,13 @@
   }
 
   .reviews__item {
-    min-width: 276px;
+    max-width: 276px;
   }
-  
+
+  .reviews__containerProgress {
+    display: block;
+  }
+
   .reviews__item:not(:last-child) {
     margin-right: 20px;
   }

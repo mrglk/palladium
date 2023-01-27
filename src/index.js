@@ -8,6 +8,7 @@ import { initChart } from './js/chart';
 import { initProjectsSlider } from './js/projectsSlider';
 import { initOfferSlider } from './js/offersSlider';
 import { initVideo } from './js/video';
+import { initReviews } from './js/reviews';
 
 document.addEventListener("DOMContentLoaded", function () {
     customSelect()
@@ -18,4 +19,5 @@ document.addEventListener("DOMContentLoaded", function () {
     initProjectsSlider()
     initOfferSlider()
     initVideo()
+    initReviews()
 });
