@@ -1,3 +1,6 @@
+.priceChart__mobileVisible {
+  display: none;
+}
 .priceChart {
   padding-bottom: 200px;
 }
@@ -15,6 +18,8 @@
 .priceChart__content {
   display: flex;
   justify-content: space-between;
+  min-height: 800px;
+  align-items: flex-end;
 }
 
 .priceChart__left {
@@ -24,7 +29,7 @@
 
 .priceChart__rangeAndCost {
   position: absolute;
-  top: 106px;
+  top: 0;
   left: 0;
 }
 
@@ -117,7 +122,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -70px;
+  padding-bottom: 379px;
 }
 
 .priceChart__percentSubtitle {
@@ -137,6 +142,9 @@
   border-radius: 46px;
   padding: 15px 19px;
   width: 194px;
+}
+
+.priceChart__percentItem:not(:last-child) {
   margin-bottom: 80px;
 }
 
@@ -163,14 +171,197 @@
   opacity: 0.5;
 }
 
+@media screen and (max-width: 1650px) {
+  .priceChart__content {
+    min-height: 700px;
+  }
+
+  .priceChart__right {
+    padding-bottom: 263px;
+  }
+}
+
 @media screen and (max-width: 1440px) {
+  .priceChart__content {
+    min-height: 580px;
+  }
 
+  .priceChart__left {
+    margin-right: 20px;
+  }
+
+  .priceChart__right {
+    padding-bottom: 203px;
+  }
+
+  .priceChart__rangeAndCost {
+    top: -70px;
+  }
 }
 
-@media screen and (max-width: 960px) {
-  
+@media screen and (max-width: 1270px) {
+  .priceChart__rangeAndCost {
+    top: -150px;
+  }
+
+  .priceChart__right {
+    padding-bottom: 110px;
+  }
 }
 
-@media screen and (max-width: 480px) {
-  
+@media screen and (max-width: 1080px) {
+  .priceChart__content {
+    min-height: 489px;
+  }
+
+  .priceChart__rangeAndCost {
+    top: -113px;
+  }
+  .priceChart__right {
+    position: relative;
+    padding-bottom: 200px;
+  }
+
+  .priceChart__percentSubtitle {
+    position: absolute;
+    font-size: 14px;
+    top: -64px;
+    width: 164px;
+    right: 0;
+  }
+  .priceChart__percentItem {
+    padding: 9px 12px;
+    width: 85px;
+  }
+  .priceChart__percentCountry {
+    display: none;
+  }
+
+  .priceChart__countryIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .priceChart__percentNum {
+    font-size: 14px;
+  }
+
+  .priceChart__percentItem:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .priceChart__subtitle {
+    font-size: 16px;
+  }
+  .priceChart__costCountry {
+    font-size: 14px;
+  }
+  .priceChart__costPrise {
+    font-size: 20px;
+  }
+
+  .priceChart__range {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .priceChart__content {
+    min-height: 442px;
+  }
+  .priceChart__rangeAndCost {
+    top: -152px;
+  }
+
+  .priceChart__right {
+    padding-bottom: 140px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .priceChart__content {
+    min-height: 398px;
+  }
+  .priceChart__rangeAndCost {
+    top: -147px;
+  }
+
+  .priceChart__right {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .priceChart__rangeAndCost {
+    top: -189px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .priceChart__mobileVisible {
+    display: block;
+  }
+
+  .priceChart__mobileCountryIcons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+
+  .priceChart__mobileIcon {
+    width: 21px;
+    height: 21px;
+    border-radius: 233px;
+    margin-bottom: 11px;
+  }
+
+  .priceChart__chartImage {
+    max-width: 1538px;
+    width: 92%;
+  }
+
+  .priceChart {
+    padding-bottom: 80px;
+  }
+
+  .priceChart__header {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .priceChart__content {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .priceChart__range {
+    margin-bottom: 40px;
+  }
+
+  .priceChart__rangeAndCost {
+    top: 0;
+  }
+
+  .priceChart__chartImageWrapper {
+    margin-top: 250px;
+  }
+
+  .priceChart__right {
+    padding: 0;
+    width: 100%;
+  }
+
+  .priceChart__percentSubtitle {
+    margin-top: 35px;
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .priceChart__percentGroup {
+    display: flex;
+  }
+
+  .priceChart__percentItem:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 23px;
+  }
 }
