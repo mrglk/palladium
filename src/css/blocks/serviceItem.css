@@ -52,7 +52,7 @@
 
 @media screen and (max-width: 960px) {
   .serviceItem {
-    min-width: 335px;
+    max-width: 335px;
   }
 
   .serviceItem__image {

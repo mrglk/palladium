@@ -9,6 +9,7 @@ import { initProjectsSlider } from './js/projectsSlider';
 import { initOfferSlider } from './js/offersSlider';
 import { initVideo } from './js/video';
 import { initReviews } from './js/reviews';
+import { initOurServices } from './js/ourServices';
 
 document.addEventListener("DOMContentLoaded", function () {
     customSelect()
@@ -20,4 +21,5 @@ document.addEventListener("DOMContentLoaded", function () {
     initOfferSlider()
     initVideo()
     initReviews()
+    initOurServices()
 });
