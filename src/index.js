@@ -7,6 +7,7 @@ import { initBurgerMenu } from './js/burgerMenu';
 import { initChart } from './js/chart';
 import { initProjectsSlider } from './js/projectsSlider';
 import { initOfferSlider } from './js/offersSlider';
+import { initVideo } from './js/video';
 
 document.addEventListener("DOMContentLoaded", function () {
     customSelect()
@@ -16,4 +17,5 @@ document.addEventListener("DOMContentLoaded", function () {
     initChart()
     initProjectsSlider()
     initOfferSlider()
+    initVideo()
 });
