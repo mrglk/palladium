@@ -84,7 +84,7 @@
 
 @media screen and (max-width: 960px) {
   .offerItem {
-    min-width: 335px;
+    max-width: 335px;
     padding: 35px 24px 35px 25px;
     height: 380px;
     margin-right: 15px;
