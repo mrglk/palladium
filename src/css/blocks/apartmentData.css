@@ -342,15 +342,17 @@
   .apartmentData__header {
     max-width: 90%;
     margin-bottom: 30px;
+    font-size: 20px;
   }
 
   .apartmentData__address {
-    max-width: 95%;
+    max-width: 100%;
     margin-bottom: 15px;
   }
 
   .apartmentData__description {
     margin-bottom: 25px;
+    max-width: 100%;
   }
 
   .apartmentData__border {

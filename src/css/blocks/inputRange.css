@@ -21,7 +21,7 @@
 .inputRange__price {
   font-weight: 500;
   font-size: 22px;
-  color: var(--white);
+  color: var(--white) !important;
 }
 
 .inputRange__input {
