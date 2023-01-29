@@ -107,3 +107,10 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 415px) {
+  .projects__filter {
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
