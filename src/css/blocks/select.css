@@ -62,8 +62,8 @@
 }
 
 .select__option {
-  padding: 15px 30px;
-
+  font-size: 18px;
+  padding: 12px 32px;
   transition: background 100ms ease;
 }
 
