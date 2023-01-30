@@ -109,7 +109,6 @@
   cursor: pointer;
 }
 
-
 .header__langButtonText {
   position: relative;
 }
@@ -135,13 +134,31 @@
 }
 
 .header__link {
+  position: relative;
   font-size: 20px;
   color: var(--white);
   text-decoration: none;
 }
 
+.header__link::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  display: block;
+  transition: all 0.4s ease 0s;
+  width: 0px;
+  height: 1px;
+  background-color: currentcolor;
+}
+
+.header__link:hover::after {
+  content: "";
+  width: 100%;
+  left: 0px;
+}
+
 .header__link:not(:last-child) {
-  padding-right: 75px;
+  margin-right: 75px;
 }
 
 .header__menuButton {
@@ -259,7 +276,7 @@
   }
 
   .header__link:not(:last-child) {
-    padding-right: 38px;
+    margin-right: 38px;
   }
 
   .header__menuButton {
