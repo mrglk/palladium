@@ -14,27 +14,27 @@
 }
 
 .offerItem--triangle {
-  background-image: url("../../img/bg-triangle.png");
+  background-image: url("/img/bg-triangle.png");
 }
 
 .offerItem--wave {
-  background-image: url("../../img/bg-wave.png");
+  background-image: url("/img/bg-wave.png");
 }
 
 .offerItem--circle {
-  background-image: url("../../img/bg-circle.png");
+  background-image: url("/img/bg-circle.png");
 }
 
 .offerItem--web {
-  background-image: url("../../img/bg-web.png");
+  background-image: url("/img/bg-web.png");
 }
 
 .offerItem--line {
-  background-image: url("../../img/bg-line.png");
+  background-image: url("/img/bg-line.png");
 }
 
 .offerItem--cross {
-  background-image: url("../../img/bg-cross.png");
+  background-image: url("/img/bg-cross.png");
 }
 
 .offerItem__about {
@@ -135,11 +135,11 @@
   }
 
   .offerItem--triangle {
-    background-image: url("../../img/bg-triangle-tablet.png");
+    background-image: url("/img/bg-triangle-tablet.png");
   }
   
   .offerItem--wave {
-    background-image: url("../../img/bg-wave-tablet.png");
+    background-image: url("/img/bg-wave-tablet.png");
   }
   
 }

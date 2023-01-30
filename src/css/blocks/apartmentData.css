@@ -121,7 +121,7 @@
 }
 
 .apartmentData__border {
-  background-image: url("../../img/border-dashed.png");
+  background-image: url("/img/border-dashed.png");
   background-repeat: repeat-x;
   background-position: center bottom;
   margin: 0 6px;
