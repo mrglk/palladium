@@ -1,11 +1,11 @@
 import Swiper from "swiper/bundle";
 
-const quotes = document.querySelectorAll('.js-experts-quotes')
+const nextListMobile = document.querySelectorAll('.js-experts-next-mobile')
 const nextList = document.querySelectorAll('.js-experts-next')
-const nextExpertButton = document.querySelector('.js-next-expert-button')
+const nextExpertButton = [...document.querySelectorAll('.js-next-expert-button')]
 
 export function initExpertSlider() {
-  if (!quotes || !nextList || !nextExpertButton) {
+  if (!nextList || !nextExpertButton) {
     return
   }
 
@@ -21,16 +21,19 @@ export function initExpertSlider() {
     }
   })
 
-  nextExpertButton.addEventListener('click', function() {
-    swiper.slideTo(swiper.realIndex + 2)
+  nextExpertButton.forEach((button) => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault()
+      swiper.slideTo(swiper.realIndex + 2)
+    })
   })
 }
 
 const slideChange = (swiper) => {
   const currentIndex = swiper.realIndex
 
-  for (let i = 0; i < quotes.length; i++) {
-    quotes[i].classList.toggle('experts__quote--active', i === currentIndex)
+  for (let i = 0; i < nextList.length; i++) {
+    nextListMobile[i].classList.toggle('experts__view--active', i === currentIndex)
     nextList[i].classList.toggle('experts__view--active', i === currentIndex)
   }
 }
