@@ -1,4 +1,5 @@
 import { Body } from './classes/Body';
+import { isWindowSizeSmallerThen } from './utils/helpers';
 
 export function initBurgerMenu() {
   const burgerMenuButton = document.querySelector('.js-burger-menu-button');
@@ -18,5 +19,18 @@ export function initBurgerMenu() {
 
     Body.toggleBody()
     Body.toggleOverlay()
+  })
+
+  burgerMenu.addEventListener('click', function(e) {
+    if (!e.target.closest('a')) {
+      return
+    }
+
+    burgerMenu.classList.remove('burgerMenu--active')
+    burgerMenuButton.classList.remove('header__menuButton--active')
+    langButton.classList.remove('header__langButtonWrapper--openedMenu')
+
+    Body.releaseBody()
+    Body.releaseOverlay()
   })
 }

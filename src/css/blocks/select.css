@@ -10,11 +10,16 @@
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(9px);
 
+  transition: background-filter 200ms ease;
+
   cursor: pointer;
 }
 
 .select--active {
   border-radius: 4px 4px 0 0 ;
+  z-index: 10;
+
+  backdrop-filter: none;
 }
 
 .select__currentValue {
