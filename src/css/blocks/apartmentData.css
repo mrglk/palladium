@@ -30,6 +30,7 @@
 .apartmentData__photo {
   width: 100%;
   margin-bottom: 42px;
+  overflow: hidden;
 }
 
 .apartmentData__photo img {
@@ -37,22 +38,26 @@
 }
 
 .apartmentData__slider {
+  width: 100%;
   display: flex;
   align-items: center;
-  overflow: scroll;
+  justify-content: flex-start;
 }
 
 .apartmentData__sliderContainer {
   display: flex;
+  justify-content: flex-start;
   flex: 1;
   margin: 0 5px;
+  overflow: hidden;
 }
 
 .apartmentData__sliderPhoto {
   display: flex;
   object-fit: cover;
-  width: 176px;
-  height: 176px;
+  max-width: 176px;
+  max-height: 176px;
+  cursor: pointer;
 }
 
 .apartmentData__sliderPhoto:not(:last-child) {
@@ -60,6 +65,8 @@
 }
 
 .apartmentData__sliderPhoto img {
+  max-width: 176px;
+  max-height: 176px;
   object-fit: cover;
 }
 
