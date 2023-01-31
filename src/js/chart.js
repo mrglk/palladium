@@ -1,62 +1,62 @@
 const chartData = {
   2013: {
     cost: {
-      uae: 1223,
-      turkey: 36347,
-      spain: 142223
+      uae: 2500,
+      turkey: 4000,
+      spain: 5500
     },
     increase: {
-      uae: 12,
-      turkey: 47,
-      spain: 13,
+      uae: 20,
+      turkey: 20,
+      spain: 10,
     },
   },
   2018: {
     cost: {
-      uae: 1223,
-      turkey: 3647,
-      spain: 14223
+      uae: 300,
+      turkey: 5000,
+      spain: 7000
     },
     increase: {
-      uae: 123,
-      turkey: 37,
-      spain: 123,
+      uae: 90,
+      turkey: 40,
+      spain: 40,
     },
   },
   2023: {
     cost: {
-      uae: 1223,
-      turkey: 3347,
-      spain: 14223
+      uae: 4500,
+      turkey: 6000,
+      spain: 9000
     },
     increase: {
-      uae: 123,
-      turkey: 47,
-      spain: 223,
+      uae: 120,
+      turkey: 50,
+      spain: 50,
     },
   },
   2028: {
     cost: {
-      uae: 1223,
-      turkey: 3347,
-      spain: 1423
+      uae: 5500,
+      turkey: 7000,
+      spain: 11000
     },
     increase: {
-      uae: 123,
-      turkey: 347,
-      spain: 123,
+      uae: 160,
+      turkey: 80,
+      spain: 60,
     },
   },
   2033: {
     cost: {
-      uae: 1223,
-      turkey: 36347,
-      spain: 142223
+      uae: 6000,
+      turkey: 9000,
+      spain: 14000
     },
     increase: {
-      uae: 123,
-      turkey: 347,
-      spain: 123,
+      uae: 190,
+      turkey: 90,
+      spain: 70,
     },
   },
 };

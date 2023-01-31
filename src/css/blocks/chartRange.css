@@ -88,7 +88,7 @@
   font-size: 16px;
   font-family: var(--accent-font);
 
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   width: calc(100% + 32px);
