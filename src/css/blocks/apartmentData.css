@@ -1,10 +1,10 @@
 .apartmentData {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--white-cream);
-  overflow-x: hidden;
-  overflow-y: auto;
+  /*overflow-x: hidden;*/
+  /*overflow-y: auto;*/
 }
 
 .apartmentData__inner {
@@ -153,7 +153,7 @@
   margin-bottom: 25px;
 }
 
-.apartmentData__price span {
+.apartmentData__price span:last-child {
   font-weight: 500;
   font-size: 21px;
   color: var(--sandal);
@@ -313,7 +313,7 @@
     font-size: 22px;
   }
 
-  .apartmentData__price span {
+  .apartmentData__price span:last-child {
     font-size: 16px;
     margin-left: 7px;
   }

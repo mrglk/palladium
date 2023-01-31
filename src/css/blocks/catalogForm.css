@@ -64,6 +64,12 @@
   margin-right: 8px;
 }
 
+.catalogForm__radioIcon--telegram {
+  background: var(--sandal);
+  fill:  var(--white);
+  border-radius: 50%;
+}
+
 .catalogForm__radioButton:checked + .catalogForm__radioLabel {
   background-color: var(--sandal);
   border-color: var(--sandal);
@@ -74,6 +80,11 @@
   + .catalogForm__radioLabel
   .catalogForm__radioIcon {
   fill: var(--white);
+}
+
+.catalogForm__radioButton:checked + .catalogForm__radioLabel .catalogForm__radioIcon--telegram {
+  background:  var(--white);
+  fill: var(--sandal);
 }
 
 .catalogForm__textInputs {

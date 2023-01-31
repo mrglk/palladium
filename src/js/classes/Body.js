@@ -43,6 +43,12 @@ export class Body {
     }
   }
 
+  static releaseOverlay() {
+    const overlay = document.querySelector(".js-overlay");
+
+    overlay.classList.remove("overlay--active");
+  }
+
   static isFixed() {
     return document.body.dataset.state === "fixed";
   }

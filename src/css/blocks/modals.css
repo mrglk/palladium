@@ -1,6 +1,6 @@
 .modals {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 
   position: fixed;
@@ -16,6 +16,8 @@
   background: #00000044;
 
   z-index: 10;
+
+  overflow: auto;
 }
 
 .modals--active {
@@ -25,16 +27,23 @@
 }
 
 .modals__item {
-  display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
 
+  display: flex;
   opacity: 0;
-  display: none;
+  pointer-events: none;
   width: 100%;
+
+  transition: opacity 200ms ease;
+}
+
+.modals__item--center {
+  align-self: center;
 }
 
 .modals__item--active {
   opacity: 1;
-  display: flex;
+  pointer-events: all;
 }

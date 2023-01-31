@@ -481,7 +481,7 @@
       <div class="container__row map__inner">
         <div class="map__top map__tabletHidden">
           <h2 class="map__header">Dubai best areas at the glance</h2>
-          <button class="button button--smaller button--thinner js-open-modal" data-modal="catalogForm">Get a
+          <button class="map__button button button--smaller button--thinner js-open-modal" data-modal="catalogForm">Get a
             catalog</button>
           <div class="mapItem" id="map-info">
             <div class="mapItem__inner">
@@ -526,10 +526,12 @@
         <div class="map__wrapper" id="map"></div>
       </div>
     </section>
-    <div class="map__buttonTabletWrapper map__desktopHidden">
-      <button class="map__button button button--smaller button--thinner button--widerOnTablet js-open-modal" data-modal="catalogForm">Get a
-        catalog</button>
-    </div>
+    <section class="container map__buttonTabletWrapper map__desktopHidden">
+      <div class="container__row">
+        <button class="map__button button button--smaller button--thinner button--widerOnTablet js-open-modal" data-modal="catalogForm">Get a
+          catalog</button>
+      </div>
+    </section>
     <section class="container experts" id="experts">
       <div class="container__row container__row--removeLeft experts__row">
         <div class="experts__videoSide">
@@ -1413,7 +1415,7 @@
       </div>
     </div>
 
-    <div class="modals__item" id="catalogForm">
+    <div class="modals__item modals__item--center" id="catalogForm">
       <div class="catalogForm">
         <div class="catalogForm__closeButton js-close-modals">
           <div class="closeButton"></div>
@@ -1443,7 +1445,7 @@
                 <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioViber">
                 <label class="catalogForm__radioLabel" for="radioViber">
                   <svg class="catalogForm__radioIcon">
-                    <use href="./spritemap.svg#icon-catalog-Viber" />
+                    <use href="./spritemap.svg#icon-catalog-viber" />
                   </svg>
                   <p class="catalogForm__radioText">Viber</p>
                 </label>
@@ -1451,7 +1453,7 @@
               <div class="catalogForm__radioButtonWrapper">
                 <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioTelegram">
                 <label class="catalogForm__radioLabel" for="radioTelegram">
-                  <svg class="catalogForm__radioIcon">
+                  <svg class="catalogForm__radioIcon catalogForm__radioIcon--telegram">
                     <use href="./spritemap.svg#icon-catalog-telegram" />
                   </svg>
                   <p class="catalogForm__radioText">Telegram</p>

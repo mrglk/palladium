@@ -80,7 +80,8 @@
 }
 
 @media screen and (max-width: 960px) {
-  .map__tabletHidden {
+  .map__tabletHidden .map__header,
+  .map__tabletHidden .map__button {
     display: none;
   }
 
