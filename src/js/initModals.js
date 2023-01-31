@@ -31,7 +31,8 @@ export function initModals() {
     )
       .split("#")
       .pop();
-
+      
+    closeModals();
     openModal(modalId);
   })
 

@@ -182,7 +182,7 @@
               </div>
             </div>
           </div>
-         <button class="button js-open-modal" data-modal="catalogForm">Get an individual offer</button>
+         <button class="button js-open-modal" data-modal="requestForm">Get an individual offer</button>
         </div>
       </div>
     </section>
@@ -1300,7 +1300,7 @@
               <div class="moreButton offerItem__button">
                 <p class="moreButton__text moreButton__text--darker">More info</p>
                 <div class="moreButton__line moreButton__line--darker"></div>
-                <button class="moreButton__button moreButton__button--darker js-open-modal" data-modal="catalogForm"></button>
+                <button class="moreButton__button moreButton__button--darker js-open-modal" data-modal="requestForm"></button>
               </div>
             </div>
             <div class="offerItem swiper-slide offerItem--wave offerItem--lighter">
@@ -1316,7 +1316,7 @@
               <div class="moreButton offerItem__button">
                 <p class="moreButton__text moreButton__text--darker">More info</p>
                 <div class="moreButton__line moreButton__line--darker"></div>
-                <button class="moreButton__button moreButton__button--darker js-open-modal" data-modal="catalogForm"></button>
+                <button class="moreButton__button moreButton__button--darker js-open-modal" data-modal="requestForm"></button>
               </div>
             </div>
             <div class="offerItem swiper-slide offerItem--lighter offerItem--circle">
@@ -1330,7 +1330,7 @@
               <div class="moreButton offerItem__button">
                 <p class="moreButton__text moreButton__text--darker">More info</p>
                 <div class="moreButton__line moreButton__line--darker"></div>
-                <button class="moreButton__button moreButton__button--darker js-open-modal" data-modal="catalogForm"></button>
+                <button class="moreButton__button moreButton__button--darker js-open-modal" data-modal="requestForm"></button>
               </div>
             </div>
             <div class="offerItem swiper-slide offerItem--web">
@@ -1346,7 +1346,7 @@
               <div class="moreButton offerItem__button">
                 <p class="moreButton__text moreButton__text--darker">More info</p>
                 <div class="moreButton__line moreButton__line--darker"></div>
-                <button class="moreButton__button moreButton__button--darker js-open-modal" data-modal="catalogForm"></button>
+                <button class="moreButton__button moreButton__button--darker js-open-modal" data-modal="requestForm"></button>
               </div>
             </div>
             <div class="offerItem swiper-slide offerItem--line">
@@ -1362,7 +1362,7 @@
               <div class="moreButton offerItem__button">
                 <p class="moreButton__text moreButton__text--darker">More info</p>
                 <div class="moreButton__line moreButton__line--darker"></div>
-                <button class="moreButton__button moreButton__button--darker js-open-modal" data-modal="catalogForm"></button>
+                <button class="moreButton__button moreButton__button--darker js-open-modal" data-modal="requestForm"></button>
               </div>
             </div>
             <div class="offerItem swiper-slide offerItem--lighter offerItem--cross">
@@ -1378,7 +1378,7 @@
               <div class="moreButton offerItem__button">
                 <p class="moreButton__text moreButton__text--darker">More info</p>
                 <div class="moreButton__line moreButton__line--darker"></div>
-                <button class="moreButton__button moreButton__button--darker js-open-modal" data-modal="catalogForm"></button>
+                <button class="moreButton__button moreButton__button--darker js-open-modal" data-modal="requestForm"></button>
               </div>
             </div>
           </div>
@@ -1408,11 +1408,11 @@
                 <li>No requirement for an employment sponsor</li>
               </ul>
             </div>
-            <button class="button button--smaller goldenVisa__mobileHidden js-open-modal" data-modal="catalogForm">get a free consultation</button>
+            <button class="button button--smaller goldenVisa__mobileHidden js-open-modal" data-modal="requestForm">get a free consultation</button>
           </div>
           <div class="goldenVisa__image">
             <img alt="Gilden Visa" src="/img/golden-visa.png" srcSet="/img/golden-visa-2x.png 2x">
-            <button class="button button--smaller goldenVisa__mobileVisible js-open-modal" data-modal="catalogForm">get a free consultation</button>
+            <button class="button button--smaller goldenVisa__mobileVisible js-open-modal" data-modal="requestForm">get a free consultation</button>
           </div>
         </div>
         <div class="goldenVisa__bottom">
@@ -1697,7 +1697,7 @@
           <div class="services__contentProgress">
             <div class="services__contentProgressBar js-services-slider-bar"></div>
           </div>
-          <button class="services__button button button--smaller js-open-modal" data-modal="catalogForm">get a free consultation</button>
+          <button class="services__button button button--smaller js-open-modal" data-modal="requestForm">get a free consultation</button>
         </div>
       </div>
     </section>
@@ -1853,7 +1853,7 @@
                     </svg>
                   </div>
                 </a>
-                <button class="button button--smaller button--thinner">Get free consultation</button>
+                <button class="button button--smaller button--thinner js-open-modal" data-modal="requestForm">Get free consultation</button>
               </div>
             </div>
           </div>
@@ -1927,6 +1927,79 @@
               class="button button--smaller button--thinner"
               data-modal="catalogForm"
               value="Get a catalog"
+              data-success="Sent"
+            >
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="modals__item modals__item--center" id="requestForm">
+      <div class="catalogForm">
+        <div class="catalogForm__closeButton js-close-modals">
+          <div class="closeButton"></div>
+        </div>
+        <div class="catalogForm__inner">
+          <form action="#" class="catalogForm__form">
+            <div class="catalogForm__radioContainer">
+              <div class="catalogForm__radioButtonWrapper">
+                <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioTel" checked>
+                <label class="catalogForm__radioLabel" for="radioTel">
+                  <svg class="catalogForm__radioIcon">
+                    <use href="./spritemap.svg#icon-catalog-tel" />
+                  </svg>
+                  <p class="catalogForm__radioText">Call</p>
+                </label>
+              </div>
+              <div class="catalogForm__radioButtonWrapper">
+                <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioWatsapp">
+                <label class="catalogForm__radioLabel" for="radioWatsapp">
+                  <svg class="catalogForm__radioIcon">
+                    <use href="./spritemap.svg#icon-catalog-watsapp" />
+                  </svg>
+                  <p class="catalogForm__radioText">Watsapp</p>
+                </label>
+              </div>
+              <div class="catalogForm__radioButtonWrapper">
+                <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioViber">
+                <label class="catalogForm__radioLabel" for="radioViber">
+                  <svg class="catalogForm__radioIcon">
+                    <use href="./spritemap.svg#icon-catalog-viber" />
+                  </svg>
+                  <p class="catalogForm__radioText">Viber</p>
+                </label>
+              </div>
+              <div class="catalogForm__radioButtonWrapper">
+                <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioTelegram">
+                <label class="catalogForm__radioLabel" for="radioTelegram">
+                  <svg class="catalogForm__radioIcon catalogForm__radioIcon--telegram">
+                    <use href="./spritemap.svg#icon-catalog-telegram" />
+                  </svg>
+                  <p class="catalogForm__radioText">Telegram</p>
+                </label>
+              </div>
+            </div>
+
+            <div class="catalogForm__textInputs">
+              <input class="catalogForm__input" data-validation="required" type="text" name="name" placeholder="Name">
+              <input class="catalogForm__input" data-validation="phone" type="tel" name="tel" placeholder="Phone">
+            </div>
+
+            <div class="catalogForm__checkbox">
+              <div class="checkbox">
+                <input class="checkbox__input" data-validation="checkbox" type="checkbox" id="privacyCatalog" name="privacyCatalog" checked>
+                <label class="checkbox__label checkbox__label--righter" for="privacyCatalog">
+                  <p class="checkbox__text">I have read and accepted the <a class="checkbox__link"
+                      href="./index.html">Privacy Policy</a></p>
+                </label>
+              </div>
+            </div>
+
+            <input
+              type="submit"
+              class="button button--smaller button--thinner"
+              data-modal="catalogForm"
+              value="Send request"
               data-success="Sent"
             >
           </form>
