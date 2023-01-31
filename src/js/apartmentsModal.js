@@ -37,7 +37,7 @@ export function initApartmentsModal() {
 
 
     apartId.innerText = data.id
-    apartFileSize.innerText = data.size || '200 KB'
+    apartFileSize.innerText = data.filesize || '200 KB'
     apartBedrooms.innerText = data.bedrooms
     apartSize.innerText = data.size
     apartAddress.innerText = data.address
@@ -49,11 +49,11 @@ export function initApartmentsModal() {
     apartBathrooms.innerText = data.bathrooms
     apartFileUrl.setAttribute('href', data.brochure)
 
-    apartThumbs.firstElementChild.innerHTML = data.photos.map((photo) => {
+    apartThumbs.firstElementChild.innerHTML = (data.photos || []).map((photo) => {
       return `<div class="apartmentData__sliderPhoto swiper-slide"><img alt="Apartaments" src="${photo}"></div>`
     }).join('')
 
-    apartSlider.firstElementChild.innerHTML = data.photos.map((photo) => {
+    apartSlider.firstElementChild.innerHTML = (data.photos || []).map((photo) => {
       return `<div class="swiper-slide"><img alt="Apartaments" src="${photo}" /></div>`
     })
 
@@ -76,6 +76,7 @@ export function initApartmentsModal() {
         crossFade: true
       },
       slidesPerView: 1,
+      autoHeight: true,
       on: {
         slideChange: () => {}
       },

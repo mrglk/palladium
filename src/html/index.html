@@ -274,9 +274,9 @@
           <div class="projects__filterWrapper">
             <div class="projects__filterWrapperLayer">
               <div class="projects__filter js-project-filter">
-                <button class="filterButton filterButton--active" data-type="penthouses">Penthouses</button>
-                <button class="filterButton" data-type="apartments">Apartments</button>
-                <button class="filterButton" data-type="townhouses">Townhouses</button>
+                <button class="filterButton" data-type="penthouses">Penthouses</button>
+                <button class="filterButton filterButton--active" data-type="apartments">Apartments</button>
+                <!-- <button class="filterButton" data-type="townhouses">Townhouses</button> -->
                 <button class="filterButton" data-type="villas">Villas</button>
               </div>
             </div>
@@ -294,19 +294,19 @@
             <div class="slider">
               <div class="slider__content js-project-slider">
                 <div class="swiper-wrapper">
-                  <div data-type="penthouses" class="projectItem swiper-slide">
+
+                  <div data-type="apartments" class="projectItem swiper-slide">
                     <div class="projectItem__photo">
-                      <img alt="Golf Views, Jumeirah Lakes Towers" src="/img/projects-2.jpg"
-                        srcSet="/img/projects-2-2x.jpg 2x">
+                      <img alt="Jumeirah Lakes Towers" src="/public/photos/golf/img-1.png">
                     </div>
                     <div class="projectItem__description">
                       <div class="projectItem__geo">
                         <svg class="projectItem__geoIcon">
                           <use href="./spritemap.svg#icon-geo-icon" />
                         </svg>
-                        <p class="projectItem__geoText">Golf Views, Jumeirah Lakes Towers</p>
+                        <p class="projectItem__geoText">Jumeirah Lake Towers</p>
                       </div>
-                      <p class="projectItem__title">2-BEDROOM APARTMENTS</p>
+                      <p class="projectItem__title">Studio</p>
                       <div class="projectItem__data">
                         <div class="projectItem__cell">
                           <p class="projectItem__dataTitle">Rooms</p><span class="projectItem__dataNum">2</span>
@@ -316,7 +316,7 @@
                         </div>
                       </div>
                       <div class="projectItem__sale">
-                        <p class="projectItem__price">358 920</p>
+                        <p class="projectItem__price">125 000</p>
                         <div class="projectItem__market">
                           <svg class="projectItem__marketIcon">
                             <use href="./spritemap.svg#icon-lightning-icon" />
@@ -328,7 +328,439 @@
                     <div class="moreButton">
                       <p class="moreButton__text">More info</p>
                       <div class="moreButton__line"></div>
+                      <button class="moreButton__button js-open-apartment-modal" data-id="1257623"></button>
+                    </div>
+                  </div>
+                  <div data-type="apartments" class="projectItem swiper-slide">
+                    <div class="projectItem__photo">
+                      <img alt="Vincitore Volare" src="/public/photos/vincitore-volare/img-1.jpeg">
+                    </div>
+                    <div class="projectItem__description">
+                      <div class="projectItem__geo">
+                        <svg class="projectItem__geoIcon">
+                          <use href="./spritemap.svg#icon-geo-icon" />
+                        </svg>
+                        <p class="projectItem__geoText">THE DOWNTOWN OF ARJAN</p>
+                      </div>
+                      <p class="projectItem__title">3 bedroom apartment</p>
+                      <div class="projectItem__data">
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Rooms</p><span class="projectItem__dataNum">2</span>
+                        </div>
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Area</p><span class="projectItem__dataNum">150 m2</span>
+                        </div>
+                      </div>
+                      <div class="projectItem__sale">
+                        <p class="projectItem__price">410 000</p>
+                        <div class="projectItem__market">
+                          <svg class="projectItem__marketIcon">
+                            <use href="./spritemap.svg#icon-lightning-icon" />
+                          </svg>
+                          <p class="projectItem__marketText">Below market by 4%</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="moreButton">
+                      <p class="moreButton__text">More info</p>
+                      <div class="moreButton__line"></div>
                       <button class="moreButton__button js-open-apartment-modal" data-id="1257140"></button>
+                    </div>
+                  </div>
+                  <div data-type="villas" class="projectItem swiper-slide">
+                    <div class="projectItem__photo">
+                      <img alt="Tilal Al Ghaf" src="/public/photos/tilal-al-ghaf/img-1.jpeg">
+                    </div>
+                    <div class="projectItem__description">
+                      <div class="projectItem__geo">
+                        <svg class="projectItem__geoIcon">
+                          <use href="./spritemap.svg#icon-geo-icon" />
+                        </svg>
+                        <p class="projectItem__geoText">Tilal Al Ghaf</p>
+                      </div>
+                      <p class="projectItem__title">4 bedroom villa</p>
+                      <div class="projectItem__data">
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Rooms</p><span class="projectItem__dataNum">2</span>
+                        </div>
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Area</p><span class="projectItem__dataNum">150 m2</span>
+                        </div>
+                      </div>
+                      <div class="projectItem__sale">
+                        <p class="projectItem__price">2 300 000</p>
+                        <div class="projectItem__market">
+                          <svg class="projectItem__marketIcon">
+                            <use href="./spritemap.svg#icon-lightning-icon" />
+                          </svg>
+                          <p class="projectItem__marketText">Below market by 5%</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="moreButton">
+                      <p class="moreButton__text">More info</p>
+                      <div class="moreButton__line"></div>
+                      <button class="moreButton__button js-open-apartment-modal" data-id="156764"></button>
+                    </div>
+                  </div>
+                  <div data-type="apartments" class="projectItem swiper-slide">
+                    <div class="projectItem__photo">
+                      <img alt="Al Jaddaf" src='/public/photos/ritz-carlton/img-1.jpg'>
+                    </div>
+                    <div class="projectItem__description">
+                      <div class="projectItem__geo">
+                        <svg class="projectItem__geoIcon">
+                          <use href="./spritemap.svg#icon-geo-icon" />
+                        </svg>
+                        <p class="projectItem__geoText">Al Jaddaf</p>
+                      </div>
+                      <p class="projectItem__title">2 bedroom apartment</p>
+                      <div class="projectItem__data">
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Rooms</p><span class="projectItem__dataNum">2</span>
+                        </div>
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Area</p><span class="projectItem__dataNum">150 m2</span>
+                        </div>
+                      </div>
+                      <div class="projectItem__sale">
+                        <p class="projectItem__price">2 900 000</p>
+                        <div class="projectItem__market">
+                          <svg class="projectItem__marketIcon">
+                            <use href="./spritemap.svg#icon-lightning-icon" />
+                          </svg>
+                          <p class="projectItem__marketText">Below market by 7%</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="moreButton">
+                      <p class="moreButton__text">More info</p>
+                      <div class="moreButton__line"></div>
+                      <button class="moreButton__button js-open-apartment-modal" data-id="149876"></button>
+                    </div>
+                  </div>
+                  <div data-type="apartments" class="projectItem swiper-slide">
+                    <div class="projectItem__photo">
+                      <img alt="Business Bay" src="/public/photos/opus/img-1.jpeg">
+                    </div>
+                    <div class="projectItem__description">
+                      <div class="projectItem__geo">
+                        <svg class="projectItem__geoIcon">
+                          <use href="./spritemap.svg#icon-geo-icon" />
+                        </svg>
+                        <p class="projectItem__geoText">Business Bay</p>
+                      </div>
+                      <p class="projectItem__title">1 bedroom apartment</p>
+                      <div class="projectItem__data">
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Rooms</p><span class="projectItem__dataNum">2</span>
+                        </div>
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Area</p><span class="projectItem__dataNum">150 m2</span>
+                        </div>
+                      </div>
+                      <div class="projectItem__sale">
+                        <p class="projectItem__price">1 200 000</p>
+                        <div class="projectItem__market">
+                          <svg class="projectItem__marketIcon">
+                            <use href="./spritemap.svg#icon-lightning-icon" />
+                          </svg>
+                          <p class="projectItem__marketText">Below market by 9%</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="moreButton">
+                      <p class="moreButton__text">More info</p>
+                      <div class="moreButton__line"></div>
+                      <button class="moreButton__button js-open-apartment-modal" data-id="147650"></button>
+                    </div>
+                  </div>
+                  <div data-type="penthouses" class="projectItem swiper-slide">
+                    <div class="projectItem__photo">
+                      <img alt="Business Bay Dubai" src='/public/photos/omniyat-sterling/img-1.jpeg'>
+                    </div>
+                    <div class="projectItem__description">
+                      <div class="projectItem__geo">
+                        <svg class="projectItem__geoIcon">
+                          <use href="./spritemap.svg#icon-geo-icon" />
+                        </svg>
+                        <p class="projectItem__geoText">Business Bay Dubai</p>
+                      </div>
+                      <p class="projectItem__title">4 room penthouse</p>
+                      <div class="projectItem__data">
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Rooms</p><span class="projectItem__dataNum">2</span>
+                        </div>
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Area</p><span class="projectItem__dataNum">150 m2</span>
+                        </div>
+                      </div>
+                      <div class="projectItem__sale">
+                        <p class="projectItem__price">4 400 000</p>
+                        <div class="projectItem__market">
+                          <svg class="projectItem__marketIcon">
+                            <use href="./spritemap.svg#icon-lightning-icon" />
+                          </svg>
+                          <p class="projectItem__marketText">Below market by 9%</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="moreButton">
+                      <p class="moreButton__text">More info</p>
+                      <div class="moreButton__line"></div>
+                      <button class="moreButton__button js-open-apartment-modal" data-id="1257682"></button>
+                    </div>
+                  </div>
+                  <div data-type="penthouses" class="projectItem swiper-slide">
+                    <div class="projectItem__photo">
+                      <img alt="Palm Jumeirah" src='/public/photos/muraba-properties/img-1.jpeg'>
+                    </div>
+                    <div class="projectItem__description">
+                      <div class="projectItem__geo">
+                        <svg class="projectItem__geoIcon">
+                          <use href="./spritemap.svg#icon-geo-icon" />
+                        </svg>
+                        <p class="projectItem__geoText">Palm Jumeirah</p>
+                      </div>
+                      <p class="projectItem__title">2 bedroom penthouse</p>
+                      <div class="projectItem__data">
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Rooms</p><span class="projectItem__dataNum">2</span>
+                        </div>
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Area</p><span class="projectItem__dataNum">150 m2</span>
+                        </div>
+                      </div>
+                      <div class="projectItem__sale">
+                        <p class="projectItem__price">2 300 000</p>
+                        <div class="projectItem__market">
+                          <svg class="projectItem__marketIcon">
+                            <use href="./spritemap.svg#icon-lightning-icon" />
+                          </svg>
+                          <p class="projectItem__marketText">Below market by 4%</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="moreButton">
+                      <p class="moreButton__text">More info</p>
+                      <div class="moreButton__line"></div>
+                      <button class="moreButton__button js-open-apartment-modal" data-id="135480"></button>
+                    </div>
+                  </div>
+                  <div data-type="apartments" class="projectItem swiper-slide">
+                    <div class="projectItem__photo">
+                      <img alt="Dubai Marina" src='/public/photos/marina-arcade/img-1.jpeg'>
+                    </div>
+                    <div class="projectItem__description">
+                      <div class="projectItem__geo">
+                        <svg class="projectItem__geoIcon">
+                          <use href="./spritemap.svg#icon-geo-icon" />
+                        </svg>
+                        <p class="projectItem__geoText">Dubai Marina</p>
+                      </div>
+                      <p class="projectItem__title">1 bedroom apartment</p>
+                      <div class="projectItem__data">
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Rooms</p><span class="projectItem__dataNum">2</span>
+                        </div>
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Area</p><span class="projectItem__dataNum">150 m2</span>
+                        </div>
+                      </div>
+                      <div class="projectItem__sale">
+                        <p class="projectItem__price">545 000</p>
+                        <div class="projectItem__market">
+                          <svg class="projectItem__marketIcon">
+                            <use href="./spritemap.svg#icon-lightning-icon" />
+                          </svg>
+                          <p class="projectItem__marketText">Below market by 7%</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="moreButton">
+                      <p class="moreButton__text">More info</p>
+                      <div class="moreButton__line"></div>
+                      <button class="moreButton__button js-open-apartment-modal" data-id="1253353"></button>
+                    </div>
+                  </div>
+                  <div data-type="apartments" class="projectItem swiper-slide">
+                    <div class="projectItem__photo">
+                      <img alt="Dubai Harbour" src='/public/photos/cavalli/img-1.jpeg'>
+                    </div>
+                    <div class="projectItem__description">
+                      <div class="projectItem__geo">
+                        <svg class="projectItem__geoIcon">
+                          <use href="./spritemap.svg#icon-geo-icon" />
+                        </svg>
+                        <p class="projectItem__geoText">Dubai Harbour</p>
+                      </div>
+                      <p class="projectItem__title">1 bedroom apartment</p>
+                      <div class="projectItem__data">
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Rooms</p><span class="projectItem__dataNum">2</span>
+                        </div>
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Area</p><span class="projectItem__dataNum">150 m2</span>
+                        </div>
+                      </div>
+                      <div class="projectItem__sale">
+                        <p class="projectItem__price">798 000</p>
+                        <div class="projectItem__market">
+                          <svg class="projectItem__marketIcon">
+                            <use href="./spritemap.svg#icon-lightning-icon" />
+                          </svg>
+                          <p class="projectItem__marketText">Below market by 9%</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="moreButton">
+                      <p class="moreButton__text">More info</p>
+                      <div class="moreButton__line"></div>
+                      <button class="moreButton__button js-open-apartment-modal" data-id="198517"></button>
+                    </div>
+                  </div>
+                  <div data-type="apartments" class="projectItem swiper-slide">
+                    <div class="projectItem__photo">
+                      <img alt="Binghatti Nova, JVC" src='/public/photos/binghatti-nova/img-1.jpeg'>
+                    </div>
+                    <div class="projectItem__description">
+                      <div class="projectItem__geo">
+                        <svg class="projectItem__geoIcon">
+                          <use href="./spritemap.svg#icon-geo-icon" />
+                        </svg>
+                        <p class="projectItem__geoText">Binghatti Nova, JVC</p>
+                      </div>
+                      <p class="projectItem__title">1 bedroom apartment</p>
+                      <div class="projectItem__data">
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Rooms</p><span class="projectItem__dataNum">2</span>
+                        </div>
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Area</p><span class="projectItem__dataNum">150 m2</span>
+                        </div>
+                      </div>
+                      <div class="projectItem__sale">
+                        <p class="projectItem__price">175 000</p>
+                        <div class="projectItem__market">
+                          <svg class="projectItem__marketIcon">
+                            <use href="./spritemap.svg#icon-lightning-icon" />
+                          </svg>
+                          <p class="projectItem__marketText">Below market by 4%</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="moreButton">
+                      <p class="moreButton__text">More info</p>
+                      <div class="moreButton__line"></div>
+                      <button class="moreButton__button js-open-apartment-modal" data-id="1259065"></button>
+                    </div>
+                  </div>
+                  <div data-type="apartments" class="projectItem swiper-slide">
+                    <div class="projectItem__photo">
+                      <img alt="Business Bay, Dubai" src='/public/photos/habtoor/img-1.jpeg'>
+                    </div>
+                    <div class="projectItem__description">
+                      <div class="projectItem__geo">
+                        <svg class="projectItem__geoIcon">
+                          <use href="./spritemap.svg#icon-geo-icon" />
+                        </svg>
+                        <p class="projectItem__geoText">Business Bay, Dubai</p>
+                      </div>
+                      <p class="projectItem__title">1 bedroom apartment</p>
+                      <div class="projectItem__data">
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Rooms</p><span class="projectItem__dataNum">2</span>
+                        </div>
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Area</p><span class="projectItem__dataNum">150 m2</span>
+                        </div>
+                      </div>
+                      <div class="projectItem__sale">
+                        <p class="projectItem__price">482 000</p>
+                        <div class="projectItem__market">
+                          <svg class="projectItem__marketIcon">
+                            <use href="./spritemap.svg#icon-lightning-icon" />
+                          </svg>
+                          <p class="projectItem__marketText">Below market by 3%</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="moreButton">
+                      <p class="moreButton__text">More info</p>
+                      <div class="moreButton__line"></div>
+                      <button class="moreButton__button js-open-apartment-modal" data-id="1256028"></button>
+                    </div>
+                  </div>
+                  <div data-type="apartments" class="projectItem swiper-slide">
+                    <div class="projectItem__photo">
+                      <img alt="Business Bay Dubai" src='/public/photos/ahad/img-1.jpeg'>
+                    </div>
+                    <div class="projectItem__description">
+                      <div class="projectItem__geo">
+                        <svg class="projectItem__geoIcon">
+                          <use href="./spritemap.svg#icon-geo-icon" />
+                        </svg>
+                        <p class="projectItem__geoText">Business Bay Dubai</p>
+                      </div>
+                      <p class="projectItem__title">2 bedroom apartment</p>
+                      <div class="projectItem__data">
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Rooms</p><span class="projectItem__dataNum">2</span>
+                        </div>
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Area</p><span class="projectItem__dataNum">150 m2</span>
+                        </div>
+                      </div>
+                      <div class="projectItem__sale">
+                        <p class="projectItem__price">809 000</p>
+                        <div class="projectItem__market">
+                          <svg class="projectItem__marketIcon">
+                            <use href="./spritemap.svg#icon-lightning-icon" />
+                          </svg>
+                          <p class="projectItem__marketText">Below market by 5%</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="moreButton">
+                      <p class="moreButton__text">More info</p>
+                      <div class="moreButton__line"></div>
+                      <button class="moreButton__button js-open-apartment-modal" data-id="1253376"></button>
+                    </div>
+                  </div>
+                  <div data-type="apartments" class="projectItem swiper-slide">
+                    <div class="projectItem__photo">
+                      <img alt="Dubai Harbour" src='/public/photos/sobha/img-1.jpg'>
+                    </div>
+                    <div class="projectItem__description">
+                      <div class="projectItem__geo">
+                        <svg class="projectItem__geoIcon">
+                          <use href="./spritemap.svg#icon-geo-icon" />
+                        </svg>
+                        <p class="projectItem__geoText">Dubai Harbour</p>
+                      </div>
+                      <p class="projectItem__title">1 room apartment</p>
+                      <div class="projectItem__data">
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Rooms</p><span class="projectItem__dataNum">2</span>
+                        </div>
+                        <div class="projectItem__cell">
+                          <p class="projectItem__dataTitle">Area</p><span class="projectItem__dataNum">150 m2</span>
+                        </div>
+                      </div>
+                      <div class="projectItem__sale">
+                        <p class="projectItem__price">870 000</p>
+                        <div class="projectItem__market">
+                          <svg class="projectItem__marketIcon">
+                            <use href="./spritemap.svg#icon-lightning-icon" />
+                          </svg>
+                          <p class="projectItem__marketText">Below market by 6%</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="moreButton">
+                      <p class="moreButton__text">More info</p>
+                      <div class="moreButton__line"></div>
+                      <button class="moreButton__button js-open-apartment-modal" data-id="140473"></button>
                     </div>
                   </div>
                 </div>
