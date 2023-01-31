@@ -7,7 +7,7 @@ const projectSliderItems = [...slider.firstElementChild.children]
 let swiper;
 
 export function initProjectsSlider() {
-  // swiper = runSwiper('apartments');
+  swiper = runSwiper('apartments');
 
   projectFilter.addEventListener('click', function(e) {
     const target = e.target;
@@ -33,7 +33,7 @@ function runSwiper(type) {
 
   return new Swiper('.js-project-slider', {
     slidesPerView: 'auto',
-    loop: true,
+    // loop: true,
     spaceBetween: 15,
 
     navigation: {
