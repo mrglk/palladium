@@ -31,8 +31,7 @@ export function initModals() {
     )
       .split("#")
       .pop();
-      
-    closeModals();
+
     openModal(modalId);
   })
 
@@ -66,6 +65,8 @@ export function initModals() {
 }
 
 export function openModal(modalId) {
+  closeModals();
+
   Body.fixBody();
 
   const modalsContainer = document.querySelector(".js-modals");
@@ -80,6 +81,10 @@ export function openModal(modalId) {
 }
 
 export function closeModals() {
+  if (!Body.isFixed()) {
+    return
+  }
+
   Body.releaseBody();
 
   const modalsContainer = document.querySelector(".js-modals");
