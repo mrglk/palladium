@@ -1,7 +1,37 @@
-import Swiper from "swiper/bundle";
+import Swiper from 'swiper/bundle';
+
+const projectFilter = document.querySelector('.js-project-filter');
+const slider = document.querySelector('.js-project-slider')
+const projectSliderItems = [...slider.firstElementChild.children]
+
+let swiper;
 
 export function initProjectsSlider() {
-  new Swiper('.js-project-slider', {
+  swiper = runSwiper('apartments');
+
+  projectFilter.addEventListener('click', function(e) {
+    const target = e.target;
+    const type = target.dataset.type;
+
+    if (!type) {
+      return;
+    }
+
+    [...projectFilter.children].forEach((item) => {
+      item.classList.toggle('filterButton--active', item === target);
+    });
+
+    swiper.destroy(true, true);
+
+    swiper = runSwiper(type);
+    // swiper.slideTo(1);
+  });
+}
+
+function runSwiper(type) {
+  slider.firstElementChild.innerHTML = projectSliderItems.filter((slide) => slide.dataset.type === type).map(item => item.outerHTML).join('')
+
+  return new Swiper('.js-project-slider', {
     slidesPerView: 'auto',
     loop: true,
     spaceBetween: 15,
@@ -14,7 +44,7 @@ export function initProjectsSlider() {
       1280: {
         slidesPerView: 3,
         spaceBetween: 30,
-      }
-    }
+      },
+    },
   });
 }
