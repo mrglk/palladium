@@ -622,39 +622,43 @@
             catalog</button>
           <div class="mapItem" id="map-info">
             <div class="mapItem__inner">
-              <div class="mapItem__closeButton mapItem__desktopHidden">
+              <div class="mapItem__closeButton mapItem__desktopHidden js-close-map-info">
                 <div class="mapItem__closeIcon"></div>
               </div>
               <div class="mapItem__photo">
-                <img alt="Palm Jumeirah" src="/img/map-item-photo.jpg" srcSet="/img/map-item-photo-2x.jpg 2x">
+                <img alt="Map Item Info" class="js-map-info-img" src="/img/map-item-photo.jpg">
               </div>
               <div class="mapItem__content">
-                <h3 class="mapItem__header">Palm Jumeirah</h3>
+                <h3 class="mapItem__header js-map-info-title">Palm Jumeirah</h3>
                 <div class="mapItem__description">
                   <div class="mapItem__column">
                     <div class="mapItem__cell">
                       <p class="mapItem__subtitle">Starting price</p>
-                      <p class="mapItem__data">AED 1,874,000</p>
+                      <p class="mapItem__data js-map-info-price">AED 1,874,000</p>
                     </div>
                     <div class="mapItem__cell">
                       <p class="mapItem__subtitle">Developer</p>
-                      <p class="mapItem__data">Nakheel</p>
+                      <p class="mapItem__data js-map-info-developer">Nakheel</p>
                     </div>
                   </div>
                   <div class="mapItem__column">
                     <div class="mapItem__cell">
                       <p class="mapItem__subtitle">Area</p>
-                      <p class="mapItem__data">180 million sq. ft.</p>
+                      <p class="mapItem__data js-map-info-area">180 million sq. ft.</p>
                     </div>
                     <div class="mapItem__cell">
                       <p class="mapItem__subtitle">Type</p>
-                      <p class="mapItem__data">Residential</p>
+                      <p class="mapItem__data js-map-info-type">Residential</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="map__controls">
+          <div class="map__controlsZoomIn js-map-zoom-in">+</div>
+          <div class="map__controlsZoomOut js-map-zoom-out">-</div>
         </div>
         <div class="map__wrapper" id="map"></div>
       </div>

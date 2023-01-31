@@ -8,6 +8,8 @@
   width: 100%;
   opacity: 0;
   pointer-events: none;
+
+  transition: opacity 200ms ease;
 }
 
 .mapItem--active {
@@ -113,6 +115,10 @@
 }
 
 @media screen and (max-width: 960px) {
+  .mapItem {
+    left: 0;
+  }
+
   .mapItem__desktopHidden {
     display: block;
   }
@@ -129,11 +135,11 @@
 
 @media screen and (max-width: 480px) {
   .mapItem {
-    max-width: 336px;
+    width: 100%;
   }
   
   .mapItem__photo {
-    max-width: 336px;
+    /*max-width: 336px;*/
   }
 
   .mapItem__content {
