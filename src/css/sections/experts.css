@@ -147,6 +147,14 @@
   display: flex;
 }
 
+.experts__desktopHidden .experts__view {
+  display: none;
+}
+
+.experts__desktopHidden .experts__view--active {
+  display: flex;
+}
+
 .experts__photo {
   width: 70px;
   height: 70px;
@@ -175,6 +183,7 @@
 .experts__more {
   display: grid;
   gap: 20px;
+  display: none;
 }
 
 .experts__moreSubtitle {
