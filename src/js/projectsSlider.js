@@ -7,7 +7,7 @@ const projectSliderItems = [...slider.firstElementChild.children]
 let swiper;
 
 export function initProjectsSlider() {
-  swiper = runSwiper('apartments');
+  // swiper = runSwiper('apartments');
 
   projectFilter.addEventListener('click', function(e) {
     const target = e.target;

@@ -14,6 +14,7 @@ import { initFaq } from './js/faq';
 import { initExpertSlider } from './js/expertSlider';
 import { initForms } from './js/forms';
 import { initMap } from './js/map';
+import { initApartmentsModal } from './js/apartmentsModal';
 
 document.addEventListener("DOMContentLoaded", function () {
     customSelect()
@@ -29,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     initFaq()
     initExpertSlider()
     initForms()
+    initApartmentsModal()
 
     setTimeout(() => {
         initMap()

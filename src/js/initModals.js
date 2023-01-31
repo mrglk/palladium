@@ -17,6 +17,24 @@ export function initModals() {
     return;
   }
 
+  document.addEventListener('click', function(e) {
+    const linkElement = e.target.closest('.js-open-modal');
+
+    if (!linkElement) {
+      return
+    }
+
+    e.preventDefault();
+
+    const modalId = (
+      linkElement.dataset.modal || linkElement.getAttribute("href")
+    )
+      .split("#")
+      .pop();
+
+    openModal(modalId);
+  })
+
   closeModalsLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
       e.preventDefault();
@@ -24,20 +42,20 @@ export function initModals() {
     });
   });
 
-  openModalLinks.forEach((link) => {
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
-
-      const linkElement = e.currentTarget;
-      const modalId = (
-        linkElement.dataset.modal || linkElement.getAttribute("href")
-      )
-        .split("#")
-        .pop();
-
-      openModal(modalId);
-    });
-  });
+  // openModalLinks.forEach((link) => {
+  //   link.addEventListener("click", function (e) {
+  //     e.preventDefault();
+  //
+  //     const linkElement = e.currentTarget;
+  //     const modalId = (
+  //       linkElement.dataset.modal || linkElement.getAttribute("href")
+  //     )
+  //       .split("#")
+  //       .pop();
+  //
+  //     openModal(modalId);
+  //   });
+  // });
 
   modalsContainer.addEventListener("click", function (e) {
     if (e.target.classList.contains("js-modals")) {
