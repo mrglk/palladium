@@ -82,6 +82,7 @@
   border-radius: 200px;
   border: 1px solid var(--brown);
   margin-right: 30px;
+  object-fit: cover;
 }
 
 .reviews__info {

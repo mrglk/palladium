@@ -1,3 +1,7 @@
+.map__desktopHidden {
+  display: none;
+}
+
 .map {
   height: 1100px;
   margin-bottom: 200px;
@@ -12,7 +16,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /*position: relative;*/
   z-index: 1;
 }
 
@@ -70,7 +73,47 @@
   width: 100%;
 }
 
+@media screen and (max-width: 1440px) {
+  .map {
+    margin-bottom: 150px;
+  }
+}
+
 @media screen and (max-width: 960px) {
+  .map__tabletHidden {
+    display: none;
+  }
+
+  .map__desktopHidden {
+    display: block;
+  }
+
+  .map {
+    margin-bottom: 40px;
+  }
+
+  .map__inner {
+    padding-top: 35px;
+  }
+
+  .map__headerTabletWrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .map__header {
+    text-align: center;
+    max-width: 240px;
+    font-size: 28px;
+  }
+
+  .map__buttonTabletWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
   .map__top {
     text-align: center;
   }
@@ -90,6 +133,14 @@
 }
 
 @media screen and (max-width: 480px) {
+  .map {
+    margin-bottom: 20px;
+  }
+
+  .map__buttonTabletWrapper {
+    margin-bottom: 80px;
+  }
+
   .map__controls {
     top: 40px;
 

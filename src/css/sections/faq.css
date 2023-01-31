@@ -69,6 +69,10 @@
   margin-bottom: 40px;
 }
 
+.faq__itemAnswer p, .faq__itemAnswer h4 {
+  margin-bottom: 1em;
+}
+
 @media screen and (max-width: 1440px) {
   .faq {
     margin-bottom: 150px;
@@ -76,10 +80,6 @@
   
   .faq__header {
     margin-bottom: 50px;
-  }
-
-  .faq__item {
-
   }
 
   .faq__itemHeader {
