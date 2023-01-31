@@ -65,7 +65,7 @@
 }
 
 .catalogForm__radioIcon--telegram {
-  background: var(--sandal);
+  background: #949494;
   fill:  var(--white);
   border-radius: 50%;
 }
