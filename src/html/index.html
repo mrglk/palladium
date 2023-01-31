@@ -133,7 +133,9 @@
               <div class="inputWrapper" data-lable="Purpose">
                 <select name="purpose" class="js-select">
                   <option value="investment">Investment</option>
-                  <option value="accommodation">Accommodation</option>
+                  <option value="rent">for Rent</option>
+                  <option value="life">for Life</option>
+                  <option value="residency">get Residency</option>
                 </select>
               </div>
             </div>
@@ -141,8 +143,10 @@
             <div class="firstScreen__input">
               <div class="inputWrapper" data-lable="Property type">
                 <select name="purpose" class="js-select">
-                  <option value="investment">Apartments</option>
-                  <option value="accommodation">House</option>
+                  <option value="apartments">Apartments</option>
+                  <option value="penthouse">Penthouse</option>
+                  <option value="villa">Villa</option>
+                  <option value="townhouse">Townhouse</option>
                 </select>
               </div>
             </div>
@@ -150,8 +154,17 @@
             <div class="firstScreen__input">
               <div class="inputWrapper" data-lable="District">
                 <select name="purpose" class="js-select">
-                  <option value="investment">Dubai Marina</option>
-                  <option value="accommodation">Dubai Lena</option>
+                  <option value="dubai-marina">Dubai Marina</option>
+                  <option value="bluewaters">Bluewaters</option>
+                  <option value="palm-jumeirah">Palm Jumeirah</option>
+                  <option value="jumeirah-lake-towers">Jumeirah Lake Towers</option>
+                  <option value="downtown-bubai">Downtown Dubai</option>
+                  <option value="business-bay">Business Bay</option>
+                  <option value="creek-harbour">Creek Harbour</option>
+                  <option value="city-walk">City Walk</option>
+                  <option value="jumeirah-village-circle">Jumeirah Village Circle</option>
+                  <option value="jumeirah-village-triangle">Jumeirah Village Triangle</option>
+                  <option value="dubai-hills">Dubai Hills</option>
                 </select>
               </div>
             </div>
@@ -169,7 +182,7 @@
               </div>
             </div>
           </div>
-         <button class="button js-open-modal" data-modal="apartmentData">Get an individual offer</button>
+         <button class="button js-open-modal" data-modal="catalogForm">Get an individual offer</button>
         </div>
       </div>
     </section>
@@ -316,7 +329,7 @@
                     <div class="moreButton">
                       <p class="moreButton__text">More info</p>
                       <div class="moreButton__line"></div>
-                      <button class="moreButton__button"></button>
+                      <button class="moreButton__button js-open-modal" data-modal="apartmentData"></button>
                     </div>
                   </div>
                   <div class="projectItem swiper-slide">
@@ -353,7 +366,7 @@
                     <div class="moreButton">
                       <p class="moreButton__text">More info</p>
                       <div class="moreButton__line"></div>
-                      <button class="moreButton__button"></button>
+                      <button class="moreButton__button js-open-modal" data-modal="apartmentData"></button>
                     </div>
                   </div>
                   <div class="projectItem swiper-slide">
@@ -392,7 +405,7 @@
                     <div class="moreButton">
                       <p class="moreButton__text">More info</p>
                       <div class="moreButton__line"></div>
-                      <button class="moreButton__button"></button>
+                      <button class="moreButton__button js-open-modal" data-modal="apartmentData"></button>
                     </div>
                   </div>
                   <div class="projectItem swiper-slide">
@@ -429,7 +442,7 @@
                     <div class="moreButton">
                       <p class="moreButton__text">More info</p>
                       <div class="moreButton__line"></div>
-                      <button class="moreButton__button"></button>
+                      <button class="moreButton__button js-open-modal" data-modal="apartmentData"></button>
                     </div>
                   </div>
                   <div class="projectItem swiper-slide">
@@ -468,7 +481,7 @@
                     <div class="moreButton">
                       <p class="moreButton__text">More info</p>
                       <div class="moreButton__line"></div>
-                      <button class="moreButton__button"></button>
+                      <button class="moreButton__button js-open-modal" data-modal="apartmentData"></button>
                     </div>
                   </div>
                 </div>
@@ -1074,7 +1087,7 @@
         <div class="letYouGet__contentProgress">
           <div class="letYouGet__contentProgressBar js-offer-slider-bar"></div>
         </div>
-        <button class="letYouGet__button button js-open-modal" data-modal="apartmentData">Get an individual
+        <button class="letYouGet__button button js-open-modal" data-modal="catalogForm">Get an individual
           offer</button>
       </div>
     </section>
@@ -1096,11 +1109,11 @@
                 <li>No requirement for an employment sponsor</li>
               </ul>
             </div>
-            <button class="button button--smaller goldenVisa__mobileHidden">get a free consultation</button>
+            <button class="button button--smaller goldenVisa__mobileHidden js-open-modal" data-modal="catalogForm">get a free consultation</button>
           </div>
           <div class="goldenVisa__image">
             <img alt="Gilden Visa" src="/img/golden-visa.png" srcSet="/img/golden-visa-2x.png 2x">
-            <button class="button button--smaller goldenVisa__mobileVisible">get a free consultation</button>
+            <button class="button button--smaller goldenVisa__mobileVisible js-open-modal" data-modal="catalogForm">get a free consultation</button>
           </div>
         </div>
         <div class="goldenVisa__bottom">
@@ -1413,7 +1426,7 @@
           <div class="services__contentProgress">
             <div class="services__contentProgressBar js-services-slider-bar"></div>
           </div>
-          <button class="services__button button button--smaller">get a free consultation</button>
+          <button class="services__button button button--smaller js-open-modal" data-modal="catalogForm">get a free consultation</button>
         </div>
       </div>
     </section>
