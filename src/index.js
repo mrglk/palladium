@@ -15,6 +15,7 @@ import { initExpertSlider } from './js/expertSlider';
 import { initForms } from './js/forms';
 import { initMap } from './js/map';
 import { initApartmentsModal } from './js/apartmentsModal';
+import { initCounters } from './js/counterEffect';
 
 document.addEventListener("DOMContentLoaded", function () {
     customSelect()
@@ -31,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     initExpertSlider()
     initForms()
     initApartmentsModal()
+    initCounters()
 
     setTimeout(() => {
         initMap()

@@ -206,8 +206,8 @@ function showContentInfo(e, data, marker) {
   marker.setOpacity(1)
 
   const { title, price, developer, area, type, img } = data;
-
   const target = e.domEvent.target;
+
   const halfSize = target.offsetWidth / 2
 
   const left = getLeft(target);
