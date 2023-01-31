@@ -1,11 +1,131 @@
 import { Loader } from 'google-maps';
+import { isWindowSizeSmallerThen } from './utils/helpers';
 
 const center = { lat: 25.1624427, lng: 55.2226371 };
 let timeoutId = null;
 let map;
 
+const mapPointsData = [
+  {
+    id: 1,
+    title: 'Bluewaters',
+    price: '$ 1,789,000',
+    beach: '100 meters',
+    developer: 'Nakheel',
+    type: 'Apartment',
+    area: '180 million sq. ft.',
+    lat: 25.079880,
+    lng: 55.121824,
+    img: '/img/map-item-photo.jpg',
+  },
+  {
+    id: 2,
+    title: 'Palm Jumeirah',
+    price: '$ 976,000',
+    beach: '100 meters',
+    developer: 'Nakheel',
+    type: 'Apartment / Villas',
+    area: '180 million sq. ft.',
+    lat: 25.115271,
+    lng: 55.137262,
+    img: '/img/map-item-photo.jpg',
+  },
+  {
+    id: 3,
+    title: 'Dubai Marina & Jumeirah Lake Towers',
+    price: '$ 1,239,000',
+    beach: '500 meters',
+    developer: 'Nakheel',
+    type: 'Apartment',
+    area: '180 million sq. ft.',
+    lat: 25.076717,
+    lng: 55.139962,
+    img: '/img/map-item-photo.jpg',
+  },
+  {
+    id: 4,
+    title: 'Downtown Dubai & Business Bay',
+    price: '$ 1,139,000',
+    beach: '2.7 kilometers',
+    developer: 'Nakheel',
+    type: 'Apartment',
+    area: '180 million sq. ft.',
+    lat: 25.193920,
+    lng: 55.275184,
+    img: '/img/map-item-photo.jpg',
+  },
+  {
+    id: 5,
+    title: 'Creek Harbour',
+    price: '$ 799,000',
+    beach: '10 kilometers',
+    developer: 'Nakheel',
+    type: 'Apartment',
+    area: '180 million sq. ft.',
+    lat: 25.202958,
+    lng: 55.350099,
+    img: '/img/map-item-photo.jpg',
+  },
+  {
+    id: 6,
+    title: 'City Walk',
+    price: '$ 1,529,000',
+    beach: '900 meters',
+    developer: 'Nakheel',
+    type: 'Apartment',
+    area: '180 million sq. ft.',
+    lat: 25.205565,
+    lng: 55.263697,
+    img: '/img/map-item-photo.jpg',
+  },
+  {
+    id: 7,
+    title: 'Jumeirah Village Circle & Triangle',
+    price: '$ 689,000',
+    beach: '6.5 kilometers',
+    developer: 'Nakheel',
+    type: 'Apartment / Villas',
+    area: '180 million sq. ft.',
+    lat: 25.060415,
+    lng: 55.208744,
+    img: '/img/map-item-photo.jpg',
+  },
+  {
+    id: 8,
+    title: 'Dubai Hills',
+    price: '$ 989,000',
+    beach: '6.1 kilometers',
+    developer: 'Nakheel',
+    type: 'Villas',
+    area: '180 million sq. ft.',
+    lat: 25.114949,
+    lng: 55.254992,
+    img: '/img/map-item-photo.jpg',
+  },
+];
+
 const mapInfo = document.getElementById('map-info');
+
+const markers = []
+
+const mapInfoTitle = mapInfo.querySelector('.js-map-info-title');
+const mapInfoPrice = mapInfo.querySelector('.js-map-info-price');
+const mapInfoArea = mapInfo.querySelector('.js-map-info-area');
+const mapInfoDeveloper = mapInfo.querySelector('.js-map-info-developer');
+const mapInfoType = mapInfo.querySelector('.js-map-info-type');
+const mapInfoImg = mapInfo.querySelector('.js-map-info-img');
+
+const mapZoomIn = document.querySelector('.js-map-zoom-in');
+const mapZoomOut = document.querySelector('.js-map-zoom-out');
+
 const mapElement = document.getElementById('map');
+
+const DUBAI_BOUNDS = {
+  north: 25.356709,
+  south: 24.940776,
+  west: 55.031419,
+  east: 55.387416,
+};
 
 export async function initMap() {
   const loader = new Loader('AIzaSyCFVN9lovd3dC-PKoK-7VENM-vhhNUcXS8', {});
@@ -17,10 +137,14 @@ export async function initMap() {
     center,
     zoom: 12.5,
     disableDefaultUI: true,
-    // draggable: false,
+    draggable: true,
     zoomControl: false,
     scrollwheel: false,
     disableDoubleClickZoom: true,
+    restriction: {
+      latLngBounds: DUBAI_BOUNDS,
+      strictBounds: false,
+    },
   });
 
   map.mapTypes.set('styled_map', styledMapType);
@@ -28,13 +152,27 @@ export async function initMap() {
 
   setMarkers(map);
 
-  map.addListener('center_changed', () => {
-    timeoutId && clearTimeout(timeoutId);
-    timeoutId = window.setTimeout(() => {
-      map.panTo(center);
-      map.setZoom(12.5);
-    }, 2000);
-  });
+  mapZoomIn.addEventListener('click', function() {
+    const currentZoom = map.getZoom()
+
+    if (currentZoom > 14) {
+      return
+    }
+
+    map.setZoom(currentZoom + 1)
+  })
+
+  mapZoomOut.addEventListener('click', function() {
+    const currentZoom = map.getZoom()
+
+    if (currentZoom < 10) {
+      return
+    }
+
+    map.setZoom(currentZoom - 1)
+  })
+
+  google.maps.event.addListener(map, 'bounds_changed', hideContentInfo);
 }
 
 function setMarkers(map) {
@@ -45,36 +183,58 @@ function setMarkers(map) {
     anchor: new google.maps.Point(25, 25),
   };
 
-  for (let i = 0; i < markersData.length; i++) {
-    const point = markersData[i];
+  mapPointsData.forEach((data) => {
+    const { lat, lng, title } = data;
 
     const marker = new google.maps.Marker({
-      position: { lat: point[1], lng: point[2] },
+      position: { lat, lng },
       map,
       icon: image,
-      title: point[0],
+      title,
       cursor: 'pointer',
-
+      opacity: 0.75
     });
 
-    google.maps.event.addListener(marker, 'click', function(e) {
-        const target = e.domEvent.target;
+    markers.push(marker)
 
-        const left = getLeft(target);
-        const top = getTop(target);
+    google.maps.event.addListener(marker, 'click', (e) => showContentInfo(e, data, marker));
+  });
+}
 
-        mapInfo.style.left = `${left + 25}px`;
-        mapInfo.style.top = `${top - 5}px`;
+function showContentInfo(e, data, marker) {
+  markers.forEach((marker) => marker.setOpacity(0.75))
+  marker.setOpacity(1)
 
-        mapInfo.classList.add('mapItem--active');
+  const { title, price, developer, area, type, img } = data;
 
-        setTimeout(() => {
-          document.addEventListener('click', hideContentInfo);
-        });
+  const target = e.domEvent.target;
+  const halfSize = target.offsetWidth / 2
 
-      },
-    );
+  const left = getLeft(target);
+  const top = getTop(target);
+
+  let realLeft = (left + mapInfo.offsetWidth - window.innerWidth < -100 ? left : left - mapInfo.offsetWidth) + halfSize
+
+  if (isWindowSizeSmallerThen(480)) {
+    realLeft = 0
   }
+
+  mapInfo.style.left = `${realLeft}px`;
+  mapInfo.style.top = `${top - mapInfo.offsetHeight + halfSize}px`;
+
+  mapInfoTitle.innerText = title;
+  mapInfoPrice.innerText = price;
+  mapInfoDeveloper.innerText = developer;
+  mapInfoType.innerText = type;
+  mapInfoArea.innerText = area;
+  mapInfoImg.setAttribute('src', img);
+
+  mapInfo.classList.add('mapItem--active');
+
+  setTimeout(() => {
+    document.addEventListener('click', hideContentInfo);
+  });
+
 }
 
 function getLeft(element, left = 0) {
@@ -82,7 +242,7 @@ function getLeft(element, left = 0) {
     return left;
   }
 
-  return getLeft(element.parentElement, left + element.offsetLeft);
+  return getLeft(element.parentElement, left + (element.offsetLeft || 0));
 }
 
 function getTop(element, top = 0) {
@@ -90,21 +250,19 @@ function getTop(element, top = 0) {
     return top;
   }
 
-  return getLeft(element.parentElement, top + element.offsetTop);
+  return getTop(element.parentElement, top + (element.offsetTop || 0));
 }
 
 function hideContentInfo(e) {
-  if (e.target.closest('.mapItem')) {
+  if (e?.target && (e.target.closest('#map-section') && !e.target.closest('.js-close-map-info'))) {
     return;
   }
+
+  markers.forEach((marker) => marker.setOpacity(0.75))
 
   document.removeEventListener('click', hideContentInfo);
   mapInfo.classList.remove('mapItem--active');
 }
-
-const markersData = [
-  ['Bondi Beach', 25.115271, 55.137262, 'id-1'],
-];
 
 const styledData = [
   {
