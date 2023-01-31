@@ -73,6 +73,8 @@ export function initChart() {
   const increasePlaceUae = document.querySelector('.js-chart-increase-uae');
   const increasePlaceSpain = document.querySelector('.js-chart-increase-spain');
 
+  const chartController = document.querySelector('.js-chart-controller');
+
   if (!chartRange || !chartOverlay) {
     return;
   }
@@ -82,6 +84,9 @@ export function initChart() {
     const currentPercent = (value - chartRange.min) / (chartRange.max - chartRange.min) * 100;
 
     chartOverlay.style.width = `${currentPercent}%`;
+
+    chartController.style.height = `${currentPercent * 1.2}%`;
+    chartController.style.left = `${currentPercent}%`;
 
     pricePlaceTurkey.innerText = chartData[value].cost.turkey;
     pricePlaceUae.innerText = chartData[value].cost.uae;
