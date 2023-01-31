@@ -84,8 +84,8 @@
                 <div class="burgerMenu__column">
                   <a href="#about" class="burgerMenu__link">About company</a>
                   <a href="#projects" class="burgerMenu__link">Available projects</a>
-                  <a href="#priseChart" class="burgerMenu__link">Property prices</a>
-                  <a href="#map" class="burgerMenu__link">The best areas of Dubai</a>
+                  <a href="#price-chart" class="burgerMenu__link">Property prices</a>
+                  <a href="#map-section" class="burgerMenu__link">The best areas of Dubai</a>
                   <a href="#experts"  class="burgerMenu__link">Our experts</a>
                   <a href="#benefits" class="burgerMenu__link">Benefits of palladium</a>
                 </div>
@@ -133,7 +133,9 @@
               <div class="inputWrapper" data-lable="Purpose">
                 <select name="purpose" class="js-select">
                   <option value="investment">Investment</option>
-                  <option value="accommodation">Accommodation</option>
+                  <option value="rent">for Rent</option>
+                  <option value="life">for Life</option>
+                  <option value="residency">get Residency</option>
                 </select>
               </div>
             </div>
@@ -141,8 +143,10 @@
             <div class="firstScreen__input">
               <div class="inputWrapper" data-lable="Property type">
                 <select name="purpose" class="js-select">
-                  <option value="investment">Apartments</option>
-                  <option value="accommodation">House</option>
+                  <option value="apartments">Apartments</option>
+                  <option value="penthouse">Penthouse</option>
+                  <option value="villa">Villa</option>
+                  <option value="townhouse">Townhouse</option>
                 </select>
               </div>
             </div>
@@ -150,8 +154,17 @@
             <div class="firstScreen__input">
               <div class="inputWrapper" data-lable="District">
                 <select name="purpose" class="js-select">
-                  <option value="investment">Dubai Marina</option>
-                  <option value="accommodation">Dubai Lena</option>
+                  <option value="dubai-marina">Dubai Marina</option>
+                  <option value="bluewaters">Bluewaters</option>
+                  <option value="palm-jumeirah">Palm Jumeirah</option>
+                  <option value="jumeirah-lake-towers">Jumeirah Lake Towers</option>
+                  <option value="downtown-bubai">Downtown Dubai</option>
+                  <option value="business-bay">Business Bay</option>
+                  <option value="creek-harbour">Creek Harbour</option>
+                  <option value="city-walk">City Walk</option>
+                  <option value="jumeirah-village-circle">Jumeirah Village Circle</option>
+                  <option value="jumeirah-village-triangle">Jumeirah Village Triangle</option>
+                  <option value="dubai-hills">Dubai Hills</option>
                 </select>
               </div>
             </div>
@@ -169,7 +182,7 @@
               </div>
             </div>
           </div>
-         <button class="button js-open-modal" data-modal="apartmentData">Get an individual offer</button>
+         <button class="button js-open-modal" data-modal="catalogForm">Get an individual offer</button>
         </div>
       </div>
     </section>
@@ -316,7 +329,7 @@
                     <div class="moreButton">
                       <p class="moreButton__text">More info</p>
                       <div class="moreButton__line"></div>
-                      <button class="moreButton__button"></button>
+                      <button class="moreButton__button js-open-modal" data-modal="apartmentData"></button>
                     </div>
                   </div>
                   <div class="projectItem swiper-slide">
@@ -353,7 +366,7 @@
                     <div class="moreButton">
                       <p class="moreButton__text">More info</p>
                       <div class="moreButton__line"></div>
-                      <button class="moreButton__button"></button>
+                      <button class="moreButton__button js-open-modal" data-modal="apartmentData"></button>
                     </div>
                   </div>
                   <div class="projectItem swiper-slide">
@@ -392,7 +405,7 @@
                     <div class="moreButton">
                       <p class="moreButton__text">More info</p>
                       <div class="moreButton__line"></div>
-                      <button class="moreButton__button"></button>
+                      <button class="moreButton__button js-open-modal" data-modal="apartmentData"></button>
                     </div>
                   </div>
                   <div class="projectItem swiper-slide">
@@ -429,7 +442,7 @@
                     <div class="moreButton">
                       <p class="moreButton__text">More info</p>
                       <div class="moreButton__line"></div>
-                      <button class="moreButton__button"></button>
+                      <button class="moreButton__button js-open-modal" data-modal="apartmentData"></button>
                     </div>
                   </div>
                   <div class="projectItem swiper-slide">
@@ -468,7 +481,7 @@
                     <div class="moreButton">
                       <p class="moreButton__text">More info</p>
                       <div class="moreButton__line"></div>
-                      <button class="moreButton__button"></button>
+                      <button class="moreButton__button js-open-modal" data-modal="apartmentData"></button>
                     </div>
                   </div>
                 </div>
@@ -510,7 +523,7 @@
         catalog</button>
     </section>
 
-    <section class="container priceChart" id="priceChart">
+    <section class="container priceChart" id="price-chart">
       <div class="container__row priceChart__inner">
         <h2 class="priceChart__header">How fast are property prices rising?</h2>
         <div class="priceChart__content">
@@ -614,47 +627,51 @@
         </div>
       </div>
     </section>
-    <section class="container map" id="map">
+    <section class="container map" id="map-section">
       <div class="container__row map__inner">
         <div class="map__top">
           <h2 class="map__header">Dubai best areas at the glance</h2>
           <button class="button button--smaller button--thinner js-open-modal" data-modal="catalogForm">Get a
             catalog</button>
-          <div class="mapItem">
+          <div class="mapItem" id="map-info">
             <div class="mapItem__inner">
-              <div class="mapItem__closeButton mapItem__desktopHidden">
+              <div class="mapItem__closeButton mapItem__desktopHidden js-close-map-info">
                 <div class="mapItem__closeIcon"></div>
               </div>
               <div class="mapItem__photo">
-                <img alt="Palm Jumeirah" src="/img/map-item-photo.jpg" srcSet="/img/map-item-photo-2x.jpg 2x">
+                <img alt="Map Item Info" class="js-map-info-img" src="/img/map-item-photo.jpg">
               </div>
               <div class="mapItem__content">
-                <h3 class="mapItem__header">Palm Jumeirah</h3>
+                <h3 class="mapItem__header js-map-info-title">Palm Jumeirah</h3>
                 <div class="mapItem__description">
                   <div class="mapItem__column">
                     <div class="mapItem__cell">
                       <p class="mapItem__subtitle">Starting price</p>
-                      <p class="mapItem__data">AED 1,874,000</p>
+                      <p class="mapItem__data js-map-info-price">AED 1,874,000</p>
                     </div>
                     <div class="mapItem__cell">
                       <p class="mapItem__subtitle">Developer</p>
-                      <p class="mapItem__data">Nakheel</p>
+                      <p class="mapItem__data js-map-info-developer">Nakheel</p>
                     </div>
                   </div>
                   <div class="mapItem__column">
                     <div class="mapItem__cell">
                       <p class="mapItem__subtitle">Area</p>
-                      <p class="mapItem__data">180 million sq. ft.</p>
+                      <p class="mapItem__data js-map-info-area">180 million sq. ft.</p>
                     </div>
                     <div class="mapItem__cell">
                       <p class="mapItem__subtitle">Type</p>
-                      <p class="mapItem__data">Residential</p>
+                      <p class="mapItem__data js-map-info-type">Residential</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="map__controls">
+          <div class="map__controlsZoomIn js-map-zoom-in">+</div>
+          <div class="map__controlsZoomOut js-map-zoom-out">-</div>
         </div>
         <div class="map__wrapper" id="map"></div>
       </div>
@@ -1070,7 +1087,7 @@
         <div class="letYouGet__contentProgress">
           <div class="letYouGet__contentProgressBar js-offer-slider-bar"></div>
         </div>
-        <button class="letYouGet__button button js-open-modal" data-modal="apartmentData">Get an individual
+        <button class="letYouGet__button button js-open-modal" data-modal="catalogForm">Get an individual
           offer</button>
       </div>
     </section>
@@ -1092,11 +1109,11 @@
                 <li>No requirement for an employment sponsor</li>
               </ul>
             </div>
-            <button class="button button--smaller goldenVisa__mobileHidden">get a free consultation</button>
+            <button class="button button--smaller goldenVisa__mobileHidden js-open-modal" data-modal="catalogForm">get a free consultation</button>
           </div>
           <div class="goldenVisa__image">
             <img alt="Gilden Visa" src="/img/golden-visa.png" srcSet="/img/golden-visa-2x.png 2x">
-            <button class="button button--smaller goldenVisa__mobileVisible">get a free consultation</button>
+            <button class="button button--smaller goldenVisa__mobileVisible js-open-modal" data-modal="catalogForm">get a free consultation</button>
           </div>
         </div>
         <div class="goldenVisa__bottom">
@@ -1409,7 +1426,7 @@
           <div class="services__contentProgress">
             <div class="services__contentProgressBar js-services-slider-bar"></div>
           </div>
-          <button class="services__button button button--smaller">get a free consultation</button>
+          <button class="services__button button button--smaller js-open-modal" data-modal="catalogForm">get a free consultation</button>
         </div>
       </div>
     </section>

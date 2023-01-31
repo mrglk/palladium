@@ -16,6 +16,47 @@
   z-index: 1;
 }
 
+.map__controls {
+  position: absolute;
+  bottom: 40px;
+  right: 80px;
+
+  z-index: 4;
+  font-weight: 300;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.map__controlsZoomIn,
+.map__controlsZoomOut {
+  width: 70px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--sandal);
+
+  font-size: 32px;
+  color: var(--white);
+
+  transition: opacity 200ms ease;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+
+.map__controlsZoomIn {
+  background: var(--brown);
+}
+
+.map__controlsZoomIn:hover,
+.map__controlsZoomOut:hover {
+  opacity: 0.75
+}
+
 .map__header {
   max-width: 485px;
   margin-bottom: 80px;
@@ -27,4 +68,31 @@
   top: 0;
   height: 100%;
   width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+  .map__top {
+    text-align: center;
+  }
+
+  .map__controls {
+    top: 30px;
+    right: 30px;
+
+    bottom: auto;
+  }
+
+  .map__controlsZoomIn,
+  .map__controlsZoomOut {
+    width: 40px;
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .map__controls {
+    top: 40px;
+
+    bottom: auto;
+  }
 }
