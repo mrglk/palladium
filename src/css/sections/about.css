@@ -86,7 +86,7 @@
   opacity: 0.5;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1700px) {
   .about__content {
     margin-bottom: 127px;
   }

@@ -82,7 +82,7 @@
   pointer-events: all;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1700px) {
   .select {
     font-size: 20px;
       height: 80px;

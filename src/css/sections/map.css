@@ -73,7 +73,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1700px) {
   .map {
     margin-bottom: 150px;
   }
