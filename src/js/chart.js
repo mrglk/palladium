@@ -61,39 +61,56 @@ const chartData = {
   },
 };
 
+const chartDates = document.querySelector('.js-range-dates');
+
+const chartOverlay = document.querySelector('.js-chart-overlay');
+const chartRange = document.querySelector('.js-chart-range');
+
+const pricePlaceTurkey = document.querySelector('.js-chart-price-turkey');
+const pricePlaceUae = document.querySelector('.js-chart-price-uae');
+const pricePlaceSpain = document.querySelector('.js-chart-price-spain');
+
+const increasePlaceTurkey = document.querySelector('.js-chart-increase-turkey');
+const increasePlaceUae = document.querySelector('.js-chart-increase-uae');
+const increasePlaceSpain = document.querySelector('.js-chart-increase-spain');
+
+const chartController = document.querySelector('.js-chart-controller');
+
 export function initChart() {
-  const chartOverlay = document.querySelector('.js-chart-overlay');
-  const chartRange = document.querySelector('.js-chart-range');
-
-  const pricePlaceTurkey = document.querySelector('.js-chart-price-turkey');
-  const pricePlaceUae = document.querySelector('.js-chart-price-uae');
-  const pricePlaceSpain = document.querySelector('.js-chart-price-spain');
-
-  const increasePlaceTurkey = document.querySelector('.js-chart-increase-turkey');
-  const increasePlaceUae = document.querySelector('.js-chart-increase-uae');
-  const increasePlaceSpain = document.querySelector('.js-chart-increase-spain');
-
-  const chartController = document.querySelector('.js-chart-controller');
-
   if (!chartRange || !chartOverlay) {
     return;
   }
 
+  chartDates.addEventListener('click', function(e) {
+    const value = Number(e.target.innerText)
+
+    if (value > 0) {
+      chartRange.value = value
+      setChartPosition(value)
+    }
+  })
+
   chartRange.addEventListener('input', function(e) {
     const value = e.target.value;
-    const currentPercent = (value - chartRange.min) / (chartRange.max - chartRange.min) * 100;
 
-    chartOverlay.style.width = `${currentPercent}%`;
-
-    chartController.style.height = `${currentPercent * 1.2}%`;
-    chartController.style.left = `${currentPercent}%`;
-
-    pricePlaceTurkey.innerText = chartData[value].cost.turkey;
-    pricePlaceUae.innerText = chartData[value].cost.uae;
-    pricePlaceSpain.innerText = chartData[value].cost.spain;
-
-    increasePlaceTurkey.innerText = chartData[value].increase.turkey
-    increasePlaceUae.innerText = chartData[value].increase.uae
-    increasePlaceSpain.innerText = chartData[value].increase.spain
+    setChartPosition(value)
   });
+}
+
+
+function setChartPosition(value) {
+  const currentPercent = (value - chartRange.min) / (chartRange.max - chartRange.min) * 100;
+
+  chartOverlay.style.width = `${currentPercent}%`;
+
+  chartController.style.height = `${currentPercent * 1.2}%`;
+  chartController.style.left = `${currentPercent}%`;
+
+  pricePlaceTurkey.innerText = chartData[value].cost.turkey;
+  pricePlaceUae.innerText = chartData[value].cost.uae;
+  pricePlaceSpain.innerText = chartData[value].cost.spain;
+
+  increasePlaceTurkey.innerText = chartData[value].increase.turkey
+  increasePlaceUae.innerText = chartData[value].increase.uae
+  increasePlaceSpain.innerText = chartData[value].increase.spain
 }
