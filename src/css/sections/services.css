@@ -48,7 +48,7 @@
   align-self: stretch;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1700px) {
   .services {
     margin-bottom: 150px;
   }

@@ -278,7 +278,7 @@
   fill: var(--cream);
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1700px) {
   .experts__videoSide {
     width: 40%;
     margin-right: 82px;

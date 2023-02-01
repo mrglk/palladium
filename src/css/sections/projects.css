@@ -41,7 +41,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1700px) {
   .projects__top {
     margin-bottom: 67px;
   }
