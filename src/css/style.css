@@ -27,6 +27,8 @@
 @import "blocks/videoModal.css";
 @import "blocks/swiper.css";
 @import "blocks/cookie.css";
+@import "blocks/lines.css";
+@import "blocks/title.css";
 
 @import "sections/header.css";
 @import "sections/firstScreen.css";

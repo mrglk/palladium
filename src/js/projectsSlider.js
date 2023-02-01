@@ -35,7 +35,7 @@ function runSwiper(type) {
     slidesPerView: 'auto',
     // loop: true,
     spaceBetween: 15,
-    allowTouchMove: false,
+    // allowTouchMove: false,
 
     navigation: {
       nextEl: '.js-project-slider-next',
