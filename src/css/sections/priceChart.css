@@ -221,16 +221,16 @@
 }
 
 @media screen and (max-width: 1780px) {
+  .priceChart__content {
+    min-height: 700px;
+  }
+  
   .priceChart__right {
     padding-bottom: 253px;
   }
 }
 
 @media screen and (max-width: 1670px) {
-  .priceChart__content {
-    min-height: 700px;
-  }
-
   .priceChart__right {
     padding-bottom: 223px;
   }

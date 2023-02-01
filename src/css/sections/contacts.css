@@ -155,7 +155,7 @@
   font-size: 14px;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1700px) {
   .contacts__inner {
     padding-top: 90px;
     background: linear-gradient(to right, #f9f3ee 52%, var(--sandal) 48%);

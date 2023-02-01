@@ -48,7 +48,7 @@
   margin-bottom: 70px;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1700px) {
   .offers__desktop1920Visible {
     display: none;
   }
