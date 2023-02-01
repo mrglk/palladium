@@ -13,7 +13,7 @@ const chartData = {
   },
   2018: {
     cost: {
-      uae: 300,
+      uae: 3000,
       turkey: 5000,
       spain: 7000
     },
