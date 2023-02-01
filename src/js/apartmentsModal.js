@@ -17,7 +17,7 @@ const apartSize = document.querySelector('.js-apartment-data-size')
 const apartBathrooms = document.querySelector('.js-apartment-data-bathrooms')
 const apartBedrooms = document.querySelector('.js-apartment-data-bedrooms')
 const apartFileSize = document.querySelector('.js-apartment-data-brochure-filesize')
-const apartFileUrl = document.querySelector('.js-apartment-data-brochure')
+// const apartFileUrl = document.querySelector('.js-apartment-data-brochure')
 
 export function initApartmentsModal() {
   apartmentsSlider.addEventListener('click', function(e) {
@@ -47,14 +47,14 @@ export function initApartmentsModal() {
     apartPrice.innerText = data.price
     // apartAge.innerText = data.age
     apartBathrooms.innerText = data.bathrooms
-    apartFileUrl.setAttribute('href', data.brochure)
+    // apartFileUrl.setAttribute('href', data.brochure)
 
     apartThumbs.firstElementChild.innerHTML = (data.photos || []).map((photo) => {
       return `<div class="apartmentData__sliderPhoto swiper-slide"><img alt="Apartaments" src="${photo}"></div>`
     }).join('')
 
     apartSlider.firstElementChild.innerHTML = (data.photos || []).map((photo) => {
-      return `<div class="swiper-slide"><img alt="Apartaments" src="${photo}" /></div>`
+      return `<div class="swiper-slide apartmentData__photoItem"><img alt="Apartaments" src="${photo}" /></div>`
     })
 
     openModal('apartmentData')
