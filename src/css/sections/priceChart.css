@@ -405,6 +405,7 @@
   
   .priceChart__mobileVisible {
     display: block;
+    margin-left: 20px;
   }
 
   .priceChart__mobileCountryIcons {
@@ -429,7 +430,7 @@
 
   .priceChart__chartImage {
     max-width: 1538px;
-    width: 95%;
+    /*width: 95%;*/
   }
 
   .priceChart {

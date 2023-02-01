@@ -16,6 +16,7 @@ import { initForms } from './js/forms';
 import { initMap } from './js/map';
 import { initApartmentsModal } from './js/apartmentsModal';
 import { initCounters } from './js/counterEffect';
+import { initTextEffect } from './js/textEffects';
 
 document.addEventListener("DOMContentLoaded", function () {
     customSelect()
@@ -33,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     initForms()
     initApartmentsModal()
     initCounters()
-
+    initTextEffect()
     setTimeout(() => {
         initMap()
     }, 2000)
