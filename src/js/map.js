@@ -135,7 +135,7 @@ export async function initMap() {
 
   map = new google.maps.Map(mapElement, {
     center,
-    zoom: 12.5,
+    zoom: isWindowSizeSmallerThen(800) ? 10.5 : 12.5,
     disableDefaultUI: true,
     draggable: true,
     zoomControl: false,
