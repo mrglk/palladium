@@ -54,7 +54,7 @@ export function initApartmentsModal() {
     }).join('')
 
     apartSlider.firstElementChild.innerHTML = (data.photos || []).map((photo) => {
-      return `<div class="swiper-slide"><img alt="Apartaments" src="${photo}" /></div>`
+      return `<div class="swiper-slide apartmentData__photoItem"><img alt="Apartaments" src="${photo}" /></div>`
     })
 
     openModal('apartmentData')

@@ -1,11 +1,12 @@
 .projectItem {
+  cursor: pointer;
   max-width: 567px;
   width: 33%;
 }
 
-.projectItem:not(:last-child) {
-  /*margin-right: 30px;*/
-}
+/* .projectItem:not(:last-child) {
+  margin-right: 30px;
+} */
 
 .projectItem__photo {
   width: 100%;
@@ -18,6 +19,7 @@
   height: 400px;
   object-fit: cover;
   width: 100%;
+  max-width: 100%;
 }
 
 .projectItem__description {

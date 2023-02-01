@@ -39,6 +39,12 @@
   object-fit: cover;
 }
 
+/* .apartmentData__photoItem {
+  height: 0;
+  padding-bottom: 75%;
+  max-width: 100%;
+} */
+
 .apartmentData__slider {
   width: 100%;
   display: flex;
