@@ -6,7 +6,7 @@ export function initCounters() {
 
 function scrollListener(e) {
 
-  if ((window.scrollY + window.innerHeight / 2) < counterElements[0].getBoundingClientRect().x) {
+  if ((window.scrollY + window.innerHeight / 1.3) < counterElements[0].getBoundingClientRect().x) {
     return
   }
 

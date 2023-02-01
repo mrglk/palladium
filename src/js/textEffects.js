@@ -18,7 +18,7 @@ export function initTextEffect() {
 
   const options = {
     root: null,
-    rootMargin: "200px",
+    // rootMargin: "200px",
     threshold: 1,
   };
 

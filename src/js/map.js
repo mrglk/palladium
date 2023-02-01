@@ -110,7 +110,7 @@ const markers = []
 
 const mapInfoTitle = mapInfo.querySelector('.js-map-info-title');
 const mapInfoPrice = mapInfo.querySelector('.js-map-info-price');
-const mapInfoArea = mapInfo.querySelector('.js-map-info-area');
+const mapInfoBeach = mapInfo.querySelector('.js-map-info-beach');
 const mapInfoDeveloper = mapInfo.querySelector('.js-map-info-developer');
 const mapInfoType = mapInfo.querySelector('.js-map-info-type');
 const mapInfoImg = mapInfo.querySelector('.js-map-info-img');
@@ -135,7 +135,7 @@ export async function initMap() {
 
   map = new google.maps.Map(mapElement, {
     center,
-    zoom: isWindowSizeSmallerThen(800) ? 10.5 : 12.5,
+    zoom: isWindowSizeSmallerThen(800) ? 10.5 : 12,
     disableDefaultUI: true,
     draggable: true,
     zoomControl: false,
@@ -205,7 +205,7 @@ function showContentInfo(e, data, marker) {
   markers.forEach((marker) => marker.setOpacity(0.75))
   marker.setOpacity(1)
 
-  const { title, price, developer, area, type, img } = data;
+  const { title, price, developer, area, type, img, beach } = data;
   const target = e.domEvent.target;
 
   const halfSize = target.offsetWidth / 2
@@ -226,7 +226,7 @@ function showContentInfo(e, data, marker) {
   mapInfoPrice.innerText = price;
   mapInfoDeveloper.innerText = developer;
   mapInfoType.innerText = type;
-  mapInfoArea.innerText = area;
+  mapInfoBeach.innerText = beach;
   mapInfoImg.setAttribute('src', img);
 
   mapInfo.classList.add('mapItem--active');
