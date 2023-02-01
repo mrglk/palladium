@@ -163,12 +163,12 @@
                   <option value="palm-jumeirah">Palm Jumeirah</option>
                   <option value="jumeirah-lake-towers">Jumeirah Lake Towers</option>
                   <option value="downtown-bubai">Downtown Dubai</option>
-                  <option value="business-bay">Business Bay</option>
+                  <!-- <option value="business-bay">Business Bay</option>
                   <option value="creek-harbour">Creek Harbour</option>
                   <option value="city-walk">City Walk</option>
                   <option value="jumeirah-village-circle">Jumeirah Village Circle</option>
                   <option value="jumeirah-village-triangle">Jumeirah Village Triangle</option>
-                  <option value="dubai-hills">Dubai Hills</option>
+                  <option value="dubai-hills">Dubai Hills</option> -->
                 </select>
               </div>
             </div>
@@ -178,15 +178,15 @@
                 <div class="inputRange">
                   <div class="inputRange__priceWrapper">
                     <span class="inputRange__price js-range-min">100000</span>
-                    <span class="inputRange__price js-range-max">1000000</span>
+                    <span class="inputRange__price js-range-max">10000000</span>
                   </div>
-                  <div class="inputRange__input" id="my-slider" data-min="0" data-max="900000" data-range="900000">
+                  <div class="inputRange__input" id="my-slider" data-min="0" data-max="9900000" data-range="9900000">
                   </div>
                 </div>
               </div>
             </div>
           </div>
-         <button class="button js-open-modal" data-modal="requestForm">Get an individual offer</button>
+         <button class="button js-open-modal" data-modal="offerForm">Get an individual offer</button>
         </div>
       </div>
     </section>
@@ -206,8 +206,7 @@
                 quality and prospects of the object, excluding unsuccessful deals.</p>
             </div>
             <button class="about__buttonDesktop button button--smaller button--thinner js-open-modal"
-              data-modal="catalogForm">Get a
-              catalog</button>
+              data-modal="catalogForm">Get a catalog</button>
           </div>
           <div class="about__right">
             <div class="about__rightRow">
@@ -222,12 +221,12 @@
             </div>
             <div class="about__rightRow">
               <div class="aboutFact">
-                <div class="aboutFact__number"><span class="js-counter-effect" data-max="900"></span>+</div>
-                <p class="aboutFact__title">TOTAL INVESTMENT (MLN. $)</p>
-              </div>
-              <div class="aboutFact">
                 <div class="aboutFact__number"><span class="js-counter-effect" data-max="100"></span>+</div>
                 <p class="aboutFact__title">PROPERTIES</p>
+              </div>
+              <div class="aboutFact">
+                <div class="aboutFact__number"><span class="js-counter-effect" data-max="900"></span>+</div>
+                <p class="aboutFact__title">TOTAL INVESTMENT (MLN. $)</p>
               </div>
             </div>
           </div>
@@ -1339,7 +1338,7 @@
         <div class="letYouGet__contentProgress">
           <div class="letYouGet__contentProgressBar js-offer-slider-bar"></div>
         </div>
-        <button class="letYouGet__button button js-open-modal" data-modal="catalogForm">Get an individual
+        <button class="letYouGet__button button js-open-modal" data-modal="offerForm">Get an individual
           offer</button>
       </div>
     </section>
@@ -1809,14 +1808,14 @@
             <div class="apartmentData__rightBottom">
               <p class="apartmentData__price"><span class="js-apartment-data-price">284,000</span> <span>$</span></p>
               <div class="apartmentData__buttons">
-                <a href="#" class="button button--smaller button--thinner button--white button--smallerOnDesktop js-apartment-data-brochure">download
+                <button class="button button--smaller button--thinner button--white button--smallerOnDesktop js-open-modal" data-modal="catalogForm">download
                   brochure,
                   <div class="button__caption"><span class="js-apartment-data-brochure-filesize">199KB</span>
                     <svg class="button__icon">
                       <use href="./spritemap.svg#icon-download-icon" />
                     </svg>
                   </div>
-                </a>
+                </button>
                 <button class="button button--smaller button--thinner js-open-modal" data-modal="requestForm">Get free consultation</button>
               </div>
             </div>
@@ -1962,8 +1961,81 @@
             <input
               type="submit"
               class="button button--smaller button--thinner"
-              data-modal="catalogForm"
+              data-modal="requestForm"
               value="Get a free consultation"
+              data-success="Sent"
+            >
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="modals__item modals__item--center" id="offerForm">
+      <div class="catalogForm">
+        <div class="catalogForm__closeButton js-close-modals">
+          <div class="closeButton"></div>
+        </div>
+        <div class="catalogForm__inner">
+          <form action="#" class="catalogForm__form">
+            <div class="catalogForm__radioContainer">
+              <div class="catalogForm__radioButtonWrapper">
+                <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioTel" checked>
+                <label class="catalogForm__radioLabel" for="radioTel">
+                  <svg class="catalogForm__radioIcon">
+                    <use href="./spritemap.svg#icon-catalog-tel" />
+                  </svg>
+                  <p class="catalogForm__radioText">Call</p>
+                </label>
+              </div>
+              <div class="catalogForm__radioButtonWrapper">
+                <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioWatsapp">
+                <label class="catalogForm__radioLabel" for="radioWatsapp">
+                  <svg class="catalogForm__radioIcon">
+                    <use href="./spritemap.svg#icon-catalog-watsapp" />
+                  </svg>
+                  <p class="catalogForm__radioText">Watsapp</p>
+                </label>
+              </div>
+              <div class="catalogForm__radioButtonWrapper">
+                <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioViber">
+                <label class="catalogForm__radioLabel" for="radioViber">
+                  <svg class="catalogForm__radioIcon">
+                    <use href="./spritemap.svg#icon-catalog-viber" />
+                  </svg>
+                  <p class="catalogForm__radioText">Viber</p>
+                </label>
+              </div>
+              <div class="catalogForm__radioButtonWrapper">
+                <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioTelegram">
+                <label class="catalogForm__radioLabel" for="radioTelegram">
+                  <svg class="catalogForm__radioIcon catalogForm__radioIcon--telegram">
+                    <use href="./spritemap.svg#icon-catalog-telegram" />
+                  </svg>
+                  <p class="catalogForm__radioText">Telegram</p>
+                </label>
+              </div>
+            </div>
+
+            <div class="catalogForm__textInputs">
+              <input class="catalogForm__input" data-validation="required" type="text" name="name" placeholder="Name">
+              <input class="catalogForm__input" data-validation="phone" type="tel" name="tel" placeholder="Phone">
+            </div>
+
+            <div class="catalogForm__checkbox">
+              <div class="checkbox">
+                <input class="checkbox__input" data-validation="checkbox" type="checkbox" id="privacyCatalog" name="privacyCatalog" checked>
+                <label class="checkbox__label checkbox__label--righter" for="privacyCatalog">
+                  <p class="checkbox__text">I have read and accepted the <a class="checkbox__link"
+                      href="./index.html">Privacy Policy</a></p>
+                </label>
+              </div>
+            </div>
+
+            <input
+              type="submit"
+              class="button button--smaller button--thinner"
+              data-modal="offerForm"
+              value="Get an individual offer"
               data-success="Sent"
             >
           </form>
