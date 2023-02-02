@@ -406,7 +406,7 @@
   
   .priceChart__mobileVisible {
     display: block;
-    margin-left: 20px;
+    margin-left: 15px;
   }
 
   .priceChart__mobileCountryIcons {
@@ -457,7 +457,7 @@
   }
 
   .priceChart__chartImageWrapper {
-    margin-top: 250px;
+    margin-top: 285px;
   }
 
   .priceChart__right {
@@ -479,6 +479,10 @@
     margin-bottom: 0;
     margin-right: 23px;
   }
+
+  .priceChart__costPrise {
+    font-size: 18px;
+}
 }
 
 @media screen and (max-width: 445px) {
@@ -491,6 +495,14 @@
   .priceChart__mobileCountryIcons {
     margin-bottom: 40px;
   }
+
+  .priceChart__costPrise {
+    font-size: 16px;
+}
+
+.priceChart__costCountry {
+  margin-bottom: 10px;
+}
 }
 
 
