@@ -254,7 +254,7 @@ function getTop(element, top = 0) {
 }
 
 function hideContentInfo(e) {
-  if (e?.target && (e.target.closest('#map-section') && !e.target.closest('.js-close-map-info'))) {
+  if (e?.target && (e.target.closest('#map-info') && !e.target.closest('.js-close-map-info'))) {
     return;
   }
 
