@@ -16,7 +16,7 @@ const apartType = document.querySelector('.js-apartment-data-type')
 const apartSize = document.querySelector('.js-apartment-data-size')
 const apartBathrooms = document.querySelector('.js-apartment-data-bathrooms')
 const apartBedrooms = document.querySelector('.js-apartment-data-bedrooms')
-const apartFileSize = document.querySelector('.js-apartment-data-brochure-filesize')
+// const apartFileSize = document.querySelector('.js-apartment-data-brochure-filesize')
 // const apartFileUrl = document.querySelector('.js-apartment-data-brochure')
 
 export function initApartmentsModal() {
@@ -37,7 +37,7 @@ export function initApartmentsModal() {
 
 
     apartId.innerText = data.id
-    apartFileSize.innerText = data.filesize || '200 KB'
+    // apartFileSize.innerText = data.filesize || '200 KB'
     apartBedrooms.innerText = data.bedrooms
     apartSize.innerText = data.size
     apartAddress.innerText = data.address

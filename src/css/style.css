@@ -29,6 +29,7 @@
 @import "blocks/cookie.css";
 @import "blocks/lines.css";
 @import "blocks/title.css";
+@import "blocks/animatedButton.css";
 
 @import "sections/header.css";
 @import "sections/firstScreen.css";
