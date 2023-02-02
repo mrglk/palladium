@@ -1,9 +1,9 @@
 const chartData = {
   2013: {
     cost: {
-      uae: 2500,
-      turkey: 4000,
-      spain: 5500
+      uae: 1600,
+      turkey: 4300,
+      spain: 7400
     },
     increase: {
       uae: 20,
@@ -13,9 +13,9 @@ const chartData = {
   },
   2018: {
     cost: {
-      uae: 3000,
-      turkey: 5000,
-      spain: 7000
+      uae: 3150,
+      turkey: 5400,
+      spain: 10500
     },
     increase: {
       uae: 90,
@@ -37,9 +37,9 @@ const chartData = {
   },
   2028: {
     cost: {
-      uae: 5500,
-      turkey: 7000,
-      spain: 11000
+      uae: 7700,
+      turkey: 7800,
+      spain: 11700
     },
     increase: {
       uae: 160,
@@ -49,9 +49,9 @@ const chartData = {
   },
   2033: {
     cost: {
-      uae: 6000,
-      turkey: 9000,
-      spain: 14000
+      uae: 10000,
+      turkey: 8600,
+      spain: 12900
     },
     increase: {
       uae: 190,

@@ -41,7 +41,7 @@
 
 .apartmentData__photoItem {
   height: 0;
-  padding-bottom: 75%;
+  padding-bottom: 55%;
   max-width: 100%;
 
   position: relative;
@@ -71,6 +71,8 @@
   object-fit: cover;
   max-width: 176px;
   max-height: 176px;
+  width: 176px;
+  height: 176px;
   cursor: pointer;
 }
 
