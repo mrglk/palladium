@@ -1,4 +1,5 @@
 .button {
+  overflow: hidden;
   text-decoration: none;
   cursor: pointer;
   display: flex;
@@ -17,13 +18,16 @@
 
   padding: 32px 60px;
   background-color: var(--sandal);
-  transition: background-color 200ms ease;
+  transition: background-color 400ms ease;
+
+  flex-shrink: 0;
+  transform: translateZ(0);
 }
 
-.button:hover,
+/* .button:hover,
 .button--active {
   background-color: var(--brown);
-}
+} */
 
 .button--smaller {
   padding-top: 25;
@@ -40,10 +44,10 @@
   border: 1px solid var(--sandal);
 }
 
-.button--white:hover {
+/* .button--white:hover {
   background-color: var(--sandal);
   color: var(--white);
-}
+} */
 
 .button__caption {
   font-family: var(--accent-font);
@@ -64,13 +68,13 @@
   fill: var(--sandal);
 }
 
-.button:hover .button__caption {
+/* .button:hover .button__caption {
   color: var(--white);
 }
 
 .button:hover .button__icon {
   fill: var(--white);
-}
+} */
 
 .disabled[disabled] {
   opacity: .5;
