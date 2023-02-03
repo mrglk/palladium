@@ -3,11 +3,58 @@
 }
 
 .header {
-  position: absolute;
+  background: transparent;
+
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 55;
   height: 130px;
   border-bottom: 1px solid rgba(230, 230, 230, 0.4);
+
+  color: var(--white);
+
+  transition: transform 300ms ease, color 300ms ease, background-color 300ms ease;
+}
+
+.header--hidden {
+  transform: translateY(-100%);
+}
+
+.header--active {
+  /*background: var(--white);*/
+  color: var(--brown);
+
+  box-shadow: 0 0 3px #00000044;
+}
+
+.header:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--white-cream);
+
+  transform: translate3d(0,0,0);
+
+  opacity: 0;
+
+  transition: opacity 300ms ease;
+}
+
+.header--active:after {
+  opacity: 1;
+}
+
+.header--active .header__logoIcon {
+  fill: var(--brown);
+}
+
+.header--active .header__socialIcon {
+  fill: var(--brown);
 }
 
 .header__row {
@@ -23,7 +70,7 @@
 
   width: 100%;
   height: 100%;
-  color: var(--white);
+  color: inherit;
 }
 
 .header__left {
@@ -69,7 +116,7 @@
 .header__tel {
   padding-right: 25px;
   font-size: 18px;
-  color: var(--white);
+  color: inherit;
   text-decoration: none;
 }
 
@@ -100,7 +147,7 @@
 .header__langButton {
   padding: 0 46px;
   font-size: 18px;
-  color: var(--white);
+  color: inherit;
   background-color: transparent;
   border: none;
 }
@@ -121,7 +168,7 @@
   bottom: -1px;
   width: 100%;
   height: 1.5px;
-  background-color: var(--white);
+  background-color: inherit;
 }
 
 .header__navLinks {
@@ -136,7 +183,7 @@
 .header__link {
   position: relative;
   font-size: 20px;
-  color: var(--white);
+  color: inherit;
   text-decoration: none;
 }
 
