@@ -6,6 +6,8 @@ export function initBurgerMenu() {
   const burgerMenu = document.querySelector('.js-burger-menu');
   const langButton = document.querySelector('.js-lang-button');
 
+  const overlay = document.querySelector('.js-overlay')
+
   if (!burgerMenuButton || !burgerMenu) {
     return
   }
@@ -23,6 +25,19 @@ export function initBurgerMenu() {
 
   burgerMenu.addEventListener('click', function(e) {
     if (!e.target.closest('a')) {
+      return
+    }
+
+    burgerMenu.classList.remove('burgerMenu--active')
+    burgerMenuButton.classList.remove('header__menuButton--active')
+    langButton.classList.remove('header__langButtonWrapper--openedMenu')
+
+    Body.releaseBody()
+    Body.releaseOverlay()
+  })
+
+  overlay.addEventListener('click', function() {
+    if (!burgerMenu.classList.contains('burgerMenu--active')) {
       return
     }
 

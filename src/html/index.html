@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="container header">
+  <header class="container header js-header">
     <div class="container__row header__row header__inner">
       <div class="header__logo">
         <a href="/index.html">
@@ -55,11 +55,70 @@
           </nav>
         </div>
         <div class="header__menuButtonWrapper">
+          <div class="overlay js-overlay"></div>
           <button class="header__menuButton js-burger-menu-button">
             <span class="header__menuIcon header__desktop--hidden"></span>
             <span class="header__tablet--hidden header__tablet--open">Menu</span>
             <span class="header__tablet--hidden header__tablet--close">Close</span>
           </button>
+
+          <div class="burgerMenu js-burger-menu">
+            <div class="burgerMenu__inner">
+              <div class="burgerMenu__header">
+                <div class="burgerMenu__row">
+                  <a href="/index.html" class="burgerMenu__logoLink">
+                    <svg class="burgerMenu__logoIcon">
+                      <use href="./spritemap.svg#icon-logo" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <nav class="burgerMenu__nav">
+                <div class="burgerMenu__row">
+                  <div class="burgerMenu__navInner">
+                    <div class="burgerMenu__column">
+                      <a href="#about" class="burgerMenu__link">About company</a>
+                      <a href="#projects" class="burgerMenu__link">Available projects</a>
+                      <a href="#price-chart" class="burgerMenu__link">Property prices</a>
+                      <a href="#map-section" class="burgerMenu__link">The best areas of Dubai</a>
+                      <a href="#experts" class="burgerMenu__link">Our experts</a>
+                      <a href="#benefits" class="burgerMenu__link">Benefits of palladium</a>
+                    </div>
+                    <div class="burgerMenu__column">
+                      <a href="#visa" class="burgerMenu__link">Golden Visa</a>
+                      <a href="#reviews" class="burgerMenu__link">Reviews</a>
+                      <a href="#faq" class="burgerMenu__link">FAQ</a>
+                      <a href="#services" class="burgerMenu__link">Our services</a>
+                      <a href="#contacts" class="burgerMenu__link">Contacts</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+              <div class="burgerMenu__footer">
+                <div class="burgerMenu__row">
+                  <div class="burgerMenu__footerInner">
+                    <div class="burgerMenu__languages">
+                      <a href="./index.html" class="burgerMenu__langLink">RU</a>
+                      <a href="./index.html" class="burgerMenu__langLink burgerMenu__langLink--active">EN</a>
+                    </div>
+                    <div class="burgerMenu__social">
+                      <a href="/index.html" class="burgerMenu__socialLink">
+                        <svg class="burgerMenu__socialIcon">
+                          <use href="./spritemap.svg#icon-burger-menu-telegram" />
+                        </svg>
+                      </a>
+                      <a href="/index.html" class="burgerMenu__socialLink">
+                        <svg class="burgerMenu__socialIcon">
+                          <use href="./spritemap.svg#icon-burger-menu-watsapp" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -67,63 +126,6 @@
 
   <main>
     <section class="container firstScreen">
-      <div class="burgerMenu js-burger-menu">
-        <div class="burgerMenu__inner">
-          <div class="burgerMenu__header">
-            <div class="burgerMenu__row">
-              <a href="/index.html" class="burgerMenu__logoLink">
-                <svg class="burgerMenu__logoIcon">
-                  <use href="./spritemap.svg#icon-logo" />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <nav class="burgerMenu__nav">
-            <div class="burgerMenu__row">
-              <div class="burgerMenu__navInner">
-                <div class="burgerMenu__column">
-                  <a href="#about" class="burgerMenu__link">About company</a>
-                  <a href="#projects" class="burgerMenu__link">Available projects</a>
-                  <a href="#price-chart" class="burgerMenu__link">Property prices</a>
-                  <a href="#map-section" class="burgerMenu__link">The best areas of Dubai</a>
-                  <a href="#experts" class="burgerMenu__link">Our experts</a>
-                  <a href="#benefits" class="burgerMenu__link">Benefits of palladium</a>
-                </div>
-                <div class="burgerMenu__column">
-                  <a href="#visa" class="burgerMenu__link">Golden Visa</a>
-                  <a href="#reviews" class="burgerMenu__link">Reviews</a>
-                  <a href="#faq" class="burgerMenu__link">FAQ</a>
-                  <a href="#services" class="burgerMenu__link">Our services</a>
-                  <a href="#contacts" class="burgerMenu__link">Contacts</a>
-                </div>
-              </div>
-            </div>
-          </nav>
-          <div class="burgerMenu__footer">
-            <div class="burgerMenu__row">
-              <div class="burgerMenu__footerInner">
-                <div class="burgerMenu__languages">
-                  <a href="./index.html" class="burgerMenu__langLink">RU</a>
-                  <a href="./index.html" class="burgerMenu__langLink burgerMenu__langLink--active">EN</a>
-                </div>
-                <div class="burgerMenu__social">
-                  <a href="/index.html" class="burgerMenu__socialLink">
-                    <svg class="burgerMenu__socialIcon">
-                      <use href="./spritemap.svg#icon-burger-menu-telegram" />
-                    </svg>
-                  </a>
-                  <a href="/index.html" class="burgerMenu__socialLink">
-                    <svg class="burgerMenu__socialIcon">
-                      <use href="./spritemap.svg#icon-burger-menu-watsapp" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div class="container__row firstScreen__inner">
 
         <h1 class="firstScreen__header js-title" data-class="title--shown">
@@ -2213,7 +2215,15 @@
     </p>
     <button class="cookie__button button js-cookie-accept">Okay</button>
   </section>
-  <div class="overlay js-overlay"></div>
+
+  <script>
+    (function(w, d, s, h, id) {
+      w.roistatProjectId = id; w.roistatHost = h;
+      var p = d.location.protocol == "https:" ? "https://" : "http://";
+      var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init?referrer="+encodeURIComponent(d.location.href);
+      var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+    })(window, document, 'script', 'cloud.roistat.com', '649d3a9b28338d5acce8c126d76e826c');
+  </script>
 </body>
 
 </html>
