@@ -23,7 +23,7 @@
   font-size: 16px;
   line-height: 1;
   color: var(--white);
-  z-index: 10;
+  /* z-index: 10; */
 
   transition: color 200ms ease, background-color 200ms ease;
 }
@@ -31,8 +31,12 @@
 .select--active + .inputWrapper__caption {
   background: #FFF;
   color: var(--brown);
-
+  z-index: 21;
   backdrop-filter: none;
+}
+
+.select--active {
+  z-index: 20;
 }
 
 @media screen and (max-width: 1700px) {
@@ -46,6 +50,6 @@
     font-size: 12px;
     top: -9px;
     left: 19px;
-    height: 5px;
+    height: 9px;
   }
 }

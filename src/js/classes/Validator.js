@@ -11,6 +11,12 @@ export default class Validator {
     return this.checkForm();
   }
 
+  clearErrors() {
+    for (let input of this.elements) {
+      input.removeAttribute('data-valid');
+    }
+  }
+
   checkForm() {
     return !this.elements.some((item) => item.dataset.valid === "false");
   }

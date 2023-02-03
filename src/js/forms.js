@@ -42,3 +42,9 @@ function submitForm(e) {
       }, 2000)
     });
 }
+
+export function resetForm(form) {
+  form.reset();
+  const validator = new Validator(form);
+  validator.clearErrors();
+}
