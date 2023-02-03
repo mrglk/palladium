@@ -47,6 +47,31 @@
     fill: var(--white);
   }
 
+
+  @media screen and (max-width: 960px) {
+    .animatedButton:hover .animatedButton__content {
+      transform: none
+    }
+
+    .animatedButton:hover .animatedButton__contentHovered {
+      transform: none;
+      display: none;
+    }
+
+    .animatedButton--white .animatedButton__contentHovered {
+      background-color: var(--white);
+      color: var(--brown);
+    }
+  
+    .animatedButton--white:hover .button__caption {
+      color: inherit;
+    }
+    
+    .animatedButton--white:hover .button__icon {
+      fill: var(--sandal);
+    }
+  }  
+
   @media screen and (max-width: 520px) {
     .animatedButton {
         width: 100%;
