@@ -22,14 +22,15 @@
 
 .modals--active {
   visibility: visible;
-  pointer-events: all;
   opacity: 1;
+  pointer-events: all;
 }
 
 .modals__item {
   align-items: center;
   justify-content: center;
   position: absolute;
+  pointer-events: none;
 
   display: flex;
   opacity: 0;
@@ -43,7 +44,11 @@
   align-self: center;
 }
 
+.modals__item--active > * {
+  pointer-events: all;
+}
+
+
 .modals__item--active {
   opacity: 1;
-  pointer-events: all;
 }

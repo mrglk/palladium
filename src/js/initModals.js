@@ -1,4 +1,5 @@
 import { Body } from "./classes/Body";
+import { resetForm } from "./forms";
 
 export function initModals() {
   const openModalLinks = document.querySelectorAll(".js-open-modal");
@@ -74,6 +75,11 @@ export function openModal(modalId) {
 
   if (!modal) {
     return;
+  }
+
+  const form = modal.querySelector('form');
+  if (form) {
+    resetForm(form);
   }
 
   modal.classList.add("modals__item--active");
