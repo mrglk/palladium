@@ -211,7 +211,7 @@ function showContentInfo(e, data, marker) {
   const halfSize = target.offsetWidth / 2
 
   const left = getLeft(target);
-  const top = getTop(target);
+  const top = getTop(target) - mapInfo.offsetHeight + halfSize
 
   let realLeft = (left + mapInfo.offsetWidth - window.innerWidth < -100 ? left : left - mapInfo.offsetWidth) + halfSize
 
@@ -220,7 +220,13 @@ function showContentInfo(e, data, marker) {
   }
 
   mapInfo.style.left = `${realLeft}px`;
-  mapInfo.style.top = `${top - mapInfo.offsetHeight + halfSize}px`;
+  mapInfo.style.top = `${top}px`;
+
+  console.log(top, mapInfo.offsetHeight);
+
+  if (top < 0) {
+    mapInfo.style.top = `${top + mapInfo.offsetHeight}px`;
+  }
 
   mapInfoTitle.innerText = title;
   mapInfoPrice.innerText = price;
@@ -254,7 +260,11 @@ function getTop(element, top = 0) {
 }
 
 function hideContentInfo(e) {
-  if (e?.target && (e.target.closest('#map-info') && !e.target.closest('.js-close-map-info'))) {
+  if (e?.target &&
+    (
+      e.target.closest('#map-section img') &&
+      !e.target.closest('.js-close-map-info'))
+  ) {
     return;
   }
 
