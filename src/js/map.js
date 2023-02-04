@@ -281,6 +281,7 @@ const styledData = [
     'stylers': [
       {
         'color': '#444444',
+        'visibility': 'off',
       },
     ],
   },
@@ -352,5 +353,17 @@ const styledData = [
         'visibility': 'on',
       },
     ],
+  },
+  {
+    "featureType": "all",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      },
+      {
+        "saturation": "-100"
+      }
+    ]
   },
 ];
