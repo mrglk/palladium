@@ -30,6 +30,7 @@
 @import "blocks/lines.css";
 @import "blocks/title.css";
 @import "blocks/animatedButton.css";
+@import "blocks/phoneSelect.css";
 
 @import "sections/header.css";
 @import "sections/firstScreen.css";

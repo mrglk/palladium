@@ -18,6 +18,7 @@ import { initApartmentsModal } from './js/apartmentsModal';
 import { initCounters } from './js/counterEffect';
 import { initTextEffect } from './js/textEffects';
 import { initHeader } from './js/header';
+import { initPhoneInput } from './js/inputPhone';
 
 document.addEventListener("DOMContentLoaded", function () {
     customSelect()
@@ -37,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     initCounters()
     initTextEffect()
     initHeader()
+    initPhoneInput()
 
     setTimeout(() => {
         initMap()
