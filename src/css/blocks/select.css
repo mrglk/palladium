@@ -24,7 +24,6 @@
   background-color: var(--white);
 }
 
-
 .select__caption {
   display: inline-block;
   position: absolute;
@@ -53,7 +52,6 @@
   align-items: center;
   padding: 34px 40px 34px 30px;
   border-radius: 4px;
-  /*backdrop-filter: blur(9px);*/
   overflow: hidden;
 }
 
@@ -67,7 +65,8 @@
 }
 
 .select--active .select__currentValue::after {
-  transform: rotate(180deg);
+  transform: scaleY(-1);
+  filter: invert(100%);
 }
 
 .select__options {
