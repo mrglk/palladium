@@ -5,7 +5,12 @@ export function initReviews() {
     slidesPerView: 'auto',
     spaceBetween: 0,
     freeMode: true,
-    loop: false,
+    loop: true,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: false
+    },
+    speed: 8000,
     mousewheel: {
       invert: true,
     },

@@ -6,13 +6,17 @@
   padding: 33px 0 33px 30px;
   height: 85px;
   background-color: #f5f5f5;
-  border-radius: 3px;
+  border-radius: 3px 0 0 3px;
   font-weight: 500;
   font-size: 18px;
   color: var(--brown);
   border: 1px solid #f5f5f5;
 
   cursor: pointer;
+}
+
+.phoneSelect + input {
+  border-radius: 0 3px 3px 0;
 }
 
 .contacts__inputWrapper .phoneSelect {
@@ -26,6 +30,10 @@
   font-size: 26px;
   color: var(--black);
   box-shadow: 0 0 0px 1000px #f9f3ee inset;
+}
+
+.contacts__inputWrapper .phoneSelect + input {
+  border-radius:  0;
 }
 
 .phoneSelect--active .phoneSelect__options {
