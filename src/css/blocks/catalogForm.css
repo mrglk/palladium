@@ -4,9 +4,10 @@
   width: 100%;
   max-height: 595px;
   background-color: var(--white-cream);
-  overflow-x: hidden;
-  overflow-y: auto;
+  /*overflow-x: hidden;*/
+  /*overflow-y: auto;*/
 }
+
 .catalogForm__inner {
   display: flex;
   flex-direction: column;
@@ -72,7 +73,7 @@
 
 .catalogForm__radioIcon--telegram {
   background: #949494;
-  fill:  var(--white);
+  fill: var(--white);
   border-radius: 50%;
 }
 
@@ -83,13 +84,13 @@
 }
 
 .catalogForm__radioButton:checked
-  + .catalogForm__radioLabel
-  .catalogForm__radioIcon {
++ .catalogForm__radioLabel
+.catalogForm__radioIcon {
   fill: var(--white);
 }
 
 .catalogForm__radioButton:checked + .catalogForm__radioLabel .catalogForm__radioIcon--telegram {
-  background:  var(--white);
+  background: var(--white);
   fill: var(--sandal);
 }
 
@@ -100,12 +101,20 @@
   margin-bottom: 25px;
 }
 
+.catalogForm__inputWrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
 .catalogForm__input {
   appearance: none;
   -webkit-appearance: none;
   -webkit-text-fill-color: var(--brown);
   box-shadow: 0 0 0px 1000px #f5f5f5 inset;
   -webkit-box-shadow: 0 0 0px 1000px #f5f5f5 inset;
+
+  flex: 1 0 auto;
 
   padding: 33px 30px;
   height: 85px;
@@ -143,6 +152,7 @@
     max-width: 684px;
     max-height: 454px;
   }
+
   .catalogForm__inner {
     padding: 84px 41px 31px 41px;
   }
@@ -185,6 +195,7 @@
   .catalogForm {
     max-height: 345px;
   }
+
   .catalogForm__inner {
     padding: 55px 25px 20px 25px;
   }
