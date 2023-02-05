@@ -33,7 +33,7 @@ export function initApartmentsModal() {
       return;
     }
 
-    const data = apartmensData.en.find((item) => item.id === Number(id))
+    const data = apartmensData.en.find((item) => Number(item.id) === Number(id))
 
 
     apartId.innerText = data.id
