@@ -33,7 +33,7 @@ function runSwiper(type) {
 
   return new Swiper('.js-project-slider', {
     slidesPerView: 'auto',
-    // loop: true,
+    loop: true,
     spaceBetween: 15,
     // allowTouchMove: false,
 
