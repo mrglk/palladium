@@ -1,7 +1,8 @@
 import Validator from './classes/Validator';
+import { openModal } from './initModals';
 
 export function initForms() {
-  const forms = document.querySelectorAll('form')
+  const forms = document.querySelectorAll('form');
 
   forms.forEach((form) => {
     form.addEventListener('submit', submitForm)
@@ -37,6 +38,7 @@ function submitForm(e) {
       form.reset()
       button.value = button.dataset.success || 'Sent'
 
+      openModal('thankYou');
       setTimeout(() => {
         button.removeAttribute('disabled')
       }, 2000)
