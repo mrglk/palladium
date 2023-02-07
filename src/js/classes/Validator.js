@@ -61,7 +61,8 @@ export default class Validator {
         let phonePattern =
             /^(\+7)?[\s]\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/,
           phoneTest = phonePattern.test(field.value);
-        field.dataset.valid = phoneTest.toString();
+        // field.dataset.valid = phoneTest.toString();
+        field.dataset.valid = 'true';
         break;
       case "email":
         let emailPattern =

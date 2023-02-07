@@ -16,7 +16,7 @@ const mapPointsData = [
     area: '180 million sq. ft.',
     lat: 25.079880,
     lng: 55.121824,
-    img: '/img/map-item-photo.jpg',
+    img: '/img/map/blue-waters.jpg',
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const mapPointsData = [
     area: '180 million sq. ft.',
     lat: 25.115271,
     lng: 55.137262,
-    img: '/img/map-item-photo.jpg',
+    img: '/img/map/palm-jumeirah.jpg',
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const mapPointsData = [
     area: '180 million sq. ft.',
     lat: 25.076717,
     lng: 55.139962,
-    img: '/img/map-item-photo.jpg',
+    img: '/img/map/dubai-marina.jpg',
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ const mapPointsData = [
     area: '180 million sq. ft.',
     lat: 25.193920,
     lng: 55.275184,
-    img: '/img/map-item-photo.jpg',
+    img: '/img/map/down-town-dubai.jpg',
   },
   {
     id: 5,
@@ -64,7 +64,7 @@ const mapPointsData = [
     area: '180 million sq. ft.',
     lat: 25.202958,
     lng: 55.350099,
-    img: '/img/map-item-photo.jpg',
+    img: '/img/map/creek-harbour.jpg',
   },
   {
     id: 6,
@@ -76,7 +76,7 @@ const mapPointsData = [
     area: '180 million sq. ft.',
     lat: 25.205565,
     lng: 55.263697,
-    img: '/img/map-item-photo.jpg',
+    img: '/img/map/city-walk.jpg',
   },
   {
     id: 7,
@@ -88,7 +88,7 @@ const mapPointsData = [
     area: '180 million sq. ft.',
     lat: 25.060415,
     lng: 55.208744,
-    img: '/img/map-item-photo.jpg',
+    img: '/img/map/jumeirah-village-circle.jpg',
   },
   {
     id: 8,
@@ -100,7 +100,7 @@ const mapPointsData = [
     area: '180 million sq. ft.',
     lat: 25.114949,
     lng: 55.254992,
-    img: '/img/map-item-photo.jpg',
+    img: '/img/map/dubai-hills.jpg',
   },
 ];
 
