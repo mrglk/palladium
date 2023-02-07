@@ -40,8 +40,8 @@ export function initApartmentsModal() {
     // apartFileSize.innerText = data.filesize || '200 KB'
     apartBedrooms.innerText = data.bedrooms
     apartSize.innerText = data.size
-    apartAddress.innerText = data.address
-    apartDescription.innerText = data.description
+    apartAddress.innerText = data.name
+    apartDescription.innerHTML= data.description
     apartTitle.innerText = data.title
     apartType.innerText = data.type
     apartPrice.innerText = data.price
