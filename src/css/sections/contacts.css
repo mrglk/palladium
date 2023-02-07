@@ -47,7 +47,11 @@
   flex: 1 0 auto;
 }
 
-.contacts__formInput[data-valid="false"] {
+.contacts__inputWrapper input:focus {
+  border-color: #1616161e;
+}
+
+.contacts__inputWrapper .contacts__formInput[data-valid="false"] {
   border-color: var(--red)
 }
 
@@ -71,6 +75,9 @@
   width: 100%;
   position: relative;
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  max-width: 563px;
 }
 
 .contacts__formCheckbox {

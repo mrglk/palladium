@@ -7,7 +7,7 @@ export function initPhoneInput() {
   const selectElement = renderCodesSelect();
 
   inputs.forEach((input) => {
-    input.before(selectElement.cloneNode(true));
+    input.after(selectElement.cloneNode(true));
     input.addEventListener('input', handleSearchCountry)
 
     Inputmask({mask: codes[0][3]}).mask(input, {greedy: false});
@@ -22,7 +22,7 @@ export function initPhoneInput() {
 
       selects.forEach((select) => {
         select.classList.remove('phoneSelect--active')
-        const input = select.nextElementSibling
+        const input = select.previousElementSibling
 
         input.placeholder = 'Phone'
 
@@ -39,7 +39,7 @@ export function initPhoneInput() {
     }
 
     const options = [...select.querySelector('.js-phone-codes').children];
-    const input = select.nextElementSibling
+    const input = select.previousElementSibling
 
     if (option) {
       const mask = option.dataset.mask
@@ -74,7 +74,7 @@ export function initPhoneInput() {
 
 function handleSearchCountry(e) {
   const input = e.target
-  const select = input.previousElementSibling
+  const select = input.nextElementSibling
 
   if (!select.classList.contains('phoneSelect--active')) {
     return
