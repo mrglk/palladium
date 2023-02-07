@@ -1,17 +1,19 @@
 import Swiper from "swiper/bundle";
 
+const swiperElement = document.querySelector('.js-reviews-slider')
+
 export function initReviews() {
-  new Swiper('.js-reviews-slider', {
+  const swiper = new Swiper('.js-reviews-slider', {
     slidesPerView: 'auto',
     spaceBetween: 0,
-    freeMode: true,
+    // freeMode: true,
     loop: true,
     autoplay: {
-      delay: 1,
+      // delay: 1,
       pauseOnMouseEnter: true,
-      disableOnInteraction: true,
+      disableOnInteraction: false,
     },
-    speed: 8000,
+    speed: 1000,
     simulateTouch: false,
     mousewheel: false,
     pagination: {
@@ -19,4 +21,12 @@ export function initReviews() {
       type: "progressbar",
     },
   })
+
+  // swiperElement.addEventListener('mouseenter', function() {
+  //   swiper.autoplay.stop()
+  // })
+  //
+  // swiperElement.addEventListener('mouseleave', function() {
+  //   swiper.autoplay.start()
+  // })
 }

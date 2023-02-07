@@ -58,11 +58,11 @@ export default class Validator {
         break;
 
       case "phone":
-        let phonePattern =
-            /^(\+7)?[\s]\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/,
-          phoneTest = phonePattern.test(field.value);
+        // let phonePattern =
+        //     /^(\+7)?[\s]\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/,
+        //   phoneTest = phonePattern.test(field.value);
         // field.dataset.valid = phoneTest.toString();
-        field.dataset.valid = 'true';
+        field.dataset.valid = String(field.value.length > 0 && !field.value.includes('_'));
         break;
       case "email":
         let emailPattern =

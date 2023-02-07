@@ -105,6 +105,7 @@
   width: 100%;
   position: relative;
   display: flex;
+  flex-direction: row-reverse;
 }
 
 .catalogForm__input {
@@ -127,8 +128,16 @@
   border: 1px solid #f5f5f5;
 }
 
+.catalogForm__inputWrapper .catalogForm__input {
+  border-radius: 0 3px 3px 0;
+}
+
 .catalogForm__input[data-valid="false"] {
   border-color: var(--red)
+}
+
+.catalogForm__inputWrapper .catalogForm__input[data-valid="false"] {
+  border-left: 0;
 }
 
 .catalogForm__input::placeholder {

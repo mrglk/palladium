@@ -30,6 +30,7 @@
   font-size: 26px;
   color: var(--black);
   box-shadow: 0 0 0px 1000px #f9f3ee inset;
+  border-radius:  0;
 }
 
 .contacts__inputWrapper .phoneSelect + input {
@@ -70,10 +71,6 @@
   padding: 16px 8px;
 }
 
-.contacts__inputWrapper input:focus {
-  border-color: #1616161e;
-}
-
 .phoneSelect__optionsViewport {
   max-height: 300px;
   overflow-y: auto;
@@ -97,7 +94,15 @@
   color: var(--white-cream);
 }
 
+[data-valid="false"] + .phoneSelect {
+  border: 1px solid var(--red);
+  border-right: 0;
+}
 
+.contacts__inputWrapper [data-valid="false"] + .phoneSelect {
+  border: 0;
+  border-bottom: 1px solid var(--red);
+}
 
 @media screen and (max-width: 960px) {
   .phoneSelect {

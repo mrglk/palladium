@@ -24,7 +24,6 @@ export function initProjectsSlider() {
     swiper.destroy(true, true);
 
     swiper = runSwiper(type);
-    // swiper.slideTo(1);
   });
 }
 
@@ -35,7 +34,6 @@ function runSwiper(type) {
     slidesPerView: 'auto',
     loop: true,
     spaceBetween: 15,
-    // allowTouchMove: false,
 
     navigation: {
       nextEl: '.js-project-slider-next',
@@ -43,7 +41,7 @@ function runSwiper(type) {
     },
     breakpoints: {
       1280: {
-        slidesPerView: 3,
+        slidesPerView: 'auto',
         spaceBetween: 30,
       },
     },

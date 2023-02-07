@@ -2,10 +2,9 @@
   margin-bottom: 212px;
 }
 
-.reviews .swiper-free-mode > .swiper-wrapper{
-  transition-timing-function : linear;
+.reviews .swiper-free-mode > .swiper-wrapper {
+  /*transition-timing-function : linear;*/
 }
-
 
 .reviews__inner {
   display: flex;
