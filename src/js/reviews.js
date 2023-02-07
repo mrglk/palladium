@@ -8,12 +8,12 @@ export function initReviews() {
     loop: true,
     autoplay: {
       delay: 1,
-      disableOnInteraction: false
+      pauseOnMouseEnter: true,
+      disableOnInteraction: true,
     },
     speed: 8000,
-    mousewheel: {
-      invert: true,
-    },
+    simulateTouch: false,
+    mousewheel: false,
     pagination: {
       el: ".js-reviews-slider-progress",
       type: "progressbar",
