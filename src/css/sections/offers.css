@@ -41,6 +41,10 @@
   margin-bottom: 20px;
 }
 
+.offers__subtitle--ru {
+  display: none;
+}
+
 .offers__header {
   position: relative;
   text-align: center;

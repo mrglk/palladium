@@ -16,6 +16,10 @@
   margin-bottom: 44px;
 }
 
+.priceChart__header--wider {
+  max-width: 968px;
+}
+
 .priceChart__content {
   display: flex;
   justify-content: space-between;
@@ -176,7 +180,7 @@
   border: 1px solid rgba(157, 140, 124, 0.5);
   border-radius: 46px;
   padding: 15px 19px;
-  width: 194px;
+  /* width: 194px; */
 }
 
 .priceChart__percentItem:not(:last-child) {
@@ -204,6 +208,7 @@
   font-size: 24px;
   color: var(--sandal);
   opacity: 0.5;
+  margin-left: 8px;
 }
 
 .priceChart__chartDates {
@@ -249,6 +254,10 @@
 }
   .priceChart__header {
     max-width: 450px;
+  }
+
+  .priceChart__header--wider {
+    max-width: 768px;
   }
 
   .priceChart__content {
@@ -311,6 +320,7 @@
     width: 164px;
     right: 0;
   }
+
   .priceChart__percentItem {
     padding: 9px 12px;
     width: 85px;
@@ -326,6 +336,7 @@
 
   .priceChart__percentNum {
     font-size: 14px;
+    margin-left: 0;
   }
 
   .priceChart__percentItem:not(:last-child) {
@@ -361,6 +372,10 @@
 }
   .priceChart__header {
     max-width: 380px;
+  }
+
+  .priceChart__header--wider {
+    max-width: 568px;
   }
 }
 
@@ -443,6 +458,11 @@
     margin-bottom: 35px;
     max-width: 360px;
   }
+
+  .priceChart__header--wider {
+    max-width: 468px;
+  }
+
   .priceChart__content {
     flex-direction: column;
     justify-content: flex-start;

@@ -22,7 +22,7 @@ function scrollListener(e) {
 }
 
 function updateCounter(value, interval, max, element) {
-  if (value >= max) {
+  if (value > max) {
     return;
   }
 

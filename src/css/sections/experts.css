@@ -375,7 +375,24 @@
   }
 }
 
+@media screen and (max-width: 1290px) {
+.experts__videoSide {
+  margin-right: 30px;
+}
+
+}
+
+@media screen and (max-width: 1150px) {
+  .experts__duration {
+    width: 120px;
+  }
+  }
+
 @media screen and (max-width: 960px) {
+  .experts__duration {
+    width: 100%;
+  }
+
   .experts__tabletHidden {
     display: none;
   }
