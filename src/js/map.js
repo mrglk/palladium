@@ -222,7 +222,7 @@ function showContentInfo(e, data, marker) {
   mapInfo.style.left = `${realLeft}px`;
   mapInfo.style.top = `${top}px`;
 
-  console.log(top, mapInfo.offsetHeight);
+  // console.log(top, mapInfo.offsetHeight);
 
   if (top < 0) {
     mapInfo.style.top = `${top + mapInfo.offsetHeight}px`;
