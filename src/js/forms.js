@@ -13,8 +13,15 @@ function submitForm(e) {
   e.preventDefault()
   const form = e.currentTarget
 
+  const codeSelector = form.querySelector('.js-phone-codes-current').innerText
+
   const validator = new Validator(form);
   const formData = new FormData(form);
+  const phone = formData.get('tel')
+
+  if (codeSelector) {
+    formData.set('tel', ('+' + codeSelector.split('+').pop() + ' ' + phone).trim())
+  }
 
   const url = form.getAttribute("action");
   const isFormValid = validator.validate();
@@ -41,6 +48,8 @@ function submitForm(e) {
       openModal('thankYou');
       setTimeout(() => {
         button.removeAttribute('disabled')
+
+        window.location.href = window.location.href + '?modal=thankYou'
       }, 2000)
     });
 }

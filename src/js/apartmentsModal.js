@@ -1,6 +1,7 @@
 import { openModal } from './initModals';
 import { apartmensData } from './data/apartments';
 import Swiper from "swiper/bundle";
+import { getPageLang } from './utils/helpers';
 
 const apartmentsSlider = document.querySelector('.js-project-slider')
 
@@ -33,7 +34,8 @@ export function initApartmentsModal() {
       return;
     }
 
-    const data = apartmensData.en.find((item) => Number(item.id) === Number(id))
+    const lang = getPageLang()
+    const data = apartmensData[lang].find((item) => Number(item.id) === Number(id))
 
 
     apartId.innerText = data.id
