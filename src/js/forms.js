@@ -48,6 +48,8 @@ function submitForm(e) {
       openModal('thankYou');
       setTimeout(() => {
         button.removeAttribute('disabled')
+
+        window.location.href = window.location.href + '?modal=thankYou'
       }, 2000)
     });
 }
