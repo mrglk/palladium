@@ -100,10 +100,14 @@
 
 .burgerMenu__footerInner {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   flex: 0 0 auto;
   padding-bottom: 35px;
+}
+
+.burgerMenu__languages--eng {
+  display: none;
 }
 
 .burgerMenu__langLink {

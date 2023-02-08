@@ -21,12 +21,4 @@ export function initReviews() {
       type: "progressbar",
     },
   })
-
-  // swiperElement.addEventListener('mouseenter', function() {
-  //   swiper.autoplay.stop()
-  // })
-  //
-  // swiperElement.addEventListener('mouseleave', function() {
-  //   swiper.autoplay.start()
-  // })
 }
