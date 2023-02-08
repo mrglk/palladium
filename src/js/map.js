@@ -233,6 +233,7 @@ function showContentInfo(e, data, marker) {
   mapInfoDeveloper.innerText = developer;
   mapInfoType.innerText = type;
   mapInfoBeach.innerText = beach;
+  mapInfoImg.setAttribute('src', "#");
   mapInfoImg.setAttribute('src', img);
 
   mapInfo.classList.add('mapItem--active');
