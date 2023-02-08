@@ -62,7 +62,7 @@
 
 .map__header {
   max-width: 485px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .map__wrapper {
@@ -109,8 +109,9 @@
 
   .map__header {
     text-align: center;
-    max-width: 240px;
+    max-width: 100%;
     font-size: 28px;
+    margin-bottom: 35px;
   }
 
   .map__buttonTabletWrapper {

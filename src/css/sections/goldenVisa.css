@@ -89,6 +89,10 @@
   padding-top: 30px;
 }
 
+.goldenVisa__subtitle--ru {
+  max-width: 100%;
+}
+
 .goldenVisa__logos {
   display: flex;
   justify-content: space-between;

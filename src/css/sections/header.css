@@ -57,6 +57,10 @@
   fill: var(--brown);
 }
 
+.header--active .header__langButtonText {
+  color: var(--brown);
+}
+
 .header__row {
   max-width: calc(50vw + 960px);
   margin-left: auto;
@@ -162,6 +166,8 @@
 
 .header__langButtonText {
   position: relative;
+  text-decoration: none;
+  color: var(--white);
 }
 
 .header__langButtonText::after {
@@ -378,9 +384,26 @@
   .header__menuButton {
     width: 80px;
   }
+
+  .header__langButtonWrapper--openedMenu {
+    border-color: #1616161e;
+    z-index: 5;
+  }
+
+  .header__langButtonWrapper--openedMenu .header__langButton {
+    color: var(--sandal);
+  }
+
+  .header__langButtonWrapper--openedMenu .header__langButtonText{
+    color: var(--sandal);
+  }
+
+  .header__langButtonWrapper--openedMenu .header__langButtonText::after {
+    background-color: var(--sandal);
+  }
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   .header__langButtonWrapper--openedMenu {
     border-color: #1616161e;
     z-index: 5;
@@ -393,7 +416,7 @@
   .header__langButtonWrapper--openedMenu .header__langButtonText::after {
     background-color: var(--sandal);
   }
-}
+} */
 
 @media screen and (max-width: 375px) {
   .header__langButton {
