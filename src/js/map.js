@@ -1,5 +1,5 @@
 import { Loader } from 'google-maps';
-import { isWindowSizeSmallerThen } from './utils/helpers';
+import { getPageLang, isWindowSizeSmallerThen } from './utils/helpers';
 
 const center = { lat: 25.1624427, lng: 55.2226371 };
 let timeoutId = null;
@@ -213,7 +213,6 @@ const mapInfoPrice = mapInfo.querySelector('.js-map-info-price');
 const mapInfoBeach = mapInfo.querySelector('.js-map-info-beach');
 const mapInfoDeveloper = mapInfo.querySelector('.js-map-info-developer');
 const mapInfoType = mapInfo.querySelector('.js-map-info-type');
-const mapInfoImg = mapInfo.querySelector('.js-map-info-img');
 
 const mapZoomIn = document.querySelector('.js-map-zoom-in');
 const mapZoomOut = document.querySelector('.js-map-zoom-out');
@@ -283,7 +282,9 @@ function setMarkers(map) {
     anchor: new google.maps.Point(25, 25),
   };
 
-  mapPointsData.en.forEach((data) => {
+  const lang = getPageLang()
+
+  mapPointsData[lang].forEach((data) => {
     const { lat, lng, title } = data;
 
     const marker = new google.maps.Marker({
@@ -333,8 +334,14 @@ function showContentInfo(e, data, marker) {
   mapInfoDeveloper.innerText = developer;
   mapInfoType.innerText = type;
   mapInfoBeach.innerText = beach;
-  mapInfoImg.setAttribute('src', "#");
-  mapInfoImg.setAttribute('src', img);
+
+  const mapInfoImg = mapInfo.querySelector('.js-map-info-img');
+
+  const newImage = document.createElement('img')
+  newImage.src = img
+  newImage.classList.add('js-map-info-img')
+
+  mapInfoImg.parentNode.replaceChild(newImage, mapInfoImg);
 
   mapInfo.classList.add('mapItem--active');
 

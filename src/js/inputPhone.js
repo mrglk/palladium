@@ -1,6 +1,9 @@
 import { codes } from './data/codes';
 import Inputmask from 'inputmask';
 import SimpleBar from 'simplebar';
+import { getPageLang } from './utils/helpers';
+
+const lang = getPageLang()
 
 export function initPhoneInput() {
   const inputs = document.querySelectorAll('.js-phone-input');
@@ -24,7 +27,7 @@ export function initPhoneInput() {
         select.classList.remove('phoneSelect--active')
         const input = select.previousElementSibling
 
-        input.placeholder = 'Phone'
+        input.placeholder = lang === 'en' ? 'Phone' : 'Телефон'
 
         const options = [...select.querySelector('.js-phone-codes').children];
 
@@ -44,7 +47,7 @@ export function initPhoneInput() {
     if (option) {
       const mask = option.dataset.mask
 
-      select.querySelector('.phoneSelect__currentValue').innerText = `${option.dataset.flag} ${option.dataset.code}`
+      select.querySelector('.js-phone-codes-current').innerText = `${option.dataset.flag} ${option.dataset.code}`
 
       input.value = ''
       Inputmask({mask: mask}).mask(input, {greedy: false});
@@ -66,7 +69,7 @@ export function initPhoneInput() {
 
       select.classList.add('phoneSelect--active')
 
-      input.placeholder = 'Search'
+      input.placeholder = lang === 'en' ? 'Search' : 'Phone'
       input.focus()
     }
   });
@@ -102,7 +105,7 @@ function renderCodesSelect() {
   selectElement.classList.add('js-phone-code-select');
 
   selectElement.innerHTML = `
-        <div class="phoneSelect__currentValue">${codes[0][0]} ${codes[0][1]}</div>
+        <div class="phoneSelect__currentValue js-phone-codes-current">${codes[0][0]} ${codes[0][1]}</div>
         <div class="phoneSelect__options">
             <div class="phoneSelect__optionsViewport js-phone-codes">
                 ${options}

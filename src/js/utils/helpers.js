@@ -57,3 +57,7 @@ export function getCookie(name) {
   );
   return matches ? decodeURIComponent(matches[1]) : undefined;
 }
+
+export function getPageLang() {
+  return document.documentElement.lang
+}
