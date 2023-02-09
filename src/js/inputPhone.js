@@ -92,6 +92,8 @@ function handleSearchCountry(e) {
 }
 
 function renderCodesSelect() {
+  const defaultMask = lang === 'ru' ? 0 : 17
+
   const options = codes.map((option) => {
     const [flag, code, country, mask] = option
 
@@ -105,7 +107,7 @@ function renderCodesSelect() {
   selectElement.classList.add('js-phone-code-select');
 
   selectElement.innerHTML = `
-        <div class="phoneSelect__currentValue js-phone-codes-current">${codes[0][0]} ${codes[0][1]}</div>
+        <div class="phoneSelect__currentValue js-phone-codes-current">${codes[defaultMask][0]} ${codes[defaultMask][1]}</div>
         <div class="phoneSelect__options">
             <div class="phoneSelect__optionsViewport js-phone-codes">
                 ${options}

@@ -1,5 +1,6 @@
 import Validator from './classes/Validator';
 import { openModal } from './initModals';
+import { getPageLang } from './utils/helpers';
 
 export function initForms() {
   const forms = document.querySelectorAll('form');
@@ -12,6 +13,7 @@ export function initForms() {
 function submitForm(e) {
   e.preventDefault()
   const form = e.currentTarget
+  const lang = getPageLang()
 
   const codeSelector = form.querySelector('.js-phone-codes-current').innerText
 
@@ -22,6 +24,8 @@ function submitForm(e) {
   if (codeSelector) {
     formData.set('tel', ('+' + codeSelector.split('+').pop() + ' ' + phone).trim())
   }
+
+  formData.set('lang', lang)
 
   const url = form.getAttribute("action");
   const isFormValid = validator.validate();
