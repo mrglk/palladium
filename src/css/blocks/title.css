@@ -9,7 +9,7 @@
 .title__lineInner {
   display: inline-block;
   transform: translateY(100%);
-
+  white-space: nowrap;
   transition: transform 500ms ease 500ms;
 }
 
