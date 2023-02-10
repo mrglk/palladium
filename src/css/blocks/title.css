@@ -16,3 +16,9 @@
 .title--shown .title__lineInner {
   transform: translateY(0);
 }
+
+@media screen and (max-width: 570px) {
+  .title__lineInner {
+    white-space: unset;
+  }
+}

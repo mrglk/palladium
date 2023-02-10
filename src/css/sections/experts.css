@@ -72,6 +72,14 @@
   height: 30px;
 }
 
+.experts__duration--hidden {
+  display: none;
+}
+
+.experts__play--hidden {
+  display: none;
+}
+
 .experts__contentSide {
   width: 55%;
   padding-top: 68px;
