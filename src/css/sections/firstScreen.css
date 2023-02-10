@@ -122,6 +122,12 @@
   }
 }
 
+@media screen and (max-width: 590px) {
+  .firstScreen__mobileHidden {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 560px) {
   .firstScreen {
     margin-bottom: 80px;

@@ -106,6 +106,10 @@
   margin-bottom: 50px;
 }
 
+.contacts__officesContent--widerMargin {
+  margin-bottom: 120px;
+}
+
 .contacts__officesItem {
   display: flex;
   align-items: center;
@@ -207,6 +211,10 @@
     margin-bottom: 40px;
   }
 
+  .contacts__officesContent--widerMargin {
+    margin-bottom: 120px;
+  }
+
   .contacts__socialLink:not(:last-child) {
     margin-right: 25px;
   }
@@ -258,6 +266,11 @@
   .contacts__officesContent {
     margin-bottom: 30px;
   }
+
+  .contacts__officesContent--widerMargin {
+    margin-bottom: 120px;
+  }
+
 
   .contacts__officesItem {
     padding: 20px 0;
