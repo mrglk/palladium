@@ -9,7 +9,7 @@
 .title__lineInner {
   display: inline-block;
   transform: translateY(100%);
-  white-space: nowrap;
+  /* white-space: nowrap; */
   transition: transform 500ms ease 500ms;
 }
 
@@ -17,8 +17,8 @@
   transform: translateY(0);
 }
 
-@media screen and (max-width: 570px) {
+/* @media screen and (max-width: 980px) {
   .title__lineInner {
     white-space: unset;
   }
-}
+} */

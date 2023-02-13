@@ -6,6 +6,10 @@ export function initHeader() {
 
   window.addEventListener('scroll', function(e) {
 
+    if(document.body.dataset.state === "fixed") {
+      return
+    }
+
     if (window.scrollY < 100) {
       header.classList.remove('header--hidden');
       header.classList.remove('header--active');
