@@ -34,6 +34,18 @@ export function customSelect() {
 
       currentElement.innerText = option.textContent;
 
+      const selectElement = select.previousElementSibling
+
+      if (selectElement.tagName === 'SELECT') {
+        [...selectElement.options].forEach((option) => {
+          if (option.innerText === currentElement.innerText) {
+            option.selected = 'selected'
+          } else {
+            option.removeAttribute('selected')
+          }
+        })
+      }
+
       return;
     }
 

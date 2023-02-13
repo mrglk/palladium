@@ -27,6 +27,18 @@ function submitForm(e) {
 
   formData.set('lang', lang)
 
+  const formPurpose = document.querySelector('.js-select-purpose')?.value || ''
+  const formType = document.querySelector('.js-select-type')?.value || ''
+  const formDistrict = document.querySelector('.js-select-district')?.value || ''
+
+  const formMin = document.querySelector('.js-range-min')?.innerText || 0
+  const formMax = document.querySelector('.js-range-max')?.innerText || 0
+
+  formData.set('purpose', formPurpose)
+  formData.set('type', formType)
+  formData.set('district', formDistrict)
+  formData.set('price', `${formMin} - ${formMax}`)
+
   const url = form.getAttribute("action");
   const isFormValid = validator.validate();
 
@@ -38,6 +50,10 @@ function submitForm(e) {
 
   if (button) {
     button.setAttribute('disabled', 'disabled')
+  }
+
+  for (let pair of formData.entries()) {
+    console.log(pair[0]+ ', ' + pair[1]);
   }
 
   fetch(url, {
