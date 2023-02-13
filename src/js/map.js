@@ -229,6 +229,11 @@ const DUBAI_BOUNDS = {
 export async function initMap() {
   const loader = new Loader('AIzaSyCFVN9lovd3dC-PKoK-7VENM-vhhNUcXS8', {});
   const google = await loader.load();
+  
+  mapPointsData.en.forEach(({img}) => {
+    const imageEl = new Image()
+    imageEl.src = img
+  })
 
   const styledMapType = new google.maps.StyledMapType(styledData);
 
