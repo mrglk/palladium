@@ -4,6 +4,7 @@ import SimpleBar from 'simplebar';
 import { getPageLang } from './utils/helpers';
 
 const lang = getPageLang()
+const defaultMask = lang === 'ru' ? 0 : 17
 
 export function initPhoneInput() {
   const inputs = document.querySelectorAll('.js-phone-input');
@@ -13,7 +14,7 @@ export function initPhoneInput() {
     input.after(selectElement.cloneNode(true));
     input.addEventListener('input', handleSearchCountry)
 
-    Inputmask({mask: codes[0][3]}).mask(input, {greedy: false});
+    Inputmask({mask: codes[defaultMask][3]}).mask(input, {greedy: false});
   });
 
   document.addEventListener('click', function(e) {
@@ -92,8 +93,6 @@ function handleSearchCountry(e) {
 }
 
 function renderCodesSelect() {
-  const defaultMask = lang === 'ru' ? 0 : 17
-
   const options = codes.map((option) => {
     const [flag, code, country, mask] = option
 

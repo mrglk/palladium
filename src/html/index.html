@@ -207,11 +207,11 @@
           <div class="firstScreen__inputsGroup">
             <div class="firstScreen__input">
               <div class="inputWrapper" data-lable="Purpose">
-                <select name="purpose" class="js-select">
-                  <option value="investment">Investment</option>
-                  <option value="rent">For Rent</option>
-                  <option value="life">For Life</option>
-                  <option value="residency">Get residence visa</option>
+                <select name="purpose" class="js-select js-select-purpose">
+                  <option value="Investment">Investment</option>
+                  <option value="For Rent">For Rent</option>
+                  <option value="For Life">For Life</option>
+                  <option value="Get residence visa">Get residence visa</option>
                 </select>
                 <div class="inputWrapper__caption">Purpose</div>
               </div>
@@ -219,11 +219,11 @@
 
             <div class="firstScreen__input">
               <div class="inputWrapper" data-lable="Property type">
-                <select name="purpose" class="js-select">
-                  <option value="apartments">Apartments</option>
-                  <option value="penthouse">Penthouse</option>
-                  <option value="villa">Villa</option>
-                  <option value="townhouse">Townhouse</option>
+                <select name="type" class="js-select js-select-type">
+                  <option value="Apartments">Apartments</option>
+                  <option value="Penthouse">Penthouse</option>
+                  <option value="Villa">Villa</option>
+                  <option value="Townhouse">Townhouse</option>
                 </select>
                 <div class="inputWrapper__caption">Property type</div>
               </div>
@@ -231,18 +231,18 @@
 
             <div class="firstScreen__input">
               <div class="inputWrapper" data-lable="District">
-                <select name="purpose" class="js-select">
-                  <option value="dubai-marina">Dubai Marina</option>
-                  <option value="bluewaters">Bluewaters</option>
-                  <option value="palm-jumeirah">Palm Jumeirah</option>
-                  <option value="jumeirah-lake-towers">Jumeirah Lake Towers</option>
-                  <option value="downtown-bubai">Downtown Dubai</option>
-                  <option value="business-bay">Business Bay</option>
-                  <option value="creek-harbour">Creek Harbour</option>
-                  <option value="city-walk">City Walk</option>
-                  <option value="jumeirah-village-circle">Jumeirah Village Circle</option>
-                  <option value="jumeirah-village-triangle">Jumeirah Village Triangle</option>
-                  <option value="dubai-hills">Dubai Hills</option>
+                <select name="district" class="js-select js-select-district">
+                  <option value="Dubai Marina">Dubai Marina</option>
+                  <option value="Bluewaters">Bluewaters</option>
+                  <option value="Palm Jumeirah">Palm Jumeirah</option>
+                  <option value="Jumeirah Lake Towers">Jumeirah Lake Towers</option>
+                  <option value="Downtown Duba">Downtown Dubai</option>
+                  <option value="Business Bay">Business Bay</option>
+                  <option value="Creek Harbour">Creek Harbour</option>
+                  <option value="City Walk">City Walk</option>
+                  <option value="Jumeirah Village Circle">Jumeirah Village Circle</option>
+                  <option value="Jumeirah Village Triangle">Jumeirah Village Triangle</option>
+                  <option value="Dubai Hills">Dubai Hills</option>
                 </select>
                 <div class="inputWrapper__caption">District</div>
               </div>
@@ -2235,7 +2235,7 @@
           <form action="https://palladiumestate.ae/amo.php?action=amo" class="catalogForm__form">
             <div class="catalogForm__radioContainer">
               <div class="catalogForm__radioButtonWrapper">
-                <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioTelCatalog" checked>
+                <input class="catalogForm__radioButton" type="radio" name="contact" id="radioTelCatalog" value="Телефон" checked>
                 <label class="catalogForm__radioLabel" for="radioTelCatalog">
                   <svg class="catalogForm__radioIcon">
                     <use href="./spritemap.svg#icon-catalog-tel" />
@@ -2244,7 +2244,7 @@
                 </label>
               </div>
               <div class="catalogForm__radioButtonWrapper">
-                <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioWatsappCatalog">
+                <input class="catalogForm__radioButton" type="radio" name="contact" id="radioWatsappCatalog" value="WhatsApp">
                 <label class="catalogForm__radioLabel" for="radioWatsappCatalog">
                   <svg class="catalogForm__radioIcon">
                     <use href="./spritemap.svg#icon-catalog-watsapp" />
@@ -2253,7 +2253,7 @@
                 </label>
               </div>
               <div class="catalogForm__radioButtonWrapper">
-                <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioViberCatalog">
+                <input class="catalogForm__radioButton" type="radio" name="contact" id="radioViberCatalog" value="Viber">
                 <label class="catalogForm__radioLabel" for="radioViberCatalog">
                   <svg class="catalogForm__radioIcon">
                     <use href="./spritemap.svg#icon-catalog-viber" />
@@ -2262,7 +2262,7 @@
                 </label>
               </div>
               <div class="catalogForm__radioButtonWrapper">
-                <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioTelegramCatalog">
+                <input class="catalogForm__radioButton" type="radio" name="contact" id="radioTelegramCatalog" value="Telegram">
                 <label class="catalogForm__radioLabel" for="radioTelegramCatalog">
                   <svg class="catalogForm__radioIcon catalogForm__radioIcon--telegram">
                     <use href="./spritemap.svg#icon-catalog-telegram" />
@@ -2309,7 +2309,7 @@
           <form action="https://palladiumestate.ae/amo.php?action=amo" class="catalogForm__form">
             <div class="catalogForm__radioContainer">
               <div class="catalogForm__radioButtonWrapper">
-                <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioTelRequest" checked>
+                <input class="catalogForm__radioButton" type="radio" name="contact" id="radioTelRequest" value="Телефон" checked>
                 <label class="catalogForm__radioLabel" for="radioTelRequest">
                   <svg class="catalogForm__radioIcon">
                     <use href="./spritemap.svg#icon-catalog-tel" />
@@ -2318,7 +2318,7 @@
                 </label>
               </div>
               <div class="catalogForm__radioButtonWrapper">
-                <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioWatsappRequest">
+                <input class="catalogForm__radioButton" type="radio" name="contact" id="radioWatsappRequest" value="WhatsApp">
                 <label class="catalogForm__radioLabel" for="radioWatsappRequest">
                   <svg class="catalogForm__radioIcon">
                     <use href="./spritemap.svg#icon-catalog-watsapp" />
@@ -2327,7 +2327,7 @@
                 </label>
               </div>
               <div class="catalogForm__radioButtonWrapper">
-                <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioViberRequest">
+                <input class="catalogForm__radioButton" type="radio" name="contact" id="radioViberRequest" value="Viber">
                 <label class="catalogForm__radioLabel" for="radioViberRequest">
                   <svg class="catalogForm__radioIcon">
                     <use href="./spritemap.svg#icon-catalog-viber" />
@@ -2336,7 +2336,7 @@
                 </label>
               </div>
               <div class="catalogForm__radioButtonWrapper">
-                <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioTelegramRequest">
+                <input class="catalogForm__radioButton" type="radio" name="contact" id="radioTelegramRequest" value="Telegram">
                 <label class="catalogForm__radioLabel" for="radioTelegramRequest">
                   <svg class="catalogForm__radioIcon catalogForm__radioIcon--telegram">
                     <use href="./spritemap.svg#icon-catalog-telegram" />
@@ -2384,7 +2384,7 @@
           <form action="https://palladiumestate.ae/amo.php?action=amo" class="catalogForm__form">
             <div class="catalogForm__radioContainer">
               <div class="catalogForm__radioButtonWrapper">
-                <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioTelOffer" checked>
+                <input class="catalogForm__radioButton" type="radio" name="contact" id="radioTelOffer" value="Телефон" checked>
                 <label class="catalogForm__radioLabel" for="radioTelOffer">
                   <svg class="catalogForm__radioIcon">
                     <use href="./spritemap.svg#icon-catalog-tel" />
@@ -2393,7 +2393,7 @@
                 </label>
               </div>
               <div class="catalogForm__radioButtonWrapper">
-                <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioWatsappOffer">
+                <input class="catalogForm__radioButton" type="radio" name="contact" id="radioWatsappOffer" value="WhatsUpp">
                 <label class="catalogForm__radioLabel" for="radioWatsappOffer">
                   <svg class="catalogForm__radioIcon">
                     <use href="./spritemap.svg#icon-catalog-watsapp" />
@@ -2402,7 +2402,7 @@
                 </label>
               </div>
               <div class="catalogForm__radioButtonWrapper">
-                <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioViberOffer">
+                <input class="catalogForm__radioButton" type="radio" name="contact" id="radioViberOffer" value="Viber">
                 <label class="catalogForm__radioLabel" for="radioViberOffer">
                   <svg class="catalogForm__radioIcon">
                     <use href="./spritemap.svg#icon-catalog-viber" />
@@ -2411,7 +2411,7 @@
                 </label>
               </div>
               <div class="catalogForm__radioButtonWrapper">
-                <input class="catalogForm__radioButton" type="radio" name="radioCatalog" id="radioTelegramOffer">
+                <input class="catalogForm__radioButton" type="radio" name="contact" id="radioTelegramOffer" value="Telegram">
                 <label class="catalogForm__radioLabel" for="radioTelegramOffer">
                   <svg class="catalogForm__radioIcon catalogForm__radioIcon--telegram">
                     <use href="./spritemap.svg#icon-catalog-telegram" />
