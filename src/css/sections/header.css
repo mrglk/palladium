@@ -49,6 +49,10 @@
   opacity: 1;
 }
 
+.header__logoIcon {
+  fill: var(--brown);
+}
+
 .header--active .header__logoIcon {
   fill: var(--brown);
 }
@@ -342,7 +346,7 @@
   }
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1070px) {
   .header__desktop--hidden {
     display: block;
   }
