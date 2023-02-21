@@ -8,6 +8,9 @@ export function initOurServices() {
 }
 
 function initOfferSwiper() {
+  if (!document.querySelector('.js-services-slider')) {
+    return
+  }
   swiper = new Swiper('.js-services-slider', {
     slidesPerView: 'auto',
     spaceBetween: 15,

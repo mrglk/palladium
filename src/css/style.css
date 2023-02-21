@@ -48,6 +48,7 @@
 @import "sections/services.css";
 @import "sections/contacts.css";
 @import "sections/footer.css";
+@import "sections/thanksPage.css";
 
 * {
   margin: 0;

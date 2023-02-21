@@ -2,11 +2,14 @@ import Swiper from 'swiper/bundle';
 
 const projectFilter = document.querySelector('.js-project-filter');
 const slider = document.querySelector('.js-project-slider')
-const projectSliderItems = [...slider.firstElementChild.children]
+const projectSliderItems = [...slider?.firstElementChild.children || []] 
 
 let swiper;
 
 export function initProjectsSlider() {
+  if (!slider) {
+    return;
+  }
   swiper = runSwiper('apartments');
 
   projectFilter.addEventListener('click', function(e) {
@@ -28,6 +31,9 @@ export function initProjectsSlider() {
 }
 
 function runSwiper(type) {
+  if (!slider) {
+    return;
+  }
   slider.firstElementChild.innerHTML = projectSliderItems.filter((slide) => slide.dataset.type === type).map(item => item.outerHTML).join('')
 
   return new Swiper('.js-project-slider', {

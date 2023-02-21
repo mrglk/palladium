@@ -8,6 +8,9 @@ export function initOfferSlider() {
 }
 
 function initOfferSwiper() {
+  if (!document.querySelector('.js-offer-slider')) {
+  return
+}
   swiper = new Swiper('.js-offer-slider', {
     slidesPerView: 'auto',
     spaceBetween: 0,

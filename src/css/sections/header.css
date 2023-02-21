@@ -21,7 +21,8 @@
   transform: translateY(-100%);
 }
 
-.header--active {
+.header--active,
+.header--darker {
   /*background: var(--white);*/
   color: var(--brown);
 
@@ -53,15 +54,18 @@
   fill: var(--brown);
 }
 
-.header--active .header__logoIcon {
+.header--active .header__logoIcon,
+.header--darker .header__logoIcon {
   fill: var(--brown);
 }
 
-.header--active .header__socialIcon {
+.header--active .header__socialIcon,
+.header--darker .header__socialIcon {
   fill: var(--brown);
 }
 
-.header--active .header__langButtonText {
+.header--active .header__langButtonText,
+.header--darker .header__langButtonText{
   color: var(--brown);
 }
 
@@ -99,6 +103,10 @@
   border-left: 1px solid rgba(230, 230, 230, 0.4);
 }
 
+.header--darker .header__content {
+  border-left: 1px solid #453D3628;
+}
+
 .header__contactsAndNavigation {
   display: flex;
   flex-direction: column;
@@ -112,6 +120,10 @@
   height: 100%;
   padding-left: 30px;
   border-bottom: 1px solid rgba(230, 230, 230, 0.4);
+}
+
+.header--darker .header__contactsAndLang {
+  border-bottom: 1px solid #453D3628;
 }
 
 .header__contacts {
@@ -150,6 +162,10 @@
 
   height: 100%;
   border-left: 1px solid rgba(230, 230, 230, 0.4);
+}
+
+.header--darker .header__langButtonWrapper {
+  border-left: 1px solid #453D3628;
 }
 
 .header__langButtonWrapper-eng {

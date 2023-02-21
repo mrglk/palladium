@@ -10,7 +10,7 @@ const mapPointsData = {
     {
       id: 1,
       title: 'Bluewaters',
-      price: '$ 1,789,000',
+      price: '$ 780,000',
       beach: '100 meters',
       developer: 'MERAAS',
       type: 'Apartment',
@@ -22,7 +22,7 @@ const mapPointsData = {
     {
       id: 2,
       title: 'Palm Jumeirah',
-      price: '$ 976,000',
+      price: '$ 600,000',
       beach: '100 meters',
       developer: 'Nakheel',
       type: 'Apartment / Villas',
@@ -34,7 +34,7 @@ const mapPointsData = {
     {
       id: 3,
       title: 'Dubai Marina & Jumeirah Lake Towers',
-      price: '$ 1,239,000',
+      price: '$ 150,000',
       beach: '500 meters',
       developer: 'Omniyat',
       type: 'Apartment',
@@ -46,7 +46,7 @@ const mapPointsData = {
     {
       id: 4,
       title: 'Downtown Dubai & Business Bay',
-      price: '$ 1,139,000',
+      price: '$ 245,000',
       beach: '2.7 kilometers',
       developer: 'EMAAR',
       type: 'Apartment',
@@ -58,7 +58,7 @@ const mapPointsData = {
     {
       id: 5,
       title: 'Creek Harbour',
-      price: '$ 799,000',
+      price: '$ 410,000',
       beach: '10 kilometers',
       developer: 'Sobha',
       type: 'Apartment',
@@ -70,7 +70,7 @@ const mapPointsData = {
     {
       id: 6,
       title: 'City Walk',
-      price: '$ 1,529,000',
+      price: '$ 440,000',
       beach: '900 meters',
       developer: 'Ahad',
       type: 'Apartment',
@@ -82,7 +82,7 @@ const mapPointsData = {
     {
       id: 7,
       title: 'Jumeirah Village Circle & Triangle',
-      price: '$ 689,000',
+      price: '$ 130,000',
       beach: '6.5 kilometers',
       developer: 'Al Habtoor',
       type: 'Apartment / Villas',
@@ -94,7 +94,7 @@ const mapPointsData = {
     {
       id: 8,
       title: 'Dubai Hills',
-      price: '$ 989,000',
+      price: '$ 305,000',
       beach: '6.1 kilometers',
       developer: 'Damac',
       type: 'Villas',
@@ -108,7 +108,7 @@ const mapPointsData = {
     {
       id: 1,
       title: 'Bluewaters',
-      price: '$ 1,789,000',
+      price: '$ 780,000',
       beach: '100 метров',
       developer: 'MERAAS',
       type: 'Апартаменты',
@@ -120,7 +120,7 @@ const mapPointsData = {
     {
       id: 2,
       title: 'Palm Jumeirah',
-      price: '$ 976,000',
+      price: '$ 600,000',
       beach: '100 метров',
       developer: 'Nakheel',
       type: 'Апартаменты / Виллы',
@@ -132,7 +132,7 @@ const mapPointsData = {
     {
       id: 3,
       title: 'Dubai Marina & Jumeirah Lake Towers',
-      price: '$ 1,239,000',
+      price: ' $ 150, 000',
       beach: '500 метров',
       developer: 'Omniyat',
       type: 'Апартаменты',
@@ -144,7 +144,7 @@ const mapPointsData = {
     {
       id: 4,
       title: 'Downtown Dubai & Business Bay',
-      price: '$ 1,139,000',
+      price: '$ 245,000',
       beach: '2.7 километра',
       developer: 'EMAAR',
       type: 'Апартаменты',
@@ -156,7 +156,7 @@ const mapPointsData = {
     {
       id: 5,
       title: 'Creek Harbour',
-      price: '$ 799,000',
+      price: '$ 410,000',
       beach: '10 километров',
       developer: 'Sobha',
       type: 'Апартаменты',
@@ -168,7 +168,7 @@ const mapPointsData = {
     {
       id: 6,
       title: 'City Walk',
-      price: '$ 1,529,000',
+      price: '$ 440,000',
       beach: '900 метров',
       developer: 'Ahad',
       type: 'Апартаменты',
@@ -180,7 +180,7 @@ const mapPointsData = {
     {
       id: 7,
       title: 'Jumeirah Village Circle & Triangle',
-      price: '$ 689,000',
+      price: '$ 130,000',
       beach: '6.5 километров',
       developer: 'Al Habtoor',
       type: 'Апартаменты / Виллы',
@@ -192,7 +192,7 @@ const mapPointsData = {
     {
       id: 8,
       title: 'Dubai Hills',
-      price: '$ 989,000',
+      price: '$ 305,000',
       beach: '6.1 километров',
       developer: 'Damac',
       type: 'Виллы',
@@ -208,11 +208,11 @@ const mapInfo = document.getElementById('map-info');
 
 const markers = []
 
-const mapInfoTitle = mapInfo.querySelector('.js-map-info-title');
-const mapInfoPrice = mapInfo.querySelector('.js-map-info-price');
-const mapInfoBeach = mapInfo.querySelector('.js-map-info-beach');
-const mapInfoDeveloper = mapInfo.querySelector('.js-map-info-developer');
-const mapInfoType = mapInfo.querySelector('.js-map-info-type');
+const mapInfoTitle = mapInfo?.querySelector('.js-map-info-title');
+const mapInfoPrice = mapInfo?.querySelector('.js-map-info-price');
+const mapInfoBeach = mapInfo?.querySelector('.js-map-info-beach');
+const mapInfoDeveloper = mapInfo?.querySelector('.js-map-info-developer');
+const mapInfoType = mapInfo?.querySelector('.js-map-info-type');
 
 const mapZoomIn = document.querySelector('.js-map-zoom-in');
 const mapZoomOut = document.querySelector('.js-map-zoom-out');
@@ -227,6 +227,9 @@ const DUBAI_BOUNDS = {
 };
 
 export async function initMap() {
+  if (!mapInfo) {
+    return;
+  }
   const loader = new Loader('AIzaSyCFVN9lovd3dC-PKoK-7VENM-vhhNUcXS8', {});
   const google = await loader.load();
   

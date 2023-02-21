@@ -21,6 +21,9 @@ const apartBedrooms = document.querySelector('.js-apartment-data-bedrooms')
 // const apartFileUrl = document.querySelector('.js-apartment-data-brochure')
 
 export function initApartmentsModal() {
+  if(!apartmentsSlider) {
+    return;
+  }
   apartmentsSlider.addEventListener('click', function(e) {
     const link = e.target.closest('.js-open-apartment-modal')
 
