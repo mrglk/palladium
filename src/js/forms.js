@@ -52,10 +52,6 @@ function submitForm(e) {
     button.setAttribute('disabled', 'disabled')
   }
 
-  for (let pair of formData.entries()) {
-    console.log(pair[0]+ ', ' + pair[1]);
-  }
-
   fetch(url, {
     method: 'POST',
     body: formData
@@ -65,12 +61,7 @@ function submitForm(e) {
       form.reset()
       button.value = button.dataset.success || 'Sent'
 
-      openModal('thankYou');
-      setTimeout(() => {
-        button.removeAttribute('disabled')
-
-        window.location.href = window.location.href + '?modal=thankYou'
-      }, 2000)
+      window.location.href = lang === 'ru' ? '/thnx-ru.html' : '/thnx.html'
     });
 }
 
