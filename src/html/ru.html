@@ -65,16 +65,6 @@
 </head>
 
 <body>
-    <!-- Roistat Counter Start -->
-<script>
-  (function(w, d, s, h, id) {
-      w.roistatProjectId = id; w.roistatHost = h;
-      var p = d.location.protocol == "https:" ? "https://" : "http://";
-      var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init?referrer="+encodeURIComponent(d.location.href);
-      var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
-  })(window, document, 'script', 'cloud.roistat.com', '649d3a9b28338d5acce8c126d76e826c');
-  </script>
-  <!-- Roistat Counter End -->
   <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQHN629"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -97,12 +87,12 @@
                 <a href="tel:+97143102171" class="header__tel">+971 (4) 310-21-71</a>
               </div>
               <div class="header__socials">
-                <a href="https://t.me/palladiumrealty_bot?start=00025" target="_blank" class="header__socialLink">
+                <a href="https://t.me/palladium_manager_bot?start=00035" target="_blank" class="header__socialLink">
                   <svg class="header__socialIcon">
                     <use href="./spritemap.svg#icon-telegram-header" />
                   </svg>
                 </a>
-                <a href="https://wa.me/97143102171" target="_blank" class="header__socialLink">
+                <a href="https://wa.me/97143102171?text=Приветствую!+Пришлите+пожалуйста+ваш+каталог+недвижимости+по+Дубаю" target="_blank" class="header__socialLink">
                   <svg class="header__socialIcon">
                     <use href="./spritemap.svg#icon-watsapp-header" />
                   </svg>
@@ -171,12 +161,12 @@
                       <a href="./index.html" class="burgerMenu__langLink">EN</a>
                     </div>
                     <div class="burgerMenu__social">
-                      <a href="https://t.me/palladiumrealty_bot?start=00025" target="_blank" class="burgerMenu__socialLink">
+                      <a href="https://t.me/palladium_manager_bot?start=00035" target="_blank" class="burgerMenu__socialLink">
                         <svg class="burgerMenu__socialIcon">
                           <use href="./spritemap.svg#icon-burger-menu-telegram" />
                         </svg>
                       </a>
-                      <a href="https://wa.me/97143102171" target="_blank" class="burgerMenu__socialLink">
+                      <a href="https://wa.me/97143102171?text=Приветствую!+Пришлите+пожалуйста+ваш+каталог+недвижимости+по+Дубаю" target="_blank" class="burgerMenu__socialLink">
                         <svg class="burgerMenu__socialIcon">
                           <use href="./spritemap.svg#icon-burger-menu-watsapp" />
                         </svg>
@@ -199,7 +189,7 @@
 
         <h1 class="firstScreen__header js-title" data-class="title--shown">
           <span class="title__line"><span class="title__lineInner">Доходные апартаменты</span></span>
-          <span class="title__line"><span class="title__lineInner">в лучших районах Дубая<br class="firstScreen__mobileHidden"/> за 24 часа</span></span>
+          <span class="title__line"><span class="title__lineInner">в лучших районах Дубая&nbsp;<br class="firstScreen__mobileHidden"/> за 24 часа</span></span>
         </h1>
         <p class="firstScreen__description">Palladium Realty - эксперты в сфере недвижимости Дубая</p>
         <div class="firstScreen__form">
@@ -1065,12 +1055,27 @@
           </div>
         </div>
         <div class="offers__right">
-          <img class="offers__desktop1920Visible" alt="Beach house" src="/img/offers-photo.jpg"
+          <picture class="offers__desktop1920Visible">
+            <source srcset="/img/offers-photo.webp, /img/offers-photo-2x.webp 2x" type="image/webp">
+            <source srcset="/img/offers-photo.jpg, /img/offers-photo-2x.jpg 2x">
+            <img src="/img/offers-photo.jpg" alt="Beach house" loading="lazy">
+          </picture>
+          <picture class="offers__desktopVisible">
+            <source srcset="/img/offers-photo-desktop.webp, /img/offers-photo-desktop-2x.webp 2x" type="image/webp">
+            <source srcset="/img/offers-photo-desktop.jpg, /img/offers-photo-desktop-2x.jpg 2x">
+            <img src="/img/offers-photo-desktop.jpg" alt="Beach house" loading="lazy">
+          </picture>
+          <picture class="offers__tabletVisible">
+            <source srcset="/img/offers-photo-tablet.webp, /img/offers-photo-tablet-2x.webp 2x" type="image/webp">
+            <source srcset="/img/offers-photo-tablet.jpg, /img/offers-photo-tablet-2x.jpg 2x">
+            <img src="/img/offers-photo-tablet.jpg" alt="Beach house" loading="lazy">
+          </picture>
+          <!-- <img class="offers__desktop1920Visible" alt="Beach house" src="/img/offers-photo.jpg"
             srcSet="/img/offers-photo-2x.jpg 2x">
           <img class="offers__desktopVisible" alt="Beach house" src="/img/offers-photo-desktop.jpg"
             srcSet="/img/offers-photo-desktop-2x.jpg 2x">
           <img class="offers__tabletVisible" alt="Beach house" src="/img/offers-photo-tablet.jpg"
-            srcSet="/img/offers-photo-tablet-2x.jpg 2x">
+            srcSet="/img/offers-photo-tablet-2x.jpg 2x"> -->
         </div>
       </div>
       <div class="animatedButton offers__onlyTabletVisible">
@@ -1276,7 +1281,14 @@
       <div class="container__row container__row--removeLeft experts__row">
         <div class="experts__videoSide">
           <div class="experts__videoWrapper">
-            <img class="experts__video" src="/img/video-test.jpg">
+            <picture>
+              <source srcset="/img/video-test-678x850.webp" type="image/webp" media="(max-width: 700px)">
+              <source srcset="/img/video-test-678x850.jpg" media="(max-width: 700px)">
+              <source srcset="/img/video-test-798x1000.webp" type="image/webp">
+              <source srcset="/img/video-test-798x1000.jpg">
+              <img src="/img/video-test-798x1000.jpg" class="experts__video" alt="Video" loading="lazy">
+            </picture>
+            <!-- <img class="experts__video" src="/img/video-test.jpg"> -->
             <div class="experts__duration">
               <br class="experts__durationText">Длительность видео</p>
               <p class="experts__durationTime">01:34</p>
@@ -1649,7 +1661,12 @@
             </div>
           </div>
           <div class="goldenVisa__image">
-            <img alt="Gilden Visa" src="/img/golden-visa.png" srcSet="/img/golden-visa-2x.png 2x">
+            <picture>
+              <source srcset="/img/golden-visa.webp, /img/golden-visa-2x.webp 2x" type="image/webp">
+              <source srcset="/img/golden-visa.png, /img/golden-visa-2x.png 2x">
+              <img src="/img/golden-visa.png" alt="Golden Visa" loading="lazy">
+            </picture>
+            <!-- <img alt="Gilden Visa" src="/img/golden-visa.png" srcSet="/img/golden-visa-2x.png 2x"> -->
             <div class="animatedButton goldenVisa__mobileVisible">
               <button class="animatedButton__content button button--smaller js-open-modal" data-modal="requestForm">Получить бесплатную консультацию</button>
               <button class="animatedButton__contentHovered button button--smaller js-open-modal"
@@ -1873,7 +1890,12 @@
             <div class="swiper-wrapper">
               <div class="serviceItem swiper-slide">
                 <div class="serviceItem__image">
-                  <img class="serviceItem" alt="Residency" src="/img/service.jpg" srcSet="/img/service-2x.jpg 2x">
+                  <picture>
+                    <source srcset="/img/service.webp, /img/service-2x.webp 2x" type="image/webp">
+                    <source srcset="/img/service.jpg, /img/service-2x.jpg 2x">
+                    <img class="serviceItem" src="/img/service.jpg" alt="Residency" loading="lazy">
+                  </picture>
+                  <!-- <img class="serviceItem" alt="Residency" src="/img/service.jpg" srcSet="/img/service-2x.jpg 2x"> -->
                 </div>
                 <div class="serviceItem__content">
                   <p class="serviceItem__num">(01)</p>
@@ -1883,7 +1905,12 @@
               </div>
               <div class="serviceItem swiper-slide">
                 <div class="serviceItem__image">
-                  <img class="serviceItem" alt="BUSINESS" src="/img/service-2.jpg" srcSet="/img/service-2-2x.jpg 2x">
+                  <picture>
+                    <source srcset="/img/service-2.webp, /img/service-2-2x.webp 2x" type="image/webp">
+                    <source srcset="/img/service-2.jpg, /img/service-2-2x.jpg 2x">
+                    <img class="serviceItem" src="/img/service-2.jpg" alt="BUSINESS" loading="lazy">
+                  </picture>
+                  <!-- <img class="serviceItem" alt="BUSINESS" src="/img/service-2.jpg" srcSet="/img/service-2-2x.jpg 2x"> -->
                 </div>
                 <div class="serviceItem__content">
                   <p class="serviceItem__num">(02)</p>
@@ -1893,7 +1920,12 @@
               </div>
               <div class="serviceItem swiper-slide">
                 <div class="serviceItem__image">
-                  <img class="serviceItem" alt="Relocation" src="/img/service-3.jpg" srcSet="/img/service-3-2x.jpg 2x">
+                  <picture>
+                    <source srcset="/img/service-3.webp, /img/service-3-2x.webp 2x" type="image/webp">
+                    <source srcset="/img/service-3.jpg, /img/service-3-2x.jpg 2x">
+                    <img class="serviceItem" src="/img/service-3.jpg" alt="Relocation" loading="lazy">
+                  </picture>
+                  <!-- <img class="serviceItem" alt="Relocation" src="/img/service-3.jpg" srcSet="/img/service-3-2x.jpg 2x"> -->
                 </div>
                 <div class="serviceItem__content">
                   <p class="serviceItem__num">(03)</p>
@@ -1903,8 +1935,13 @@
               </div>
               <div class="serviceItem swiper-slide">
                 <div class="serviceItem__image">
-                  <img class="serviceItem" alt="Banl account" src="/img/service-4.jpg"
-                    srcSet="/img/service-4-2x.jpg 2x">
+                  <picture>
+                    <source srcset="/img/service-4.webp, /img/service-4-2x.webp 2x" type="image/webp">
+                    <source srcset="/img/service-4.jpg, /img/service-4-2x.jpg 2x">
+                    <img class="serviceItem" src="/img/service-4.jpg" alt="Bank account" loading="lazy">
+                  </picture>
+                  <!-- <img class="serviceItem" alt="Bank account" src="/img/service-4.jpg"
+                    srcSet="/img/service-4-2x.jpg 2x"> -->
                 </div>
                 <div class="serviceItem__content">
                   <p class="serviceItem__num">(04)</p>
@@ -1914,8 +1951,13 @@
               </div>
               <div class="serviceItem swiper-slide">
                 <div class="serviceItem__image">
-                  <img class="serviceItem" alt="Free customs" src="/img/service-5.jpg"
-                    srcSet="/img/service-5-2x.jpg 2x">
+                  <picture>
+                    <source srcset="/img/service-5.webp, /img/service-5-2x.webp 2x" type="image/webp">
+                    <source srcset="/img/service-5.jpg, /img/service-5-2x.jpg 2x">
+                    <img class="serviceItem" src="/img/service-5.jpg" alt="Free customs" loading="lazy">
+                  </picture>
+                  <!-- <img class="serviceItem" alt="Free customs" src="/img/service-5.jpg"
+                    srcSet="/img/service-5-2x.jpg 2x"> -->
                 </div>
                 <div class="serviceItem__content">
                   <p class="serviceItem__num">(05)</p>
@@ -1926,8 +1968,13 @@
               </div>
               <div class="serviceItem swiper-slide">
                 <div class="serviceItem__image">
-                  <img class="serviceItem" alt="Worldwide finance" src="/img/service-6.jpg"
-                    srcSet="/img/service-6-2x.jpg 2x">
+                  <picture>
+                    <source srcset="/img/service-6.webp, /img/service-6-2x.webp 2x" type="image/webp">
+                    <source srcset="/img/service-6.jpg, /img/service-6-2x.jpg 2x">
+                    <img class="serviceItem" src="/img/service-6.jpg"  alt="Worldwide finance" loading="lazy">
+                  </picture>
+                  <!-- <img class="serviceItem" alt="Worldwide finance" src="/img/service-6.jpg"
+                    srcSet="/img/service-6-2x.jpg 2x"> -->
                 </div>
                 <div class="serviceItem__content">
                   <p class="serviceItem__num">(06)</p>
@@ -2017,13 +2064,13 @@
             </div>
           </div>
           <div class="contacts__social">
-            <a href="https://t.me/palladiumrealty_bot?start=00025" target="_blank" class="contacts__socialLink">
+            <a href="https://t.me/palladium_manager_bot?start=00035" target="_blank" class="contacts__socialLink">
               <svg class="contacts__socialIcon">
                 <use href="./spritemap.svg#icon-telegram-contacts" />
               </svg>
               <p class="contacts__socialTitle">Telegram</p>
             </a>
-            <a href="https://wa.me/97143102171" target="_blank" class="contacts__socialLink">
+            <a href="https://wa.me/97143102171?text=Приветствую!+Пришлите+пожалуйста+ваш+каталог+недвижимости+по+Дубаю" target="_blank" class="contacts__socialLink">
               <svg class="contacts__socialIcon">
                 <use href="./spritemap.svg#icon-watsapp-contacts" />
               </svg>
@@ -2394,6 +2441,16 @@
     </p>
     <button class="cookie__button button js-cookie-accept">Хорошо</button>
   </section>
+      <!-- Roistat Counter Start -->
+<script>
+  (function(w, d, s, h, id) {
+      w.roistatProjectId = id; w.roistatHost = h;
+      var p = d.location.protocol == "https:" ? "https://" : "http://";
+      var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init?referrer="+encodeURIComponent(d.location.href);
+      var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+  })(window, document, 'script', 'cloud.roistat.com', '649d3a9b28338d5acce8c126d76e826c');
+  </script>
+  <!-- Roistat Counter End -->
 </body>
 
 </html>
