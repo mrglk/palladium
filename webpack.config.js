@@ -6,6 +6,7 @@ const SVGSpriteMapPlugin = require("svg-spritemap-webpack-plugin");
 const autoprefixer = require("autoprefixer");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 const html = [];
 const pages = glob.sync(__dirname + "/src/html/*.html");
@@ -91,7 +92,15 @@ module.exports = {
           },
         ],
       },
-      { test: /\.(js)$/, use: "babel-loader" },
+      {
+        test: /\.(js)$/,
+        // use: "babel-loader" },
+        use: [
+          {
+            loader: "babel-loader",
+          }
+        ]
+      },
       {
         test: /\.css$/,
         use: [
@@ -140,7 +149,8 @@ module.exports = {
     filename: "bundle.js",
   },
   optimization: {
-    minimizer: [new CssMinimizerPlugin()],
+    minimize: true,
+    minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
   },
   plugins: [
     new MiniCssExtractPlugin({
