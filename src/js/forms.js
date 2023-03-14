@@ -2,6 +2,8 @@ import Validator from './classes/Validator';
 import { openModal } from './initModals';
 import { getPageLang } from './utils/helpers';
 
+let formSent = false;
+
 export function initForms() {
   const forms = document.querySelectorAll('form');
 
@@ -12,6 +14,11 @@ export function initForms() {
 
 function submitForm(e) {
   e.preventDefault()
+
+  if (formSent) {
+    return;
+  }
+
   const form = e.currentTarget
   const lang = getPageLang()
 
@@ -52,17 +59,20 @@ function submitForm(e) {
     button.setAttribute('disabled', 'disabled')
   }
 
-  fetch(url, {
-    method: 'POST',
-    body: formData
-  })
-    .then((response) => response.json())
-    .then((response) => {
-      form.reset()
-      button.value = button.dataset.success || 'Sent'
+  formSent = true;
 
-      window.location.href = lang === 'ru' ? '/thnx-ru.html' : '/thnx.html'
-    });
+    fetch(url, {
+      method: 'POST',
+      body: formData
+    })
+      .then((response) => response.json())
+      .then((response) => {
+        // console.log('Отправлено')
+        form.reset()
+        button.value = button.dataset.success || 'Sent'
+  
+        window.location.href = lang === 'ru' ? '/thnx-ru.html' : '/thnx.html'
+      });
 }
 
 export function resetForm(form) {
