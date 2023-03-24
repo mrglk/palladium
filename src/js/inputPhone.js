@@ -13,6 +13,7 @@ export function initPhoneInput() {
   inputs.forEach((input) => {
     input.after(selectElement.cloneNode(true));
     input.addEventListener('input', handleSearchCountry)
+    input.addEventListener('paste', handlePastePhone)
 
     Inputmask({mask: codes[defaultMask][3]}).mask(input, {greedy: false});
   });
@@ -90,6 +91,22 @@ function handleSearchCountry(e) {
     const text = option.textContent.toLowerCase()
     option.classList.toggle('phoneSelect__option--hidden', !text.includes(input.value.toLowerCase()))
   })
+}
+
+function handlePastePhone(e) {
+  const input = e.target;
+  const form = input.closest('form');
+  const pastedPhoneNumber = (e.clipboardData || window.clipboardData).getData("text") || "";
+  let currentCode = form.querySelector('.js-phone-codes-current').innerText;
+  currentCode = currentCode.slice(currentCode.indexOf("+"))
+
+  if (pastedPhoneNumber.indexOf(currentCode) === 0) {
+    input.value = pastedPhoneNumber.slice(currentCode.length);
+  }
+
+  if (pastedPhoneNumber.indexOf(currentCode.slice(1)) === 0) {
+    input.value = pastedPhoneNumber.slice(currentCode.slice(1).length);
+  }
 }
 
 function renderCodesSelect() {
