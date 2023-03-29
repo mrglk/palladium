@@ -2,6 +2,7 @@ export const apartmensData = {
   en: [
     {
       id: 1918453,
+      category: 'penthouses',
       title: '4 bedroom Penthouse',
       name: 'Al Habtoor City, Meera Tower, Business Bay',
       address: 'Business Bay, Dubai',
@@ -42,6 +43,7 @@ export const apartmensData = {
     },
     {
       id: 189296,
+      category: 'penthouses',
       title: '6 bedroom Penthouse',
       name: 'OPUS Omniyat, Business Bay',
       address: 'Business Bay',
@@ -70,6 +72,7 @@ export const apartmensData = {
     },
     {
       id: 1720977,
+      category: 'villas',
       title: '6 bedroom villa',
       name: 'Tilal Al Ghaf Villas, Tilal Al Ghaf',
       address: 'Tilal Al Ghaf',
@@ -92,6 +95,7 @@ export const apartmensData = {
     },
     {
       id: '0371712',
+      category: 'villas',
       title: '8 bedroom villa',
       name: 'Ritz Carlton residences by MAG, Al Jaddaf',
       address: 'Al Jaddaf',
@@ -118,6 +122,7 @@ export const apartmensData = {
     },
     {
       id:  '0947110',
+      category: 'villas',
       title: '6 bedroom villa',
       name: 'DAMAC Lagoons',
       address: 'DAMAC Lagoons',
@@ -139,6 +144,7 @@ export const apartmensData = {
     },
     {
       id: 1257623,
+      category: 'apartments',
       title: 'Studio',
       name: 'Golf Views, Jumeirah Lake Towers',
       address: 'Jumeirah Lake Towers',
@@ -171,6 +177,7 @@ export const apartmensData = {
     },
     {
       id: 1257140,
+      category: 'apartments',
       title: '3 bedroom apartment',
       name: 'VINCITORE  VOLARE, THE DOWNTOWN OF ARJAN',
       address: 'THE DOWNTOWN OF ARJAN',
@@ -197,6 +204,7 @@ export const apartmensData = {
     },
     {
       id: 156764,
+      category: 'villas',
       title: '4 bedroom villa',
       name: 'Tilal Al Ghaf Villas, Tilal Al Ghaf',
       address: 'Tilal Al Ghaf',
@@ -218,26 +226,8 @@ export const apartmensData = {
       ],
     },
     {
-      id: 140473,
-      title: '1 room apartment',
-      name: 'Sobha Marima, Dubai Harbour',
-      address: 'Dubai Harbour',
-      description: 'Unique location and stunning views of Dubai Marina, Persian Gulf, Ferris wheel and Palm Jumeirah. It is located in one of the most sought-after areas of Dubai - Dubai Marina, on the first line, which makes the project as popular as possible. <br> <br> Convenient location, allowing you to go to the main highway of the city in a couple of minutes. Near the famous beaches JBR, Barasti beach and others.',
-      price: '870,000',
-      below: '6%',
-      type: 'Apartment',
-      size: '581 sqft / 54 sqm',
-      bathrooms: 1,
-      bedrooms: 1,
-      brochure: '/public/files/sobha-seahaven.pdf',
-      photos: [
-        '/public/photos/sobha/img-1.jpg',
-        '/public/photos/sobha/img-2.jpg',
-        '/public/photos/sobha/img-3.jpg',
-      ],
-    },
-    {
       id: 149876,
+      category: 'apartments',
       title: '2 bedroom apartment',
       name: 'Ritz Carlton residences by MAG, Al Jaddaf',
       address: 'Al Jaddaf',
@@ -263,7 +253,28 @@ export const apartmensData = {
       ],
     },
     {
+      id: 140473,
+      category: 'apartments',
+      title: '1 room apartment',
+      name: 'Sobha Marima, Dubai Harbour',
+      address: 'Dubai Harbour',
+      description: 'Unique location and stunning views of Dubai Marina, Persian Gulf, Ferris wheel and Palm Jumeirah. It is located in one of the most sought-after areas of Dubai - Dubai Marina, on the first line, which makes the project as popular as possible. <br> <br> Convenient location, allowing you to go to the main highway of the city in a couple of minutes. Near the famous beaches JBR, Barasti beach and others.',
+      price: '870,000',
+      below: '6%',
+      type: 'Apartment',
+      size: '581 sqft / 54 sqm',
+      bathrooms: 1,
+      bedrooms: 1,
+      brochure: '/public/files/sobha-seahaven.pdf',
+      photos: [
+        '/public/photos/sobha/img-1.jpg',
+        '/public/photos/sobha/img-2.jpg',
+        '/public/photos/sobha/img-3.jpg',
+      ],
+    },
+    {
       id: 147650,
+      category: 'apartments',
       title: '1 bedroom apartment',
       name: 'OPUS Omniyat, Business Bay',
       address: 'Business Bay',
@@ -292,6 +303,7 @@ export const apartmensData = {
     },
     {
       id: 1257682,
+      category: 'penthouses',
       title: '4 room penthouse',
       name: 'Omniyat Sterling, Business Bay',
       address: 'Business Bay Dubai',
@@ -351,6 +363,7 @@ export const apartmensData = {
     },
     {
       id: 135480,
+      category: 'penthouses',
       title: '2 bedroom penthouse',
       name: 'Muraba Properties, Palm Jumeirah',
       address: 'Palm Jumeirah',
@@ -375,6 +388,7 @@ export const apartmensData = {
     },
     {
       id: 1253353,
+      category: 'apartments',
       title: '1 bedroom apartment',
       name: 'Marina Arcade tower, Dubai Marina',
       address: 'Dubai Marina',
@@ -405,6 +419,7 @@ export const apartmensData = {
     },
     {
       id: 198517,
+      category: 'apartments',
       title: '1 bedroom apartment',
       name: 'CAVALLI от Roberto Cavalli & DAMAC, Dubai Harbour',
       address: 'Dubai Harbour',
@@ -424,6 +439,7 @@ export const apartmensData = {
     },
     {
       id: 1259065,
+      category: 'apartments',
       title: '1 bedroom apartment',
       name: 'Binghatti Nova, JVC',
       address: 'JVC, Dubai',
@@ -443,6 +459,7 @@ export const apartmensData = {
     },
     {
       id: 1256028,
+      category: 'apartments',
       title: '1 bedroom apartment',
       name: 'Al Habtoor City, Meera Tower, Business Bay',
       address: 'Business Bay, Dubai',
@@ -483,6 +500,7 @@ export const apartmensData = {
     },
     {
       id: 1253376,
+      category: 'apartments',
       title: '2 bedroom apartment',
       name: 'Ahad residences, Business Bay',
       address: 'Business Bay Dubai',
@@ -512,6 +530,7 @@ export const apartmensData = {
   ru: [
     {
       id: 1918453,
+      category: 'penthouses',
       title: '4 комнатный Пентхаус',
       name: 'Al Habtoor City, Meera Tower, Business Bay',
       address: 'Business Bay, Dubai',
@@ -552,6 +571,7 @@ export const apartmensData = {
     },
     {
       id: 189296,
+      category: 'penthouses',
       title: '6 комнатный Пентхаус',
       name: 'OPUS Omniyat, Business Bay',
       address: 'Business Bay',
@@ -580,6 +600,7 @@ export const apartmensData = {
     },
     {
       id: 1720977,
+      category: 'villas',
       title: 'Вилла с 6 спальнями',
       name: 'Tilal Al Ghaf Villas, Tilal Al Ghaf',
       address: 'Tilal Al Ghaf',
@@ -602,6 +623,7 @@ export const apartmensData = {
     },
     {
       id: '0371712',
+      category: 'villas',
       title: 'Вилла с 8 спальнями',
       name: 'Ritz Carlton residences by MAG, Al Jaddaf',
       address: 'Al Jaddaf',
@@ -628,6 +650,7 @@ export const apartmensData = {
     },
     {
       id:  '0947110',
+      category: 'villas',
       title: 'Вилла с 6 спальнями',
       name: 'DAMAC Lagoons',
       address: 'DAMAC Lagoons',
@@ -649,6 +672,7 @@ export const apartmensData = {
     },
     {
       id: 1257623,
+      category: 'apartments',
       title: 'Студия',
       name: 'Golf Views, Jumeirah Lake Towers',
       address: 'Jumeirah Lake Towers',
@@ -681,6 +705,7 @@ export const apartmensData = {
     },
     {
       id: 1257140,
+      category: 'apartments',
       title: '3 комнатные апартаменты',
       name: 'VINCITORE  VOLARE, THE DOWNTOWN OF ARJAN',
       address: 'THE DOWNTOWN OF ARJAN',
@@ -707,6 +732,7 @@ export const apartmensData = {
     },
     {
       id: 156764,
+      category: 'villas',
       title: 'Вилла с 4 спальнями',
       name: 'Tilal Al Ghaf Villas, Tilal Al Ghaf',
       address: 'Tilal Al Ghaf',
@@ -728,26 +754,8 @@ export const apartmensData = {
       ],
     },
     {
-      id: 140473,
-      title: '1 комнатные апартаменты',
-      name: 'Sobha Marima, Dubai Harbour',
-      address: 'Dubai Harbour',
-      description: 'Уникальная локация и потрясающий вид на Дубай Марину, Персидский залив, колесо обозрения и Palm Jumeirah. Располагается в одном из самых востребованных районов Дубая - Дубай Марина, на первой линии, что делает проект максимально востребованным. <br> <br> Удобное расположение, позволяющее выехать на главную магистраль города за пару минут. Рядом знаменитые пляжи JBR, Barasti beach и др.',
-      price: '870,000',
-      below: '6%',
-      type: 'Апартаменты',
-      size: '581 sqft / 54 sqm',
-      bathrooms: 1,
-      bedrooms: 1,
-      brochure: '/public/files/sobha-seahaven.pdf',
-      photos: [
-        '/public/photos/sobha/img-1.jpg',
-        '/public/photos/sobha/img-2.jpg',
-        '/public/photos/sobha/img-3.jpg',
-      ],
-    },
-    {
       id: 149876,
+      category: 'apartments',
       title: '2 комнатные апартаменты',
       name: 'Ritz Carlton residences by MAG, Al Jaddaf',
       address: 'Al Jaddaf',
@@ -773,7 +781,28 @@ export const apartmensData = {
       ],
     },
     {
+      id: 140473,
+      category: 'apartments',
+      title: '1 комнатные апартаменты',
+      name: 'Sobha Marima, Dubai Harbour',
+      address: 'Dubai Harbour',
+      description: 'Уникальная локация и потрясающий вид на Дубай Марину, Персидский залив, колесо обозрения и Palm Jumeirah. Располагается в одном из самых востребованных районов Дубая - Дубай Марина, на первой линии, что делает проект максимально востребованным. <br> <br> Удобное расположение, позволяющее выехать на главную магистраль города за пару минут. Рядом знаменитые пляжи JBR, Barasti beach и др.',
+      price: '870,000',
+      below: '6%',
+      type: 'Апартаменты',
+      size: '581 sqft / 54 sqm',
+      bathrooms: 1,
+      bedrooms: 1,
+      brochure: '/public/files/sobha-seahaven.pdf',
+      photos: [
+        '/public/photos/sobha/img-1.jpg',
+        '/public/photos/sobha/img-2.jpg',
+        '/public/photos/sobha/img-3.jpg',
+      ],
+    },
+    {
       id: 147650,
+      category: 'apartments',
       title: '1 комнатные апартаменты',
       name: 'OPUS Omniyat, Business Bay',
       address: 'Business Bay',
@@ -802,6 +831,7 @@ export const apartmensData = {
     },
     {
       id: 1257682,
+      category: 'penthouses',
       title: '4 комнатный пентхаус',
       name: 'Omniyat Sterling, Business Bay',
       address: 'Business Bay Dubai',
@@ -861,6 +891,7 @@ export const apartmensData = {
     },
     {
       id: 135480,
+      category: 'penthouses',
       title: '2 комнатный пентхаус',
       name: 'Muraba Properties, Palm Jumeirah',
       address: 'Palm Jumeirah',
@@ -885,6 +916,7 @@ export const apartmensData = {
     },
     {
       id: 1253353,
+      category: 'apartments',
       title: '1 комнатные апартаменты',
       name: 'Marina Arcade tower, Dubai Marina',
       address: 'Dubai Marina',
@@ -915,6 +947,7 @@ export const apartmensData = {
     },
     {
       id: 198517,
+      category: 'apartments',
       title: '1 комнатные апартаменты',
       name: 'CAVALLI от Roberto Cavalli & DAMAC, Dubai Harbour',
       address: 'Dubai Harbour',
@@ -934,6 +967,7 @@ export const apartmensData = {
     },
     {
       id: 1259065,
+      category: 'apartments',
       title: '1 комнатные апартаменты',
       name: 'Binghatti Nova, JVC',
       address: 'JVC, Dubai',
@@ -953,6 +987,7 @@ export const apartmensData = {
     },
     {
       id: 1256028,
+      category: 'apartments',
       title: '1 комнатные апартаменты',
       name: 'Al Habtoor City, Meera Tower, Business Bay',
       address: 'Business Bay, Dubai',
@@ -993,6 +1028,7 @@ export const apartmensData = {
     },
     {
       id: 1253376,
+      category: 'apartments',
       title: '2 комнатные апартаменты',
       name: 'Ahad residences, Business Bay',
       address: 'Business Bay Dubai',
