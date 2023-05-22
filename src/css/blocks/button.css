@@ -22,6 +22,8 @@
 
   flex-shrink: 0;
   transform: translateZ(0);
+
+  white-space: break-spaces;
 }
 
 /* .button:hover,
